@@ -1,0 +1,22 @@
+# Ambiente virtual
+.venv/
+venv/
+
+# Cache do Python
+__pycache__/
+
+# Arquivos temporários da pipeline
+PipelineBernardoSilvaC1P1/temp_atp/
+PipelineBernardoSilvaC1P1/ArquivosPL4/
+PipelineBernardoSilvaC1P1/CartoesNaoRodados/
+
+# Base de cartões ATP
+PipelineBernardoSilvaC1P1/TodosCartoesRodadosSemRetirarCargas/
+
+# Parquets gerados
+PipelineBernardoSilvaC1P1/Parquets/
+
+# Arquivos grandes e dados gerados
+*.zip
+*.parquet
+*.pl4

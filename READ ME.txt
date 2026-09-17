@@ -1,0 +1,6 @@
+READ ME
+
+
+1 - Gere os cartões ATP na pasta step 1
+2 - Para funcionar na nova versão, use no próprio ATP o tpbigm antes
+3 - No ATP Launcher, desmarque a opção Output to Screen

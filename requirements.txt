@@ -1,0 +1,14 @@
+pandas>=2.2.3
+numpy>=1.26.4
+openpyxl>=3.1.5
+psutil==6.0.0
+tqdm==4.66.4
+scipy>=1.14.0
+pyarrow>=14.0.1
+mat4py
+h5py>=3.10
+mat73>=0.63.0
+pymatreader>=0.0.32
+matplotlib
+
+
