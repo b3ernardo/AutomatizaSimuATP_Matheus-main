@@ -2,7 +2,7 @@
 from f_selecionavariaveisATP import seleciona_variaveis
 
 # Seleciona somente os sinais correspondentes aos medidores e à subestação
-def seleciona_sinais_medidores(pl4, incluir_time=True):
+def selecionar_sinais_medidores(pl4, incluir_time=True):
     """
     Seleciona tensões e correntes dos medidores Mxx e da SUB.
 

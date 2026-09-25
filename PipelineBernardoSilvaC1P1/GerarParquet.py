@@ -19,7 +19,7 @@ DIRETORIO_REPOSITORIO_RAIZ = DIRETORIO_PIPELINE.parent
 sys.path.insert(0, str(DIRETORIO_REPOSITORIO_RAIZ))
 
 from f_readpl4 import readpl4
-from f_processa_pl4 import processar_pl4
+from f_processar_pl4 import processar_pl4
 
 # ============================================================
 # Configurações

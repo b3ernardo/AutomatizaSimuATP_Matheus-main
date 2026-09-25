@@ -1,5 +1,5 @@
 from pathlib import Path
-from f_seleciona_sinais_medidores import seleciona_sinais_medidores
+from f_selecionar_sinais_medidores import selecionar_sinais_medidores
 from scipy.signal import resample_poly
 import re
 import numpy as np
@@ -63,7 +63,7 @@ def processar_pl4(pl4, arquivo_atp):
     # Seleção dos sinais
     # ============================================================
     # Mantém somente o tempo, as tensões e correntes dos medidores e da SUB
-    variaveis = seleciona_sinais_medidores(
+    variaveis = selecionar_sinais_medidores(
         pl4,
         incluir_time=True
     )
