@@ -1,5 +1,5 @@
 FREQUENCIA_REDE = 60.0
-AMOSTRAS_POR_CICLO = 64
+AMOSTRAS_POR_CICLO = 16
 
 def recortar_janela(df, ciclos_antes, ciclos_depois):
     """

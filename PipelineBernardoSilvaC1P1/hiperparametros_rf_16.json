@@ -1,0 +1,1058 @@
+{
+    "0/5|2": {
+        "assinatura": "65998f1e8fbc1f62817425ffa949856048bc6da4c8db1c31b6a1722eb6f42f07",
+        "parametros": {
+            "n_estimators": 200,
+            "max_depth": 10,
+            "min_samples_split": 3,
+            "min_samples_leaf": 5,
+            "max_features": null
+        },
+        "f1_validacao": 0.9674382575304914
+    },
+    "0/5|3": {
+        "assinatura": "0aac89d750aefe3701d9f391bdc86df1753ee89ed0ab35dff46a0286250f7973",
+        "parametros": {
+            "n_estimators": 500,
+            "max_depth": null,
+            "min_samples_split": 5,
+            "min_samples_leaf": 1,
+            "max_features": null
+        },
+        "f1_validacao": 0.907507697338216
+    },
+    "0/5|4": {
+        "assinatura": "d03fbe56609c836eb3e2cf80e2e2e67a264b45eb78aede25d4373b87b89c368a",
+        "parametros": {
+            "n_estimators": 200,
+            "max_depth": null,
+            "min_samples_split": 3,
+            "min_samples_leaf": 1,
+            "max_features": null
+        },
+        "f1_validacao": 0.8212747556650154
+    },
+    "0/5|5": {
+        "assinatura": "e115bed41c89acf0f3af978b439fcfff8b9fcde746958fb236a9308569784528",
+        "parametros": {
+            "n_estimators": 600,
+            "max_depth": null,
+            "min_samples_split": 5,
+            "min_samples_leaf": 1,
+            "max_features": null
+        },
+        "f1_validacao": 0.796087475178814
+    },
+    "0/5|6": {
+        "assinatura": "45fb84fe9035724ed909e811721264e37674240d014a9749b64d824f638924a5",
+        "parametros": {
+            "n_estimators": 500,
+            "max_depth": null,
+            "min_samples_split": 5,
+            "min_samples_leaf": 1,
+            "max_features": null
+        },
+        "f1_validacao": 0.7789237650174752
+    },
+    "0/5|7": {
+        "assinatura": "edde483f3e9380111009eea94af3a7a6b312cc1b723ac4cf8692a1993ae47424",
+        "parametros": {
+            "n_estimators": 600,
+            "max_depth": null,
+            "min_samples_split": 6,
+            "min_samples_leaf": 1,
+            "max_features": null
+        },
+        "f1_validacao": 0.7764265872539828
+    },
+    "0/5|8": {
+        "assinatura": "30f62b0d49794006812fbf126f2d19b7b35901a008d2efa9356bea4fb11c55e0",
+        "parametros": {
+            "n_estimators": 400,
+            "max_depth": 10,
+            "min_samples_split": 3,
+            "min_samples_leaf": 1,
+            "max_features": null
+        },
+        "f1_validacao": 0.7620502432477856
+    },
+    "0/5|9": {
+        "assinatura": "73ea7eef5cb2e03c8246fe68afe78e07a03afad0547d09c211ad03c2886ae2ba",
+        "parametros": {
+            "n_estimators": 600,
+            "max_depth": null,
+            "min_samples_split": 5,
+            "min_samples_leaf": 1,
+            "max_features": null
+        },
+        "f1_validacao": 0.7410809967617396
+    },
+    "0/5|10": {
+        "assinatura": "0da61cd23bb82f8a7f9a0ce08c97d7ff3f5f0c1262e013df6d51f9055d50f085",
+        "parametros": {
+            "n_estimators": 400,
+            "max_depth": null,
+            "min_samples_split": 2,
+            "min_samples_leaf": 1,
+            "max_features": null
+        },
+        "f1_validacao": 0.7545551349406118
+    },
+    "0/5|11": {
+        "assinatura": "b636bcdff866ef33a98400ce925b833691596c477a4b9bf02e8a117b5c42b768",
+        "parametros": {
+            "n_estimators": 600,
+            "max_depth": null,
+            "min_samples_split": 5,
+            "min_samples_leaf": 1,
+            "max_features": null
+        },
+        "f1_validacao": 0.7472806917748555
+    },
+    "0/5|12": {
+        "assinatura": "bb0ce7e973b5cc49fc49b7c7c771276954be0a6a0ffdd1026d279f6840def264",
+        "parametros": {
+            "n_estimators": 500,
+            "max_depth": null,
+            "min_samples_split": 5,
+            "min_samples_leaf": 1,
+            "max_features": null
+        },
+        "f1_validacao": 0.7375166484207436
+    },
+    "0/5|13": {
+        "assinatura": "1067b4642b28265e9453acaaa64ee613ff4cee40803e15165a7aa62e62c69bb7",
+        "parametros": {
+            "n_estimators": 400,
+            "max_depth": 10,
+            "min_samples_split": 3,
+            "min_samples_leaf": 1,
+            "max_features": null
+        },
+        "f1_validacao": 0.7190047810416117
+    },
+    "0/5|14": {
+        "assinatura": "cf624181f002b2207e08f27fe50d877ff271220b35d5f3b2a63b980a73ae7a96",
+        "parametros": {
+            "n_estimators": 200,
+            "max_depth": null,
+            "min_samples_split": 2,
+            "min_samples_leaf": 1,
+            "max_features": null
+        },
+        "f1_validacao": 0.7265960792317074
+    },
+    "0/5|15": {
+        "assinatura": "d42b13969c454c443550b333014b3a3bf120c9ececdde3b0ce76c31ab4270802",
+        "parametros": {
+            "n_estimators": 500,
+            "max_depth": null,
+            "min_samples_split": 5,
+            "min_samples_leaf": 1,
+            "max_features": null
+        },
+        "f1_validacao": 0.7200003450101036
+    },
+    "0/5|16": {
+        "assinatura": "0c6486d9e6cb3dbf2c54a3f5659779792e71694ad320e11e43524621239424a7",
+        "parametros": {
+            "n_estimators": 600,
+            "max_depth": null,
+            "min_samples_split": 5,
+            "min_samples_leaf": 1,
+            "max_features": null
+        },
+        "f1_validacao": 0.7000201892079698
+    },
+    "0/5|17": {
+        "assinatura": "beffb257724aaa828da5ddcafa0dbd6dcfb062eb3cde782e68d4f9a4bf32eb11",
+        "parametros": {
+            "n_estimators": 600,
+            "max_depth": null,
+            "min_samples_split": 5,
+            "min_samples_leaf": 1,
+            "max_features": null
+        },
+        "f1_validacao": 0.7003776930874664
+    },
+    "0/5|18": {
+        "assinatura": "f2357ceb80d2268dfcb817a255785d1d72dfa895d771b3c1b269db1f415040af",
+        "parametros": {
+            "n_estimators": 400,
+            "max_depth": null,
+            "min_samples_split": 2,
+            "min_samples_leaf": 1,
+            "max_features": null
+        },
+        "f1_validacao": 0.7298371417364993
+    },
+    "0/5|19": {
+        "assinatura": "4a41dd284a63b2b41cc242aaa4f6cb8e7d735aecf3fe18f2949d75c4be37f66d",
+        "parametros": {
+            "n_estimators": 200,
+            "max_depth": null,
+            "min_samples_split": 2,
+            "min_samples_leaf": 1,
+            "max_features": null
+        },
+        "f1_validacao": 0.7182679508437523
+    },
+    "0/5|20": {
+        "assinatura": "1835cf8de16f48a9686d1cf696cbc3f75a3d0bc698a090b8087c86a6b050e15d",
+        "parametros": {
+            "n_estimators": 100,
+            "max_depth": null,
+            "min_samples_split": 3,
+            "min_samples_leaf": 1,
+            "max_features": null
+        },
+        "f1_validacao": 0.6914015420034134
+    },
+    "0/5|21": {
+        "assinatura": "4708998bedc56d05803ec7b20fb3170ae85ee0964ec35c11ced63aa638fde6bd",
+        "parametros": {
+            "n_estimators": 200,
+            "max_depth": null,
+            "min_samples_split": 2,
+            "min_samples_leaf": 1,
+            "max_features": null
+        },
+        "f1_validacao": 0.7005687665153649
+    },
+    "0/5|22": {
+        "assinatura": "983667f5b2a28c040e03b89602c5d4f6b304e75473757662eb8079165fec5b90",
+        "parametros": {
+            "n_estimators": 400,
+            "max_depth": 20,
+            "min_samples_split": 3,
+            "min_samples_leaf": 1,
+            "max_features": null
+        },
+        "f1_validacao": 0.7052083624529295
+    },
+    "0/5|23": {
+        "assinatura": "3f6388a20c47708d62cbbfc9ae3295dd25dce3f1cd1c6fa168b64152d4d3acb4",
+        "parametros": {
+            "n_estimators": 300,
+            "max_depth": null,
+            "min_samples_split": 2,
+            "min_samples_leaf": 1,
+            "max_features": null
+        },
+        "f1_validacao": 0.715026802392957
+    },
+    "0/5|24": {
+        "assinatura": "29cf1d5518ad0fcd5496eb42b50702f1282ae8f9997818f37966dd93fa525e3c",
+        "parametros": {
+            "n_estimators": 300,
+            "max_depth": null,
+            "min_samples_split": 2,
+            "min_samples_leaf": 1,
+            "max_features": null
+        },
+        "f1_validacao": 0.7003373281205488
+    },
+    "0/5|25": {
+        "assinatura": "7e33d3521b3cc3a4c80edde5a8116ac96edfe36d77411b7943ad0013ff201387",
+        "parametros": {
+            "n_estimators": 400,
+            "max_depth": null,
+            "min_samples_split": 2,
+            "min_samples_leaf": 1,
+            "max_features": null
+        },
+        "f1_validacao": 0.6982002082378161
+    },
+    "0/5|26": {
+        "assinatura": "5455dc1d9f23973fa66b864bc473d3bfa19510683d95b1a030dc6f91363b7818",
+        "parametros": {
+            "n_estimators": 600,
+            "max_depth": null,
+            "min_samples_split": 5,
+            "min_samples_leaf": 1,
+            "max_features": null
+        },
+        "f1_validacao": 0.6812612540563557
+    },
+    "0/5|27": {
+        "assinatura": "b8b77f55469f0eec01782883e145de803d8f4e263ab4f165b1832068fc0c405f",
+        "parametros": {
+            "n_estimators": 600,
+            "max_depth": null,
+            "min_samples_split": 5,
+            "min_samples_leaf": 1,
+            "max_features": null
+        },
+        "f1_validacao": 0.6756533071879447
+    },
+    "0/5|28": {
+        "assinatura": "1adbcabf22a85f1c80d03256ea547601be1e7558afb679e46af88ce18ccd69d2",
+        "parametros": {
+            "n_estimators": 400,
+            "max_depth": null,
+            "min_samples_split": 2,
+            "min_samples_leaf": 1,
+            "max_features": null
+        },
+        "f1_validacao": 0.6434025214277849
+    },
+    "0/5|29": {
+        "assinatura": "b0b37eecc07c8fbf30cadd4c7ed45527c0f7be5b7b1f8339b2353e549522ddbc",
+        "parametros": {
+            "n_estimators": 500,
+            "max_depth": null,
+            "min_samples_split": 2,
+            "min_samples_leaf": 2,
+            "max_features": null
+        },
+        "f1_validacao": 0.6302595972289874
+    },
+    "0/5|30": {
+        "assinatura": "a39771ee39ce040e9967e756940e79e0c762d0ef6e47cabcfbb0c75fd733712b",
+        "parametros": {
+            "n_estimators": 600,
+            "max_depth": null,
+            "min_samples_split": 5,
+            "min_samples_leaf": 1,
+            "max_features": null
+        },
+        "f1_validacao": 0.6225172899569185
+    },
+    "0/5|31": {
+        "assinatura": "820c9a2c3e5e966d247733d53093f08e7ad08f71b654774e316fd8e2f150ef25",
+        "parametros": {
+            "n_estimators": 600,
+            "max_depth": null,
+            "min_samples_split": 6,
+            "min_samples_leaf": 1,
+            "max_features": null
+        },
+        "f1_validacao": 0.6155826823952054
+    },
+    "0/5|32": {
+        "assinatura": "ee574daab36b5c4563d3df9015bfe5d9f3b0ac43fce033a0ca31654eb7edc528",
+        "parametros": {
+            "n_estimators": 500,
+            "max_depth": null,
+            "min_samples_split": 3,
+            "min_samples_leaf": 2,
+            "max_features": null
+        },
+        "f1_validacao": 0.6132729944344479
+    },
+    "0/5|33": {
+        "assinatura": "8223fa4c6f8ff3491ff14252fcf0ded67be98b0087ccb2ddeb95db2e1dd291f3",
+        "parametros": {
+            "n_estimators": 500,
+            "max_depth": null,
+            "min_samples_split": 5,
+            "min_samples_leaf": 1,
+            "max_features": null
+        },
+        "f1_validacao": 0.6273456389541389
+    },
+    "0/10|2": {
+        "assinatura": "812f00cebbb7f05165985d691ddceb016129c01587ddcea20acf54a6b46dc324",
+        "parametros": {
+            "n_estimators": 300,
+            "max_depth": null,
+            "min_samples_split": 2,
+            "min_samples_leaf": 5,
+            "max_features": "log2"
+        },
+        "f1_validacao": 0.9684504392218702
+    },
+    "0/10|3": {
+        "assinatura": "e78dadfaa8233715b9d01a1de4bb07e228287d92915bd1edd382573df8e1bd64",
+        "parametros": {
+            "n_estimators": 600,
+            "max_depth": 40,
+            "min_samples_split": 4,
+            "min_samples_leaf": 4,
+            "max_features": null
+        },
+        "f1_validacao": 0.8939658299470749
+    },
+    "0/10|4": {
+        "assinatura": "91bef3143259aa576817799ec90b8b4a396c9c1e07640d8360ad539f6c725ac6",
+        "parametros": {
+            "n_estimators": 400,
+            "max_depth": 10,
+            "min_samples_split": 3,
+            "min_samples_leaf": 1,
+            "max_features": null
+        },
+        "f1_validacao": 0.8116088417845402
+    },
+    "0/10|5": {
+        "assinatura": "01b455f2ebf51ac4254dcf1cc2393bf227c2a0464a69634d8fe6aa00479c56b2",
+        "parametros": {
+            "n_estimators": 400,
+            "max_depth": 40,
+            "min_samples_split": 4,
+            "min_samples_leaf": 1,
+            "max_features": "sqrt"
+        },
+        "f1_validacao": 0.7950515737204417
+    },
+    "0/10|6": {
+        "assinatura": "16a4a2df0d9dfc9453121966d3a784cb860c3a4a0ba5117867c29ad30924d2a6",
+        "parametros": {
+            "n_estimators": 500,
+            "max_depth": null,
+            "min_samples_split": 5,
+            "min_samples_leaf": 1,
+            "max_features": null
+        },
+        "f1_validacao": 0.7777495497408586
+    },
+    "0/10|7": {
+        "assinatura": "147a052f1300d6e0e0563fa4f37152ccc5faf8af62454d5a9c7c834a65fab636",
+        "parametros": {
+            "n_estimators": 500,
+            "max_depth": 40,
+            "min_samples_split": 2,
+            "min_samples_leaf": 1,
+            "max_features": "log2"
+        },
+        "f1_validacao": 0.7717222820931535
+    },
+    "0/10|8": {
+        "assinatura": "7a19ef08e6c63224af6a2090039071bb905db58fd80bffb6c6409a46a4b84bcf",
+        "parametros": {
+            "n_estimators": 400,
+            "max_depth": 10,
+            "min_samples_split": 3,
+            "min_samples_leaf": 1,
+            "max_features": null
+        },
+        "f1_validacao": 0.7492355108673097
+    },
+    "0/10|9": {
+        "assinatura": "8908130c445cfdf14eba6c5e17b6aa68c4f802f66d14911a92dcb607ba21b9d9",
+        "parametros": {
+            "n_estimators": 100,
+            "max_depth": null,
+            "min_samples_split": 3,
+            "min_samples_leaf": 1,
+            "max_features": null
+        },
+        "f1_validacao": 0.7481629680863925
+    },
+    "0/10|10": {
+        "assinatura": "d9eba81a266ac3bc8d581d9a9bc624673baec1adb8a7367a9865bb0d961ce09c",
+        "parametros": {
+            "n_estimators": 600,
+            "max_depth": null,
+            "min_samples_split": 5,
+            "min_samples_leaf": 1,
+            "max_features": null
+        },
+        "f1_validacao": 0.7320738136903003
+    },
+    "0/10|11": {
+        "assinatura": "dbd52a53901b2ccf2dfa42ee1917e124db3b902bb598c3a973eca6c5c940a490",
+        "parametros": {
+            "n_estimators": 200,
+            "max_depth": null,
+            "min_samples_split": 2,
+            "min_samples_leaf": 1,
+            "max_features": null
+        },
+        "f1_validacao": 0.7520587786228122
+    },
+    "0/10|12": {
+        "assinatura": "70a9e710bb1a225cd7ec1b6fa6efdcb548c7b5fb9104b5f198da981b7ac1a2b6",
+        "parametros": {
+            "n_estimators": 400,
+            "max_depth": null,
+            "min_samples_split": 2,
+            "min_samples_leaf": 1,
+            "max_features": null
+        },
+        "f1_validacao": 0.7497531887161208
+    },
+    "0/10|13": {
+        "assinatura": "409b90281296288b0289be62630ec075518af1cb0ef70caff147bf859022999c",
+        "parametros": {
+            "n_estimators": 400,
+            "max_depth": null,
+            "min_samples_split": 2,
+            "min_samples_leaf": 2,
+            "max_features": null
+        },
+        "f1_validacao": 0.705345217110795
+    },
+    "0/10|14": {
+        "assinatura": "52ea1f4d871a30f970a70402e89f286dbaab11b8ae27594c22c3e94024019e24",
+        "parametros": {
+            "n_estimators": 500,
+            "max_depth": null,
+            "min_samples_split": 5,
+            "min_samples_leaf": 1,
+            "max_features": null
+        },
+        "f1_validacao": 0.7090041901288422
+    },
+    "0/10|15": {
+        "assinatura": "2c6f271d042da281c06b42c09ec5bd5956d875e4a1edd410fc3216af85dfe528",
+        "parametros": {
+            "n_estimators": 500,
+            "max_depth": null,
+            "min_samples_split": 5,
+            "min_samples_leaf": 1,
+            "max_features": null
+        },
+        "f1_validacao": 0.7144555386544187
+    },
+    "0/10|16": {
+        "assinatura": "1f0ec517c4d1db7f6144b4abf33c60ea45ea71e5ee7ca2ed0bf2456a03d004e9",
+        "parametros": {
+            "n_estimators": 400,
+            "max_depth": null,
+            "min_samples_split": 2,
+            "min_samples_leaf": 1,
+            "max_features": null
+        },
+        "f1_validacao": 0.7121499088961165
+    },
+    "0/10|17": {
+        "assinatura": "746a50846c70cb0e9194064fedf2bbaed75eeadb94dbe7314797e9c85ddddf22",
+        "parametros": {
+            "n_estimators": 100,
+            "max_depth": null,
+            "min_samples_split": 3,
+            "min_samples_leaf": 2,
+            "max_features": null
+        },
+        "f1_validacao": 0.6944304696533614
+    },
+    "0/10|18": {
+        "assinatura": "300475cca680763d0f1711feae83591ee128ff736ebd42434a5e8da054839340",
+        "parametros": {
+            "n_estimators": 600,
+            "max_depth": null,
+            "min_samples_split": 5,
+            "min_samples_leaf": 1,
+            "max_features": null
+        },
+        "f1_validacao": 0.6984520386477955
+    },
+    "0/10|19": {
+        "assinatura": "edf87338b72000ac84d12b916ce845dc0ba7f1b2be17515b56b7e66c61841215",
+        "parametros": {
+            "n_estimators": 500,
+            "max_depth": null,
+            "min_samples_split": 5,
+            "min_samples_leaf": 1,
+            "max_features": null
+        },
+        "f1_validacao": 0.6924321895542586
+    },
+    "0/10|20": {
+        "assinatura": "2dd84ca2b57be3856eb688c815e1e220f099badd36e1aae552151891ddfc7b8f",
+        "parametros": {
+            "n_estimators": 300,
+            "max_depth": null,
+            "min_samples_split": 2,
+            "min_samples_leaf": 1,
+            "max_features": null
+        },
+        "f1_validacao": 0.6846212525254991
+    },
+    "0/10|21": {
+        "assinatura": "369490b086a04138450ee52bf1b2cda0ecd30dfc7ce201bb3629d043e608f552",
+        "parametros": {
+            "n_estimators": 400,
+            "max_depth": null,
+            "min_samples_split": 2,
+            "min_samples_leaf": 1,
+            "max_features": null
+        },
+        "f1_validacao": 0.6959378119733578
+    },
+    "0/10|22": {
+        "assinatura": "cd85ef9dfd4b8699274c5c11c74315b0ead6beaddcbc2b07a510e595e6aa2afc",
+        "parametros": {
+            "n_estimators": 600,
+            "max_depth": null,
+            "min_samples_split": 5,
+            "min_samples_leaf": 1,
+            "max_features": null
+        },
+        "f1_validacao": 0.686661867205155
+    },
+    "0/10|23": {
+        "assinatura": "514bd650a83089579ff710e9b9d0ecea95787288c7ddc7abe25021ec0c73ea27",
+        "parametros": {
+            "n_estimators": 500,
+            "max_depth": null,
+            "min_samples_split": 2,
+            "min_samples_leaf": 2,
+            "max_features": null
+        },
+        "f1_validacao": 0.6956761665431351
+    },
+    "0/10|24": {
+        "assinatura": "a29fbf7cb5bce3716750e480abfd2098d95e0ae11e7e1869a0da48269fa433cd",
+        "parametros": {
+            "n_estimators": 200,
+            "max_depth": null,
+            "min_samples_split": 3,
+            "min_samples_leaf": 1,
+            "max_features": null
+        },
+        "f1_validacao": 0.6907593482201329
+    },
+    "0/10|25": {
+        "assinatura": "198f01c89ebccad597ede41fba81c22ac837f4ad88c69abab5922eb393d62f36",
+        "parametros": {
+            "n_estimators": 400,
+            "max_depth": null,
+            "min_samples_split": 2,
+            "min_samples_leaf": 1,
+            "max_features": null
+        },
+        "f1_validacao": 0.6922779318265726
+    },
+    "0/10|26": {
+        "assinatura": "9e0de17ac3d0f3b41dc5ebd2409f248700922b93b1c1dec6c265673acfd81278",
+        "parametros": {
+            "n_estimators": 500,
+            "max_depth": null,
+            "min_samples_split": 5,
+            "min_samples_leaf": 1,
+            "max_features": null
+        },
+        "f1_validacao": 0.6595155287776435
+    },
+    "0/10|27": {
+        "assinatura": "b308b7fc2ec4a72aadd61ac21351ee51efadf020eb1f86a9b7644bd134ba744b",
+        "parametros": {
+            "n_estimators": 500,
+            "max_depth": null,
+            "min_samples_split": 5,
+            "min_samples_leaf": 1,
+            "max_features": null
+        },
+        "f1_validacao": 0.6518665612750945
+    },
+    "0/10|28": {
+        "assinatura": "0cc4c7c6549bb1d2b927760615797e0d22b0a3f039e2313d569b361f437f7bbf",
+        "parametros": {
+            "n_estimators": 100,
+            "max_depth": null,
+            "min_samples_split": 5,
+            "min_samples_leaf": 1,
+            "max_features": null
+        },
+        "f1_validacao": 0.614574176316174
+    },
+    "0/10|29": {
+        "assinatura": "96d013598c60e726913155f1bbb736ec6de30f4be4dfbc98da9410f238c81e7e",
+        "parametros": {
+            "n_estimators": 500,
+            "max_depth": null,
+            "min_samples_split": 2,
+            "min_samples_leaf": 1,
+            "max_features": null
+        },
+        "f1_validacao": 0.6272472451046466
+    },
+    "0/10|30": {
+        "assinatura": "00ed6ffe5c1a9d114c855f884ba794615fc415941fe0d512338950af31f98f3b",
+        "parametros": {
+            "n_estimators": 400,
+            "max_depth": null,
+            "min_samples_split": 2,
+            "min_samples_leaf": 1,
+            "max_features": null
+        },
+        "f1_validacao": 0.612496590081596
+    },
+    "0/10|31": {
+        "assinatura": "b599c8a9ba61a525b74110df8c89801c310358badb904d7f4195594c9e38a6a5",
+        "parametros": {
+            "n_estimators": 500,
+            "max_depth": null,
+            "min_samples_split": 2,
+            "min_samples_leaf": 1,
+            "max_features": null
+        },
+        "f1_validacao": 0.6115370699644623
+    },
+    "0/10|32": {
+        "assinatura": "9fe708358073d0520f6d86ee2ec8e0898a3163ec0f2c308ad397693ff2002459",
+        "parametros": {
+            "n_estimators": 500,
+            "max_depth": null,
+            "min_samples_split": 2,
+            "min_samples_leaf": 1,
+            "max_features": null
+        },
+        "f1_validacao": 0.6094826533634288
+    },
+    "0/10|33": {
+        "assinatura": "e1d0791ffee66a2763f0b5945121eb984cb0e80274907aa9a69c3d622835d361",
+        "parametros": {
+            "n_estimators": 100,
+            "max_depth": null,
+            "min_samples_split": 3,
+            "min_samples_leaf": 2,
+            "max_features": null
+        },
+        "f1_validacao": 0.6055363859853022
+    },
+    "0/20|2": {
+        "assinatura": "7ca7bc594c5231ffee10595bb4f88f453de1c4ef4e03d4eaf9ce419595800318",
+        "parametros": {
+            "n_estimators": 400,
+            "max_depth": null,
+            "min_samples_split": 9,
+            "min_samples_leaf": 1,
+            "max_features": null
+        },
+        "f1_validacao": 0.9665878108762399
+    },
+    "0/20|3": {
+        "assinatura": "e312c30f752e293b825328b953c2f39f53b4c9762a10ec43d5485dad486947c1",
+        "parametros": {
+            "n_estimators": 600,
+            "max_depth": 40,
+            "min_samples_split": 8,
+            "min_samples_leaf": 3,
+            "max_features": null
+        },
+        "f1_validacao": 0.8716190782180855
+    },
+    "0/20|4": {
+        "assinatura": "6a295b9342c9421202cf1e05787a44fa2f5ff5351f5028dc8c967038d33c1301",
+        "parametros": {
+            "n_estimators": 200,
+            "max_depth": null,
+            "min_samples_split": 6,
+            "min_samples_leaf": 4,
+            "max_features": null
+        },
+        "f1_validacao": 0.784782819884203
+    },
+    "0/20|5": {
+        "assinatura": "52c531613d1d8f3d216882deda3c7d00e5e249403be240ebea1458ee1f6d8d24",
+        "parametros": {
+            "n_estimators": 300,
+            "max_depth": null,
+            "min_samples_split": 3,
+            "min_samples_leaf": 1,
+            "max_features": null
+        },
+        "f1_validacao": 0.7788576206633463
+    },
+    "0/20|6": {
+        "assinatura": "903fa50446abce08b84d9ccd6c4dd02d6dc22dc020c77a3893c4af852f6fe717",
+        "parametros": {
+            "n_estimators": 600,
+            "max_depth": null,
+            "min_samples_split": 5,
+            "min_samples_leaf": 1,
+            "max_features": null
+        },
+        "f1_validacao": 0.761571201508579
+    },
+    "0/20|7": {
+        "assinatura": "a1e5fd485ed4a92c0133769a35fe3e9fbbd028d372928a478b85ddcf12684dfb",
+        "parametros": {
+            "n_estimators": 600,
+            "max_depth": null,
+            "min_samples_split": 5,
+            "min_samples_leaf": 1,
+            "max_features": null
+        },
+        "f1_validacao": 0.7630808796617559
+    },
+    "0/20|8": {
+        "assinatura": "3f9934751eb1da57c8f6f82d69bb0a3a20462a195cdecf5833b03b16534be207",
+        "parametros": {
+            "n_estimators": 600,
+            "max_depth": null,
+            "min_samples_split": 5,
+            "min_samples_leaf": 1,
+            "max_features": null
+        },
+        "f1_validacao": 0.7206760739764558
+    },
+    "0/20|9": {
+        "assinatura": "5b8f443c932de967e7e59280a5694d5ea4672e5a345512ec3b035d338a474047",
+        "parametros": {
+            "n_estimators": 500,
+            "max_depth": null,
+            "min_samples_split": 2,
+            "min_samples_leaf": 2,
+            "max_features": null
+        },
+        "f1_validacao": 0.7022890373509764
+    },
+    "0/20|10": {
+        "assinatura": "d9f0d0db5f43f0acb3ad9dcfb9b35cd95c6f73b67772147a7a629bb9590cd5b0",
+        "parametros": {
+            "n_estimators": 300,
+            "max_depth": null,
+            "min_samples_split": 5,
+            "min_samples_leaf": 2,
+            "max_features": null
+        },
+        "f1_validacao": 0.6989172981642631
+    },
+    "0/20|11": {
+        "assinatura": "29f40167c633a288a18ddba70f5ddbac2f1b9ad7ebc81656c2eb9dcba9e83a79",
+        "parametros": {
+            "n_estimators": 100,
+            "max_depth": null,
+            "min_samples_split": 4,
+            "min_samples_leaf": 2,
+            "max_features": null
+        },
+        "f1_validacao": 0.7156994873176099
+    },
+    "0/20|12": {
+        "assinatura": "7ce036730b3e3d3b25bcca58db37caf48e52338f84fb561f72422adc3b9d3023",
+        "parametros": {
+            "n_estimators": 600,
+            "max_depth": null,
+            "min_samples_split": 5,
+            "min_samples_leaf": 1,
+            "max_features": null
+        },
+        "f1_validacao": 0.7024845270703696
+    },
+    "0/20|13": {
+        "assinatura": "c31a00409cb8609b158ad589bc2fcbda4ea7daa2668c5b0633e98c6e117d4788",
+        "parametros": {
+            "n_estimators": 500,
+            "max_depth": null,
+            "min_samples_split": 5,
+            "min_samples_leaf": 1,
+            "max_features": null
+        },
+        "f1_validacao": 0.6900503760356294
+    },
+    "0/20|14": {
+        "assinatura": "f41c033467cabe7403dd192888ab13aa2afa35a7d85e581708f3a9313f28341c",
+        "parametros": {
+            "n_estimators": 500,
+            "max_depth": null,
+            "min_samples_split": 2,
+            "min_samples_leaf": 1,
+            "max_features": null
+        },
+        "f1_validacao": 0.6859620718341803
+    },
+    "0/20|15": {
+        "assinatura": "67e247fb026a4ed017f08c7ad67a2f29de49282ff23dc50faa292c8a1818b05f",
+        "parametros": {
+            "n_estimators": 500,
+            "max_depth": null,
+            "min_samples_split": 5,
+            "min_samples_leaf": 1,
+            "max_features": null
+        },
+        "f1_validacao": 0.6800920113235351
+    },
+    "0/20|16": {
+        "assinatura": "086b842f0bf6034305c52346aca1a11d7a56c8eae7f5362d4b376842dce3eea5",
+        "parametros": {
+            "n_estimators": 500,
+            "max_depth": null,
+            "min_samples_split": 5,
+            "min_samples_leaf": 1,
+            "max_features": null
+        },
+        "f1_validacao": 0.6820442919688334
+    },
+    "0/20|17": {
+        "assinatura": "d2bd145248c00ad30be5aadb953356bebd6cf7141a91f75bfe8e9e27faeabc7e",
+        "parametros": {
+            "n_estimators": 200,
+            "max_depth": null,
+            "min_samples_split": 3,
+            "min_samples_leaf": 1,
+            "max_features": null
+        },
+        "f1_validacao": 0.6855057064800615
+    },
+    "0/20|18": {
+        "assinatura": "6e476d092fbc3c2bc45b63b9fbbce551d31869aab97c39a9b7fa8a4ab91cf388",
+        "parametros": {
+            "n_estimators": 500,
+            "max_depth": null,
+            "min_samples_split": 5,
+            "min_samples_leaf": 1,
+            "max_features": null
+        },
+        "f1_validacao": 0.6797911061278015
+    },
+    "0/20|19": {
+        "assinatura": "ba7b0e5c023615108dc8501b6a6febad353fe9a4ce50d5873794441f83ae0996",
+        "parametros": {
+            "n_estimators": 200,
+            "max_depth": null,
+            "min_samples_split": 3,
+            "min_samples_leaf": 1,
+            "max_features": null
+        },
+        "f1_validacao": 0.6685476790811646
+    },
+    "0/20|20": {
+        "assinatura": "d8f3166d23637fe80979bbdf9ce90331505c86fdabd68ee028dd287e1413eb7f",
+        "parametros": {
+            "n_estimators": 500,
+            "max_depth": null,
+            "min_samples_split": 5,
+            "min_samples_leaf": 1,
+            "max_features": null
+        },
+        "f1_validacao": 0.6519386299926186
+    },
+    "0/20|21": {
+        "assinatura": "34b4c3d37fa83401aece14f65bac0744f0d8a73b775e273d614e6f2c9c4b2522",
+        "parametros": {
+            "n_estimators": 400,
+            "max_depth": null,
+            "min_samples_split": 2,
+            "min_samples_leaf": 1,
+            "max_features": null
+        },
+        "f1_validacao": 0.6572805469364887
+    },
+    "0/20|22": {
+        "assinatura": "9722ffad7160ea0c5ea17df68ee47762f7157f8cca22c4eb54160daf9e89ecf1",
+        "parametros": {
+            "n_estimators": 500,
+            "max_depth": null,
+            "min_samples_split": 5,
+            "min_samples_leaf": 1,
+            "max_features": null
+        },
+        "f1_validacao": 0.6670589468585895
+    },
+    "0/20|23": {
+        "assinatura": "0b4dfb3b7859eb250edef9535a16d18eecb94bc60d4041f9aea9538399b7594f",
+        "parametros": {
+            "n_estimators": 400,
+            "max_depth": null,
+            "min_samples_split": 2,
+            "min_samples_leaf": 2,
+            "max_features": null
+        },
+        "f1_validacao": 0.6718307193290418
+    },
+    "0/20|24": {
+        "assinatura": "6f8200652296af79b7f9ce9af0fb5a7b0f71395533dd2447f358678814109d42",
+        "parametros": {
+            "n_estimators": 500,
+            "max_depth": null,
+            "min_samples_split": 2,
+            "min_samples_leaf": 2,
+            "max_features": null
+        },
+        "f1_validacao": 0.6602959196116922
+    },
+    "0/20|25": {
+        "assinatura": "de83bb3bd61827481c4c6d10eae9cd0bc3c6128787e03c71f035f4c243bb7074",
+        "parametros": {
+            "n_estimators": 200,
+            "max_depth": null,
+            "min_samples_split": 3,
+            "min_samples_leaf": 1,
+            "max_features": null
+        },
+        "f1_validacao": 0.6550192314051768
+    },
+    "0/20|26": {
+        "assinatura": "0ef5c8cc0524182b671790211470a285e6324d60cc9798d451ae1507c33ffb0e",
+        "parametros": {
+            "n_estimators": 500,
+            "max_depth": null,
+            "min_samples_split": 5,
+            "min_samples_leaf": 1,
+            "max_features": null
+        },
+        "f1_validacao": 0.6444332700998203
+    },
+    "0/20|27": {
+        "assinatura": "b5cf081fb86da80a687b8ceee132da72978ded8fe49530b55dddf7573b2d073a",
+        "parametros": {
+            "n_estimators": 500,
+            "max_depth": null,
+            "min_samples_split": 5,
+            "min_samples_leaf": 1,
+            "max_features": null
+        },
+        "f1_validacao": 0.6437773868303527
+    },
+    "0/20|28": {
+        "assinatura": "59332ca7b74db357830a334340484e8984a484488cc7eeaa60589782a05357a0",
+        "parametros": {
+            "n_estimators": 500,
+            "max_depth": null,
+            "min_samples_split": 5,
+            "min_samples_leaf": 1,
+            "max_features": null
+        },
+        "f1_validacao": 0.6116607175337504
+    },
+    "0/20|29": {
+        "assinatura": "725a20249df2189e97ff3446062dae7ea3bb4ffcf6d9ddb237acf6278330d54c",
+        "parametros": {
+            "n_estimators": 600,
+            "max_depth": null,
+            "min_samples_split": 5,
+            "min_samples_leaf": 1,
+            "max_features": null
+        },
+        "f1_validacao": 0.622656340662617
+    },
+    "0/20|30": {
+        "assinatura": "3f4be3dc2290548634f58a809243dd772262bd551912058c649bd13ff7299e67",
+        "parametros": {
+            "n_estimators": 500,
+            "max_depth": null,
+            "min_samples_split": 5,
+            "min_samples_leaf": 1,
+            "max_features": null
+        },
+        "f1_validacao": 0.6074176448584725
+    },
+    "0/20|31": {
+        "assinatura": "bdb19b76f1b4da07e7b9162c02e8da7baff89f534eae6984b7cfe7177b949d0c",
+        "parametros": {
+            "n_estimators": 600,
+            "max_depth": null,
+            "min_samples_split": 5,
+            "min_samples_leaf": 1,
+            "max_features": null
+        },
+        "f1_validacao": 0.6062338714295865
+    },
+    "0/20|32": {
+        "assinatura": "ae26dbebb57a03dbf26e280353b1244f51280beee48f2305eb15623f521ca38f",
+        "parametros": {
+            "n_estimators": 600,
+            "max_depth": null,
+            "min_samples_split": 5,
+            "min_samples_leaf": 1,
+            "max_features": null
+        },
+        "f1_validacao": 0.6005817496110727
+    },
+    "0/20|33": {
+        "assinatura": "815ddc56f9a12908ad6ade2a4c004fd2eea6d3dc6f1d1e5d31e489a19e9adb87",
+        "parametros": {
+            "n_estimators": 500,
+            "max_depth": null,
+            "min_samples_split": 5,
+            "min_samples_leaf": 1,
+            "max_features": null
+        },
+        "f1_validacao": 0.5884281349156103
+    }
+}

@@ -2,6 +2,10 @@
 import numpy as np
 import pandas as pd
 import optuna
+import json
+import hashlib
+import os
+import sklearn
 from pathlib import Path
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.linear_model import LogisticRegression
@@ -20,7 +24,8 @@ from Regionalizacoes import REGIONALIZACOES
 # ============================================================
 # Diretórios
 DIRETORIO_PIPELINE = Path(__file__).resolve().parent
-DIRETORIO_DATASETS = DIRETORIO_PIPELINE / "DatasetAtributos"
+DIRETORIO_DATASETS = DIRETORIO_PIPELINE / "DatasetAtributos16"
+CAMINHO_CACHE_RF = DIRETORIO_PIPELINE / "hiperparametros_rf_16.json"
 
 # Janelas temporais em relação ao TTOQ
 JANELAS = [
@@ -248,6 +253,89 @@ def otimizar_random_forest(X_treino, y_treino):
 
 
 # ============================================================
+# Cache dos hiperparâmetros da Random Forest
+# ============================================================
+def assinatura_otimizacao(X_treino, y_treino):
+    # Impede reutilização de parâmetros após alterações nos dados
+    # ou nas configurações da otimização.
+    resumo = {
+        "atributos": ATRIBUTOS_DE_INTERESSE,
+        "n_trials": N_TRIALS,
+        "n_folds": N_FOLDS,
+        "random_state": RANDOM_STATE,
+        "sklearn": sklearn.__version__,
+        "optuna": optuna.__version__,
+        "busca": {
+            "n_estimators": [100, 600, 100],
+            "max_depth": [None, 5, 10, 20, 40],
+            "min_samples_split": [2, 10],
+            "min_samples_leaf": [1, 5],
+            "max_features": ["sqrt", "log2", None],
+        },
+    }
+    assinatura = hashlib.sha256(
+        json.dumps(resumo, sort_keys=True).encode("utf-8")
+    )
+    assinatura.update(pd.util.hash_pandas_object(X_treino, index=True).values.tobytes())
+    assinatura.update(pd.util.hash_pandas_object(y_treino, index=True).values.tobytes())
+    return assinatura.hexdigest()
+
+
+def carregar_cache_rf():
+    if not CAMINHO_CACHE_RF.is_file():
+        raise FileNotFoundError(
+            f"Arquivo de hiperparâmetros não encontrado: {CAMINHO_CACHE_RF}"
+        )
+
+    with CAMINHO_CACHE_RF.open("r", encoding="utf-8") as arquivo:
+        cache = json.load(arquivo)
+
+    if not isinstance(cache, dict):
+        raise ValueError("Formato inválido do cache de hiperparâmetros.")
+
+    return cache
+
+
+def salvar_cache_rf(cache):
+    # Substituição atômica: preserva os resultados anteriores em caso
+    # de interrupção durante a escrita do arquivo.
+    caminho_temporario = CAMINHO_CACHE_RF.with_suffix(".json.tmp")
+    try:
+        with caminho_temporario.open("w", encoding="utf-8") as arquivo:
+            json.dump(cache, arquivo, ensure_ascii=False, indent=4)
+        os.replace(caminho_temporario, CAMINHO_CACHE_RF)
+    finally:
+        if caminho_temporario.exists():
+            caminho_temporario.unlink()
+
+
+def obter_hiperparametros_rf(X_treino, y_treino, nome_janela, numero_regioes, cache):
+    chave = f"{nome_janela}|{numero_regioes}"
+    registro = cache.get(chave)
+
+    if not isinstance(registro, dict) or not isinstance(registro.get("parametros"), dict):
+        raise KeyError(
+            f"Hiperparâmetros não encontrados no JSON para a janela "
+            f"{nome_janela} e {numero_regioes} regiões (chave: {chave})."
+        )
+
+    assinatura = assinatura_otimizacao(X_treino, y_treino)
+    if registro.get("assinatura") != assinatura:
+        raise ValueError(
+            f"Os hiperparâmetros salvos para a janela {nome_janela} e "
+            f"{numero_regioes} regiões não correspondem aos dados ou "
+            f"às configurações atuais. Refaça a otimização para essa configuração."
+        )
+
+    print(
+        f"[RF] Janela {nome_janela} | {numero_regioes} regiões | "
+        "hiperparâmetros carregados do JSON",
+        flush=True,
+    )
+    return registro["parametros"], registro.get("f1_validacao")
+
+
+# ============================================================
 # Divisão dos conjuntos de treinamento e teste
 # ============================================================
 # Utiliza a primeira janela para definir um split fixo
@@ -306,6 +394,7 @@ print(f"Regionalizações: {len(NUMEROS_REGIOES)}")
 # Classificação por janela e regionalização
 # ============================================================
 resultados = []
+cache_rf = carregar_cache_rf()
 
 for ciclos_antes, ciclos_depois in JANELAS:
     nome_janela = f"{ciclos_antes}/{ciclos_depois}"
@@ -369,9 +458,12 @@ for ciclos_antes, ciclos_depois in JANELAS:
 
         for nome_classificador, modelo in classificadores.items():
             if nome_classificador == "Random Forest":
-                melhores_parametros, f1_validacao = otimizar_random_forest(
+                melhores_parametros, f1_validacao = obter_hiperparametros_rf(
                     X_treino,
                     y_treino,
+                    nome_janela,
+                    numero_regioes,
+                    cache_rf,
                 )
                 modelo.set_params(**melhores_parametros)
 

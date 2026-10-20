@@ -1,7 +1,7 @@
 import numpy as np
 import pandas as pd
 
-def extrair_harmonicas(sinal, amostras_por_ciclo=64, ordem_maxima=20):
+def extrair_harmonicas(sinal, amostras_por_ciclo=16, ordem_maxima=1):
     """
     Extrai as componentes harmônicas de um sinal, ciclo a ciclo.
 

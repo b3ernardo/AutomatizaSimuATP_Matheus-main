@@ -7,7 +7,7 @@ import numpy as np
 FREQUENCIA_REDE = 60.0 # frequência fundamental da rede elétrica, em Hz
 CICLOS_ANTES = 20 # quantidade de ciclos que serão mantidos antes do início da FAI
 CICLOS_DEPOIS = 20 # quantidade de ciclos que serão mantidos depois do início da FAI
-AMOSTRAS_POR_CICLO_DESTINO = 64 # quantidade desejada de amostras por ciclo após a subamostragem
+AMOSTRAS_POR_CICLO_DESTINO = 16 # quantidade desejada de amostras por ciclo após a subamostragem
 
 # ============================================================
 # Extração do instante de início da FAI - TTOQ

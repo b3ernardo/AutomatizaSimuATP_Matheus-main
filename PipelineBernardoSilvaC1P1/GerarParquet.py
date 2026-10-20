@@ -24,6 +24,7 @@ from f_processar_pl4 import processar_pl4
 # ============================================================
 # Configurações
 # ============================================================
+AMOSTRAS_POR_CICLO = 16
 NUM_THREADS = 4 # define o número de threads
 LIMITE_TESTE = None # define até quantos cartões vão rodar
 
@@ -37,7 +38,7 @@ DIRETORIO_CARTOES = (
 )
 RUNATP_PATH = DIRETORIO_REPOSITORIO_RAIZ / "runATP.exe" # executável que inicia as simulações do ATP
 DIRETORIO_TEMP = DIRETORIO_PIPELINE / "temp_atp"
-DIRETORIO_PARQUETS = DIRETORIO_PIPELINE / "Parquets"
+DIRETORIO_PARQUETS = DIRETORIO_PIPELINE / "Parquets16"
 DIRETORIO_FALHAS = DIRETORIO_PIPELINE / "CartoesNaoRodados"
 
 # ============================================================
@@ -300,8 +301,8 @@ def processar_cartao(cartao: Path):
                 "O processamento terminou, mas o Parquet não foi criado."
             )
 
-        # Verifica as 2560 amostras esperadas: 40 ciclos × 64 amostras/ciclo
-        if len(df) != 2560:
+        # 40 ciclos × 16 amostras/ciclo
+        if len(df) != 40 * AMOSTRAS_POR_CICLO:
             raise ValueError(
                 f"Número inesperado de linhas no Parquet: {len(df)}."
             )
@@ -313,7 +314,7 @@ def processar_cartao(cartao: Path):
             )
 
         # Define o índice correspondente ao TTOQ após os 20 ciclos anteriores
-        indice_evento = 20 * 64
+        indice_evento = 20 * AMOSTRAS_POR_CICLO
 
         # Verifica se o instante do TTOQ está corretamente posicionado em t = 0
         if not np.isclose(

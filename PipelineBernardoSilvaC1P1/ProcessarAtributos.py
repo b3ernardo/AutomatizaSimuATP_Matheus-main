@@ -14,8 +14,8 @@ from f_calcular_estatisticas import calcular_estatisticas
 # ============================================================
 # Diretórios 
 DIRETORIO_PIPELINE = Path(__file__).resolve().parent
-DIRETORIO_PARQUETS = DIRETORIO_PIPELINE / "Parquets"
-DIRETORIO_DATASETS = DIRETORIO_PIPELINE / "DatasetAtributos"
+DIRETORIO_PARQUETS = DIRETORIO_PIPELINE / "Parquets16"
+DIRETORIO_DATASETS = DIRETORIO_PIPELINE / "DatasetAtributos16"
 
 # Cria a pasta de saída caso ainda não exista
 DIRETORIO_DATASETS.mkdir(
@@ -42,8 +42,8 @@ JANELAS = [
 ]
 
 # Parâmetros utilizados pelas funções auxiliares de extração harmônica
-AMOSTRAS_POR_CICLO = 64
-ORDEM_HARMONICA_MAXIMA = 20
+AMOSTRAS_POR_CICLO = 16
+ORDEM_HARMONICA_MAXIMA = 1
 PONTO_MEDICAO = "SUB"
 
 # ============================================================
