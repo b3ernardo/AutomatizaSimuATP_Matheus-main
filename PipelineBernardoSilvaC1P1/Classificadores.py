@@ -15,9 +15,7 @@ from sklearn.neighbors import KNeighborsClassifier
 from sklearn.pipeline import make_pipeline
 from sklearn.preprocessing import StandardScaler
 from sklearn.svm import SVC
-
 from Regionalizacoes import REGIONALIZACOES
-
 
 # ============================================================
 # Configurações
@@ -30,8 +28,8 @@ CAMINHO_CACHE_RF = DIRETORIO_PIPELINE / "hiperparametros_rf_16.json"
 # Janelas temporais em relação ao TTOQ
 JANELAS = [
     (0, 5),
-    (0, 10),
-    (0, 20),
+    # (0, 10),
+    # (0, 20),
 ]
 
 # Regionalizações utilizadas na classificação
@@ -61,7 +59,6 @@ METADADOS = [
     "fase_faltosa",
     "barra",
 ]
-
 
 # ============================================================
 # Funções auxiliares
@@ -97,7 +94,6 @@ def carregar_dataset(ciclos_antes, ciclos_depois):
 
     return df
 
-
 def preparar_matriz(df):
     # Seleciona exclusivamente os seis atributos de interesse
     X = df[ATRIBUTOS_DE_INTERESSE].apply(
@@ -113,7 +109,6 @@ def preparar_matriz(df):
 
     return X
 
-
 def construir_mapa_barra_regiao(regioes):
     # Associa cada barra à região correspondente
     mapa = {}
@@ -128,7 +123,6 @@ def construir_mapa_barra_regiao(regioes):
             mapa[barra] = nome_regiao
 
     return mapa
-
 
 def validar_regionalizacoes(barras_esperadas):
     # Verifica se cada regionalização contém todas as barras
@@ -154,7 +148,6 @@ def validar_regionalizacoes(barras_esperadas):
                 "conjunto de barras incompatível com o dataset."
             )
 
-
 def criar_alvo_regiao(df, numero_regioes):
     # Converte a barra da falta no rótulo da região
     regioes = REGIONALIZACOES[numero_regioes]
@@ -169,7 +162,6 @@ def criar_alvo_regiao(df, numero_regioes):
         )
 
     return y
-
 
 def criar_classificadores():
     # Cria novos modelos para cada experimento
@@ -205,7 +197,6 @@ def criar_classificadores():
     }
 
     return classificadores
-
 
 def otimizar_random_forest(X_treino, y_treino):
     # Otimiza os hiperparâmetros somente com os dados de treinamento
@@ -251,7 +242,6 @@ def otimizar_random_forest(X_treino, y_treino):
 
     return estudo.best_params, estudo.best_value
 
-
 # ============================================================
 # Cache dos hiperparâmetros da Random Forest
 # ============================================================
@@ -280,7 +270,6 @@ def assinatura_otimizacao(X_treino, y_treino):
     assinatura.update(pd.util.hash_pandas_object(y_treino, index=True).values.tobytes())
     return assinatura.hexdigest()
 
-
 def carregar_cache_rf():
     if not CAMINHO_CACHE_RF.is_file():
         raise FileNotFoundError(
@@ -295,7 +284,6 @@ def carregar_cache_rf():
 
     return cache
 
-
 def salvar_cache_rf(cache):
     # Substituição atômica: preserva os resultados anteriores em caso
     # de interrupção durante a escrita do arquivo.
@@ -307,7 +295,6 @@ def salvar_cache_rf(cache):
     finally:
         if caminho_temporario.exists():
             caminho_temporario.unlink()
-
 
 def obter_hiperparametros_rf(X_treino, y_treino, nome_janela, numero_regioes, cache):
     chave = f"{nome_janela}|{numero_regioes}"
@@ -333,7 +320,6 @@ def obter_hiperparametros_rf(X_treino, y_treino, nome_janela, numero_regioes, ca
         flush=True,
     )
     return registro["parametros"], registro.get("f1_validacao")
-
 
 # ============================================================
 # Divisão dos conjuntos de treinamento e teste
@@ -388,7 +374,6 @@ print(f"Treinamento: {len(arquivos_treino)} simulações")
 print(f"Teste: {len(arquivos_teste)} simulações")
 print(f"Atributos: {len(ATRIBUTOS_DE_INTERESSE)}")
 print(f"Regionalizações: {len(NUMEROS_REGIOES)}")
-
 
 # ============================================================
 # Classificação por janela e regionalização
@@ -535,7 +520,6 @@ for ciclos_antes, ciclos_depois in JANELAS:
             float_format=lambda x: f"{x:.4f}",
         )
     )
-
 
 # ============================================================
 # Comparação dos classificadores entre as janelas
