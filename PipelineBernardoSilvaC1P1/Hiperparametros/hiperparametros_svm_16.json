@@ -1,0 +1,866 @@
+{
+    "0/5|2": {
+        "parametros": {
+            "C": 6896.677222842864,
+            "gamma": 585.7279284663562,
+            "class_weight": null
+        },
+        "f1_validacao": 0.9694604877774842,
+        "assinatura": "33f2ef5b3a33f3ea2d449f86445f10425a5b2fda7ea2b3776c3247ea8943f8fe"
+    },
+    "0/5|3": {
+        "parametros": {
+            "C": 8810.982091582342,
+            "gamma": 64.36185616384,
+            "class_weight": "balanced"
+        },
+        "f1_validacao": 0.9028442079778352,
+        "assinatura": "15deedbf876db9827831869e1d9daab64a5cc6744426845f4b9b6448dc8165c7"
+    },
+    "0/5|4": {
+        "parametros": {
+            "C": 8256.256706118069,
+            "gamma": 102.1784429060154,
+            "class_weight": "balanced"
+        },
+        "f1_validacao": 0.7925983311629446,
+        "assinatura": "d057944835f38a26b2fdefc7daf9a8a84a50b2e876b2b561a6c056a55f2d495e"
+    },
+    "0/5|5": {
+        "parametros": {
+            "C": 8886.690939509908,
+            "gamma": 104.12358831125462,
+            "class_weight": "balanced"
+        },
+        "f1_validacao": 0.8029864967674886,
+        "assinatura": "c3f357dc2cdbf0c266404390291603cbf9a09c2b77dae2ed5f5405e219c6ec78"
+    },
+    "0/5|6": {
+        "parametros": {
+            "C": 1327.8735638807188,
+            "gamma": 233.3549669204872,
+            "class_weight": "balanced"
+        },
+        "f1_validacao": 0.8133636098333668,
+        "assinatura": "bae6abffcc1e14cba3c53995f04b5b25cdcb1d7a31dfa962bddf307660a0884e"
+    },
+    "0/5|7": {
+        "parametros": {
+            "C": 753.9869268513235,
+            "gamma": 335.23675128143594,
+            "class_weight": "balanced"
+        },
+        "f1_validacao": 0.8042838666883876,
+        "assinatura": "e70cbc70a2f66161bbf800369b5adac01ce0f9e08d5a274d3c316a26be4f0e86"
+    },
+    "0/5|8": {
+        "parametros": {
+            "C": 7038.334226647727,
+            "gamma": 99.4298008729715,
+            "class_weight": null
+        },
+        "f1_validacao": 0.7880217721419956,
+        "assinatura": "5ea0d9e72d485e6d9133234b1f5232fcfd162912e11efff6f33ed720167923e9"
+    },
+    "0/5|9": {
+        "parametros": {
+            "C": 9229.820494951035,
+            "gamma": 225.33291261272083,
+            "class_weight": "balanced"
+        },
+        "f1_validacao": 0.7564950892752761,
+        "assinatura": "f8a34c4c5a9d75903d201ed196944163cdbe9714af3da4d3b3dacfd39b6e818a"
+    },
+    "0/5|10": {
+        "parametros": {
+            "C": 8369.71850304487,
+            "gamma": 435.947907622425,
+            "class_weight": null
+        },
+        "f1_validacao": 0.7551145291086921,
+        "assinatura": "1e70b662606d5ee458d3fe4afeb18f85507b714dff260ff9edd3e99bc2a91836"
+    },
+    "0/5|11": {
+        "parametros": {
+            "C": 2028.2926622155446,
+            "gamma": 366.9249539792764,
+            "class_weight": "balanced"
+        },
+        "f1_validacao": 0.7657909494934121,
+        "assinatura": "be61d9c1bf16ab747759fe75e756730c128a0cac296cb9d012347f226fc186cb"
+    },
+    "0/5|12": {
+        "parametros": {
+            "C": 1903.2366295210643,
+            "gamma": 158.37741553067204,
+            "class_weight": null
+        },
+        "f1_validacao": 0.7555844961274161,
+        "assinatura": "88138eb0e9b093758ef29472dad1a6065bc84126c0e4eeff553410609c465be9"
+    },
+    "0/5|13": {
+        "parametros": {
+            "C": 9398.12805541251,
+            "gamma": 73.16727800622739,
+            "class_weight": null
+        },
+        "f1_validacao": 0.7330346748239066,
+        "assinatura": "d592907bcba529d08a8e32b1e57a75e1262d61aa7abb5fa1c6cf397e0078bb48"
+    },
+    "0/5|14": {
+        "parametros": {
+            "C": 8298.528675085547,
+            "gamma": 564.0456574860425,
+            "class_weight": null
+        },
+        "f1_validacao": 0.7372918680065464,
+        "assinatura": "b1bba32a0332f288ce92dac7b646b4248da625430c27c8c0e3bf61b9438d8e44"
+    },
+    "0/5|15": {
+        "parametros": {
+            "C": 5047.98432551819,
+            "gamma": 175.15860723326995,
+            "class_weight": "balanced"
+        },
+        "f1_validacao": 0.7410095081634099,
+        "assinatura": "5a7aa6aa102375cacb5e8ce275f786180243ae0edb21be20741e7213c3a18936"
+    },
+    "0/5|16": {
+        "parametros": {
+            "C": 9690.569650931977,
+            "gamma": 57.03254511890105,
+            "class_weight": "balanced"
+        },
+        "f1_validacao": 0.7472011606902271,
+        "assinatura": "76a6234a26710e9a148f782dfeaff0de17ba199962815fca4a4050c1c6676e79"
+    },
+    "0/5|17": {
+        "parametros": {
+            "C": 8957.343189779871,
+            "gamma": 65.335165962721,
+            "class_weight": "balanced"
+        },
+        "f1_validacao": 0.7496124101499918,
+        "assinatura": "cd42d97504e736e7568a2eeb7852be146229e87c59a23e327853b08625f81127"
+    },
+    "0/5|18": {
+        "parametros": {
+            "C": 9749.712444593772,
+            "gamma": 519.4802369502104,
+            "class_weight": null
+        },
+        "f1_validacao": 0.7385990022465043,
+        "assinatura": "99fac77f48735d5d488ecbbf58594ce1d3740d7bd779f128fbc27a9e650eeb22"
+    },
+    "0/5|19": {
+        "parametros": {
+            "C": 9619.02404984734,
+            "gamma": 360.64723902851114,
+            "class_weight": "balanced"
+        },
+        "f1_validacao": 0.7226106341145945,
+        "assinatura": "b1ab6848c9db182c604456b173ae32a9dd1f3deaf25f36b3d1d47fd912b14574"
+    },
+    "0/5|20": {
+        "parametros": {
+            "C": 7208.7113273399345,
+            "gamma": 406.5366063827997,
+            "class_weight": "balanced"
+        },
+        "f1_validacao": 0.6910744173260096,
+        "assinatura": "247994ab54fdb6317b58af90a155e002d76acabe6a2aca67f741019784be4cad"
+    },
+    "0/5|21": {
+        "parametros": {
+            "C": 8878.461442917507,
+            "gamma": 359.4983569704879,
+            "class_weight": "balanced"
+        },
+        "f1_validacao": 0.7057699189004676,
+        "assinatura": "9fefeb41ec1655b98aeb1635099da7152974123ee7684a2f5f7de5c131d6130c"
+    },
+    "0/5|22": {
+        "parametros": {
+            "C": 8942.877580864242,
+            "gamma": 343.82053123224006,
+            "class_weight": "balanced"
+        },
+        "f1_validacao": 0.6931766774904288,
+        "assinatura": "75dcbd27375a5fc698d0c5a23158dec2250370d88578cc13a25957b202964534"
+    },
+    "0/5|23": {
+        "parametros": {
+            "C": 8051.4877199774755,
+            "gamma": 371.34434593901733,
+            "class_weight": "balanced"
+        },
+        "f1_validacao": 0.7068554141321233,
+        "assinatura": "de3bc492056da4a282f2e776c5ae44dd51f8e442d2246d05a7840a47b442c7e2"
+    },
+    "0/5|24": {
+        "parametros": {
+            "C": 8875.80683312346,
+            "gamma": 338.84905090535636,
+            "class_weight": "balanced"
+        },
+        "f1_validacao": 0.6940450716547486,
+        "assinatura": "8a2327056cdb16e6e5f122dbb7fca38e12ac8de852ba6339dfa039f266699d5f"
+    },
+    "0/5|25": {
+        "parametros": {
+            "C": 9490.820178179214,
+            "gamma": 351.39106951171163,
+            "class_weight": "balanced"
+        },
+        "f1_validacao": 0.6864017585739889,
+        "assinatura": "7b8bad0b598a82b849385bcbae1722db558f66a54a604ff01a9207ad168701c0"
+    },
+    "0/5|26": {
+        "parametros": {
+            "C": 9770.980793447112,
+            "gamma": 328.46954048485355,
+            "class_weight": "balanced"
+        },
+        "f1_validacao": 0.6941441593102822,
+        "assinatura": "42955890e66a17deac761e12a4a33438d3cf338b902dfd832e3d1a8cbceaa4a5"
+    },
+    "0/5|27": {
+        "parametros": {
+            "C": 8696.476057865537,
+            "gamma": 85.08269857810706,
+            "class_weight": "balanced"
+        },
+        "f1_validacao": 0.6963726424958937,
+        "assinatura": "880ef40d1eba7397eaf621d06f3d0ee02fb59ec162f34562f35f6af7f712109b"
+    },
+    "0/5|28": {
+        "parametros": {
+            "C": 9137.756490167436,
+            "gamma": 62.50190331761119,
+            "class_weight": "balanced"
+        },
+        "f1_validacao": 0.663525232096726,
+        "assinatura": "9648889ed10a997b23ac49d36e07771c4e2eb471386285452f0e0fd930e645ad"
+    },
+    "0/5|29": {
+        "parametros": {
+            "C": 6809.855283122743,
+            "gamma": 68.32396386391545,
+            "class_weight": "balanced"
+        },
+        "f1_validacao": 0.6530505878813424,
+        "assinatura": "2e19005acd475d6234768a6c07ff36580fe5f3325746383d9ff6868fc2c77bb1"
+    },
+    "0/5|30": {
+        "parametros": {
+            "C": 9767.268068073467,
+            "gamma": 95.70271370440864,
+            "class_weight": "balanced"
+        },
+        "f1_validacao": 0.6432561666072569,
+        "assinatura": "70b4cfc48a4471c51e8d0c9ad61cf10768b6445329ca0d711007179c8861ddcb"
+    },
+    "0/5|31": {
+        "parametros": {
+            "C": 9264.59065555767,
+            "gamma": 170.89134331158266,
+            "class_weight": "balanced"
+        },
+        "f1_validacao": 0.623320898909221,
+        "assinatura": "6ff0799ebbf983a41eeb7870b3ebd19c4f2a0e246a84ed60d13a6f2b1bdb2f1b"
+    },
+    "0/5|32": {
+        "parametros": {
+            "C": 3344.745845960711,
+            "gamma": 833.4846514871377,
+            "class_weight": "balanced"
+        },
+        "f1_validacao": 0.6245868373393109,
+        "assinatura": "dcc4c575821f612440d11676788aaa109c5c93f1add65f5bfc30f33b9b3ce39d"
+    },
+    "0/5|33": {
+        "parametros": {
+            "C": 5996.75460867485,
+            "gamma": 859.425401751852,
+            "class_weight": "balanced"
+        },
+        "f1_validacao": 0.609944526898744,
+        "assinatura": "c9bfd00dc45b302ae125bad819ff38d179a3627496a191e9de8f3949384449db"
+    },
+    "0/10|2": {
+        "parametros": {
+            "C": 14.914471357907718,
+            "gamma": 738.0667206126918,
+            "class_weight": null
+        },
+        "f1_validacao": 0.9674305290128885,
+        "assinatura": "63fbe384de1c092bc948b6cd7a85c5d601a3e3812b5f8d063c16b9d8c017d20a"
+    },
+    "0/10|3": {
+        "parametros": {
+            "C": 89.00507642755849,
+            "gamma": 717.397006536856,
+            "class_weight": "balanced"
+        },
+        "f1_validacao": 0.8804869928101171,
+        "assinatura": "57644974349ea3ba7524d1bbf69c6082c56cf6005132a6d1c87e821c495703bc"
+    },
+    "0/10|4": {
+        "parametros": {
+            "C": 9644.86514543504,
+            "gamma": 414.8594899986037,
+            "class_weight": "balanced"
+        },
+        "f1_validacao": 0.779253217229445,
+        "assinatura": "4491ed3702e76a2158f14e9d8a5c01d2caf5d502503f5a6c94cc87221c37f9a1"
+    },
+    "0/10|5": {
+        "parametros": {
+            "C": 8566.101516445302,
+            "gamma": 175.9078352711776,
+            "class_weight": "balanced"
+        },
+        "f1_validacao": 0.7608499607615945,
+        "assinatura": "5cc0522f4469cd984a62fc369a23d8cdaf849b588570436078aabfc6ed45da63"
+    },
+    "0/10|6": {
+        "parametros": {
+            "C": 8439.713143820249,
+            "gamma": 252.00336398482935,
+            "class_weight": "balanced"
+        },
+        "f1_validacao": 0.7692180997685978,
+        "assinatura": "5a1aadf82d1d50e8726821802f6ef4172cdfac259944bd195c90a28e08ff1d96"
+    },
+    "0/10|7": {
+        "parametros": {
+            "C": 8949.631926599937,
+            "gamma": 254.59081948903037,
+            "class_weight": null
+        },
+        "f1_validacao": 0.7665508901642553,
+        "assinatura": "c63e10c9a3b54ff5ffb38e0c0bd5db505173797cd03bfb8d52353c51c40c0035"
+    },
+    "0/10|8": {
+        "parametros": {
+            "C": 6404.485296786851,
+            "gamma": 134.9107226550306,
+            "class_weight": null
+        },
+        "f1_validacao": 0.7200841362140604,
+        "assinatura": "5e6e7c3f40596acd51536c3aa97f8c1df1ff666c9414b1ab31f2d90c2fec6d6d"
+    },
+    "0/10|9": {
+        "parametros": {
+            "C": 3014.7991311099913,
+            "gamma": 191.89895057068173,
+            "class_weight": "balanced"
+        },
+        "f1_validacao": 0.6923192635835422,
+        "assinatura": "7edb62199bc868f06ab79d7e00c6a692eff62370cd2331676307536dac35a4e8"
+    },
+    "0/10|10": {
+        "parametros": {
+            "C": 5055.668930851331,
+            "gamma": 210.4539079146342,
+            "class_weight": null
+        },
+        "f1_validacao": 0.7009285118292071,
+        "assinatura": "f619f6eb7c9fe31992824072d95d401ec082d59dfe9fb5d27bd0c9af8420047c"
+    },
+    "0/10|11": {
+        "parametros": {
+            "C": 8622.96061174909,
+            "gamma": 196.497942614164,
+            "class_weight": "balanced"
+        },
+        "f1_validacao": 0.7133603277510229,
+        "assinatura": "1c5acf426ac76fd8ec326407f587dd9636fa4a5e9b277917edabf64806645bb0"
+    },
+    "0/10|12": {
+        "parametros": {
+            "C": 2627.9730600904913,
+            "gamma": 173.35397264715064,
+            "class_weight": null
+        },
+        "f1_validacao": 0.7083075304991381,
+        "assinatura": "b94f6e65ad891c99eeeb9f75b08d1e0f83441359fa7dd353b7def36f8a5ed0b0"
+    },
+    "0/10|13": {
+        "parametros": {
+            "C": 906.0137328248505,
+            "gamma": 145.51388157613118,
+            "class_weight": null
+        },
+        "f1_validacao": 0.6782207383771734,
+        "assinatura": "fa6cca1404b5ba3a99c0b1275deaf07e271463b910de3956abedc101fdda1d3d"
+    },
+    "0/10|14": {
+        "parametros": {
+            "C": 4775.432083260782,
+            "gamma": 78.96007686311121,
+            "class_weight": null
+        },
+        "f1_validacao": 0.6815585826983395,
+        "assinatura": "b1f06bc67de2613149078e287a7f1d15246defc41aa3e4f526bcf97ee09cdd7e"
+    },
+    "0/10|15": {
+        "parametros": {
+            "C": 9884.214295429669,
+            "gamma": 102.51291271491483,
+            "class_weight": null
+        },
+        "f1_validacao": 0.699713825365073,
+        "assinatura": "8c1ef4c0df31e36758c70b1deae0ee92d8dde679c2b908b92de96a7874a1f38d"
+    },
+    "0/10|16": {
+        "parametros": {
+            "C": 7862.037955426841,
+            "gamma": 105.67800317440583,
+            "class_weight": null
+        },
+        "f1_validacao": 0.6935597744044522,
+        "assinatura": "4fe28382dfcbd8f4292631b863e045d3ab8bf1c933180bb48d72f4a982d5329a"
+    },
+    "0/10|17": {
+        "parametros": {
+            "C": 9619.09024989181,
+            "gamma": 84.06604292580569,
+            "class_weight": null
+        },
+        "f1_validacao": 0.6925517855356127,
+        "assinatura": "c440419e063048404ed453cd7519c5521fc0f1b287026fa70d9e7b700ac97102"
+    },
+    "0/10|18": {
+        "parametros": {
+            "C": 9619.1380105536,
+            "gamma": 78.56333582432381,
+            "class_weight": null
+        },
+        "f1_validacao": 0.6795996837879772,
+        "assinatura": "7cb881fb96aef55bdb468b72fddac45dcca919c1ed2e223c9575f33811d3387d"
+    },
+    "0/10|19": {
+        "parametros": {
+            "C": 6633.492351540798,
+            "gamma": 66.5280956727728,
+            "class_weight": "balanced"
+        },
+        "f1_validacao": 0.6461254763652688,
+        "assinatura": "9d20820af10ea4c9972a9544657007a583cbe75a23faa8d289bfa762e7768cea"
+    },
+    "0/10|20": {
+        "parametros": {
+            "C": 5426.782114362309,
+            "gamma": 66.71595539304198,
+            "class_weight": null
+        },
+        "f1_validacao": 0.6254728748879448,
+        "assinatura": "61470fd256fedc44de7ce7397b17588cd4f2f4364f8502d807b4743ac5197756"
+    },
+    "0/10|21": {
+        "parametros": {
+            "C": 8817.87216628798,
+            "gamma": 53.069940932857776,
+            "class_weight": null
+        },
+        "f1_validacao": 0.6368043043447512,
+        "assinatura": "d80148077f72146475f5b124eebaf05296d5c7bd983ccf5faa6ef10a74bffee1"
+    },
+    "0/10|22": {
+        "parametros": {
+            "C": 9581.909794384947,
+            "gamma": 67.26463936513727,
+            "class_weight": "balanced"
+        },
+        "f1_validacao": 0.6350450026388381,
+        "assinatura": "77a2114043f08c98436f17102665762f178a2ce207d1b13922ba1a037e952d56"
+    },
+    "0/10|23": {
+        "parametros": {
+            "C": 9872.186514500017,
+            "gamma": 65.10926216671017,
+            "class_weight": "balanced"
+        },
+        "f1_validacao": 0.6381918836043122,
+        "assinatura": "d285c92c1a8ac0e1d66f35840f208edc21feb0872234694aa86da51046daeaac"
+    },
+    "0/10|24": {
+        "parametros": {
+            "C": 9529.242889334104,
+            "gamma": 69.91449974263095,
+            "class_weight": "balanced"
+        },
+        "f1_validacao": 0.6308382361263771,
+        "assinatura": "b16fef5221dad190c589944c7f81fe0c39d475b09ef5bc9c5fdc01dda0484566"
+    },
+    "0/10|25": {
+        "parametros": {
+            "C": 4656.417418639492,
+            "gamma": 255.03523559010384,
+            "class_weight": "balanced"
+        },
+        "f1_validacao": 0.619156940314205,
+        "assinatura": "3ba11bd3afb0ad535166f36046f8a7d2cdda509294541b5dc2e23f3852496807"
+    },
+    "0/10|26": {
+        "parametros": {
+            "C": 2117.9306889966974,
+            "gamma": 166.16210016686196,
+            "class_weight": "balanced"
+        },
+        "f1_validacao": 0.6214779289275826,
+        "assinatura": "cbe8779521b6f8d9e723b4e438fe3dfb85f443bab71c5bf1c10c8b98a9c74c6b"
+    },
+    "0/10|27": {
+        "parametros": {
+            "C": 7212.760439546786,
+            "gamma": 100.96387394470986,
+            "class_weight": "balanced"
+        },
+        "f1_validacao": 0.619655078143898,
+        "assinatura": "6b869202f3a4e8b14d8c039ee2afc23db52de2fc7f195216833732469dfedcd1"
+    },
+    "0/10|28": {
+        "parametros": {
+            "C": 6453.612843873752,
+            "gamma": 74.72643549536909,
+            "class_weight": "balanced"
+        },
+        "f1_validacao": 0.5998043809824962,
+        "assinatura": "043277ac568c025e20fc3ec72522fe8f725ab1793063ad9d9b0e481532db29a9"
+    },
+    "0/10|29": {
+        "parametros": {
+            "C": 9699.495096533637,
+            "gamma": 62.86367747440744,
+            "class_weight": "balanced"
+        },
+        "f1_validacao": 0.5889216878689029,
+        "assinatura": "33b46a2aedd8d658c5e797f381e093ebf5903fc315b9e2b66cbdf8c4d85a3dc9"
+    },
+    "0/10|30": {
+        "parametros": {
+            "C": 9671.537517683606,
+            "gamma": 61.530606168244674,
+            "class_weight": "balanced"
+        },
+        "f1_validacao": 0.5750084511171848,
+        "assinatura": "5dd01f32324601f1ee151d43df722472fda77597d3f097acac81fb44913d7bd0"
+    },
+    "0/10|31": {
+        "parametros": {
+            "C": 9838.336876853777,
+            "gamma": 137.4867454903154,
+            "class_weight": "balanced"
+        },
+        "f1_validacao": 0.5644190115202926,
+        "assinatura": "f961b44dd91896e6aee94525eb327735f5b8ac47482aeed26dce4c12d01bbfad"
+    },
+    "0/10|32": {
+        "parametros": {
+            "C": 9264.59065555767,
+            "gamma": 170.89134331158266,
+            "class_weight": "balanced"
+        },
+        "f1_validacao": 0.5603284319720749,
+        "assinatura": "05be5f4d4f1443cab379227bf9739186fc4855c566ca688da2f679b9d5cf900a"
+    },
+    "0/10|33": {
+        "parametros": {
+            "C": 7338.706635417672,
+            "gamma": 400.43927477586317,
+            "class_weight": "balanced"
+        },
+        "f1_validacao": 0.5536853378436731,
+        "assinatura": "ed249343292b47cd49c7f4f60910ddcc58a23a21b70e29d1faee27c38cbb4c91"
+    },
+    "0/20|2": {
+        "parametros": {
+            "C": 13.987081304910637,
+            "gamma": 408.7987018407011,
+            "class_weight": null
+        },
+        "f1_validacao": 0.9616510509109052,
+        "assinatura": "f66e2207f51463d9e9982325201320844803c074c0de4ddd7ac627b99282658d"
+    },
+    "0/20|3": {
+        "parametros": {
+            "C": 8078.266420680091,
+            "gamma": 5.234420882644739,
+            "class_weight": null
+        },
+        "f1_validacao": 0.84989236637134,
+        "assinatura": "73de533694f64078486750342a1934b1abcd936d871dd6eb997e49f62b350087"
+    },
+    "0/20|4": {
+        "parametros": {
+            "C": 736.1242479258708,
+            "gamma": 152.26447146775536,
+            "class_weight": "balanced"
+        },
+        "f1_validacao": 0.7315115989373159,
+        "assinatura": "00e9a65dbf21714271c452af8cc9de0192dba608689f90724b8a51a27ef0cb45"
+    },
+    "0/20|5": {
+        "parametros": {
+            "C": 5308.529062807811,
+            "gamma": 17.3879808722127,
+            "class_weight": "balanced"
+        },
+        "f1_validacao": 0.6800732818306565,
+        "assinatura": "b37ed541edc42c23018fd282e92521aa69143a3abb99324041d88897cfc78917"
+    },
+    "0/20|6": {
+        "parametros": {
+            "C": 8886.690939509908,
+            "gamma": 104.12358831125462,
+            "class_weight": "balanced"
+        },
+        "f1_validacao": 0.6575391532019855,
+        "assinatura": "cd1164c05b181d8cb931c76a103b6aafc783790d56565e9594cfb76b888df47e"
+    },
+    "0/20|7": {
+        "parametros": {
+            "C": 28.55022157300279,
+            "gamma": 936.4585951327543,
+            "class_weight": "balanced"
+        },
+        "f1_validacao": 0.6708605150589562,
+        "assinatura": "df92a4f57b156823615a3a1315bfa59b99751bddf251081389dd633fa4455ed4"
+    },
+    "0/20|8": {
+        "parametros": {
+            "C": 790.7642351582435,
+            "gamma": 238.42671211561253,
+            "class_weight": null
+        },
+        "f1_validacao": 0.6358222833071925,
+        "assinatura": "78e37bab564196d88fdc99aed5792d303409888700a06c6c4231dddfabb2ec7c"
+    },
+    "0/20|9": {
+        "parametros": {
+            "C": 689.9787970663177,
+            "gamma": 274.78101383323127,
+            "class_weight": null
+        },
+        "f1_validacao": 0.6106372329480323,
+        "assinatura": "cd74da0d5b527eb895e606c6c7113a0aa9a2c5465b4058212480aefdd0c22037"
+    },
+    "0/20|10": {
+        "parametros": {
+            "C": 494.7947810666085,
+            "gamma": 929.0888139507118,
+            "class_weight": null
+        },
+        "f1_validacao": 0.6045835842844416,
+        "assinatura": "6696f5c0bb317116ee084cd641a6837c32b9019a36df4efccdcb5a7450714f79"
+    },
+    "0/20|11": {
+        "parametros": {
+            "C": 435.8768367003828,
+            "gamma": 315.74535791387245,
+            "class_weight": "balanced"
+        },
+        "f1_validacao": 0.6154938675300308,
+        "assinatura": "e7cfe42d918f4fa8767a934c3a9bd9ce0d34f78453875522c4d58dddd8f4794e"
+    },
+    "0/20|12": {
+        "parametros": {
+            "C": 546.410368184018,
+            "gamma": 300.33430556286885,
+            "class_weight": null
+        },
+        "f1_validacao": 0.6206332629143775,
+        "assinatura": "935cfefda85c2a2204b1f0db2f8ec438b94b07231692b6e3752caec614f42674"
+    },
+    "0/20|13": {
+        "parametros": {
+            "C": 711.6085809549081,
+            "gamma": 330.31914727997366,
+            "class_weight": null
+        },
+        "f1_validacao": 0.5937653318258047,
+        "assinatura": "830dec29ccb73fae028285d9232e52f4b44fe13226febc6f769dd902c7265d17"
+    },
+    "0/20|14": {
+        "parametros": {
+            "C": 82.41975014838657,
+            "gamma": 286.99126826315575,
+            "class_weight": null
+        },
+        "f1_validacao": 0.590210877273164,
+        "assinatura": "d89203cd617900078c51752234f54cf9e3d18a871e385bbdfffea341b97a57de"
+    },
+    "0/20|15": {
+        "parametros": {
+            "C": 577.6103635603565,
+            "gamma": 818.4358470277591,
+            "class_weight": null
+        },
+        "f1_validacao": 0.5815322549678303,
+        "assinatura": "c6e9f94a5e67731dcdc9d304b567665971e5a7c5d995b8da0b2f605fe2c9eb22"
+    },
+    "0/20|16": {
+        "parametros": {
+            "C": 2214.7091402609044,
+            "gamma": 514.269538424679,
+            "class_weight": "balanced"
+        },
+        "f1_validacao": 0.5565573864578935,
+        "assinatura": "cfa0b27b3fb204f8bba49cd9518a51e53bf4d463b31fb6a5819feed41150cddd"
+    },
+    "0/20|17": {
+        "parametros": {
+            "C": 2376.2814983305598,
+            "gamma": 60.491900063908496,
+            "class_weight": null
+        },
+        "f1_validacao": 0.5607578937697457,
+        "assinatura": "5b68a5a373d30727f81c3ea75bdca9fbf6aa706e1ecb651b1a39092b86f09f18"
+    },
+    "0/20|18": {
+        "parametros": {
+            "C": 6954.221537610745,
+            "gamma": 123.19181926574772,
+            "class_weight": "balanced"
+        },
+        "f1_validacao": 0.5557911373522972,
+        "assinatura": "76547f2460996ca4418dcfcfa8a37253a763b74fd5bdf79e5125850a5f093a40"
+    },
+    "0/20|19": {
+        "parametros": {
+            "C": 1714.7393817509271,
+            "gamma": 93.94391153716523,
+            "class_weight": null
+        },
+        "f1_validacao": 0.5460436817283232,
+        "assinatura": "7a46582ba4f9cc20421c82d5f82fa048d1435657b833ec277c530d3f20df1c34"
+    },
+    "0/20|20": {
+        "parametros": {
+            "C": 2327.623774350968,
+            "gamma": 457.493376748139,
+            "class_weight": "balanced"
+        },
+        "f1_validacao": 0.5239508792152219,
+        "assinatura": "4569c7cf01787370593a555d80e73b382e3cd97f8518a2d9b9a709b11ebfe543"
+    },
+    "0/20|21": {
+        "parametros": {
+            "C": 6143.816284980103,
+            "gamma": 330.18205613870873,
+            "class_weight": null
+        },
+        "f1_validacao": 0.5407943864191664,
+        "assinatura": "4ea4da37227827e29d15662d1398c3e500207814d893e723409e349f970f0220"
+    },
+    "0/20|22": {
+        "parametros": {
+            "C": 1233.5189688314194,
+            "gamma": 376.9541527811475,
+            "class_weight": "balanced"
+        },
+        "f1_validacao": 0.5285934499288006,
+        "assinatura": "0723d3e2985c7745e6bb68644ad57343af2d6a2ec83f0c71fbff4593b1b2bde0"
+    },
+    "0/20|23": {
+        "parametros": {
+            "C": 2246.205920183262,
+            "gamma": 346.08253636252107,
+            "class_weight": "balanced"
+        },
+        "f1_validacao": 0.5290775423147671,
+        "assinatura": "a4a6501196954b4002c22f297d3913ec5007c2e4f7ec5e2abece79ec101667fb"
+    },
+    "0/20|24": {
+        "parametros": {
+            "C": 1048.637218153821,
+            "gamma": 357.9750247666074,
+            "class_weight": "balanced"
+        },
+        "f1_validacao": 0.5277857165104689,
+        "assinatura": "9ae5e930cfe9b1a7e5dd87ab89ebd039882d1078d5a5b7d432b66753c2b99ea8"
+    },
+    "0/20|25": {
+        "parametros": {
+            "C": 9653.354129224157,
+            "gamma": 32.26883629560564,
+            "class_weight": "balanced"
+        },
+        "f1_validacao": 0.5098155223970322,
+        "assinatura": "42308353b2972f45eaace66afa6f6d36fe9de152752ea81f34a7b685a7edb1db"
+    },
+    "0/20|26": {
+        "parametros": {
+            "C": 6148.661854230593,
+            "gamma": 51.627756630937874,
+            "class_weight": "balanced"
+        },
+        "f1_validacao": 0.5069327540174399,
+        "assinatura": "f15cf19f8d2f4346d999523e6ceed6191b04e48c58197ca92bfaa6331ebca487"
+    },
+    "0/20|27": {
+        "parametros": {
+            "C": 6097.736239016397,
+            "gamma": 62.72181391306635,
+            "class_weight": "balanced"
+        },
+        "f1_validacao": 0.5113042996361427,
+        "assinatura": "200a16954332638cac1685fc66c0c49444cdcb324819c26f7fe2239729e800c6"
+    },
+    "0/20|28": {
+        "parametros": {
+            "C": 9465.776660721085,
+            "gamma": 51.136786351354225,
+            "class_weight": "balanced"
+        },
+        "f1_validacao": 0.5142371101907105,
+        "assinatura": "10813951906b4e5324e1a6785ee6955c5e6b2826bd099d75ff643bda48eb5bba"
+    },
+    "0/20|29": {
+        "parametros": {
+            "C": 4528.902234217565,
+            "gamma": 58.91182902401609,
+            "class_weight": "balanced"
+        },
+        "f1_validacao": 0.48891617831730405,
+        "assinatura": "3aae501b1199a58e064ee2d28e37933f9372747820b38810e131b9fa9b64d349"
+    },
+    "0/20|30": {
+        "parametros": {
+            "C": 3866.2778108342477,
+            "gamma": 60.72788134145697,
+            "class_weight": "balanced"
+        },
+        "f1_validacao": 0.4782412977164373,
+        "assinatura": "cdfd115794b9eed50856fc5a014e5b3305fde552f9d2d94c89a00921eacb8c6f"
+    },
+    "0/20|31": {
+        "parametros": {
+            "C": 9679.756950488785,
+            "gamma": 45.43981602476293,
+            "class_weight": "balanced"
+        },
+        "f1_validacao": 0.46937208039250383,
+        "assinatura": "e3389cf6335463829eec603cd3c6c8bf66d121abeb9e2abee761c4541762cb09"
+    },
+    "0/20|32": {
+        "parametros": {
+            "C": 8940.17586519338,
+            "gamma": 55.573877525605916,
+            "class_weight": "balanced"
+        },
+        "f1_validacao": 0.46174646517679313,
+        "assinatura": "4a6684869a14e0f8eb2c478ade372b75fa8b4b68ef9210bfa22a3bfce086b6a6"
+    },
+    "0/20|33": {
+        "parametros": {
+            "C": 7558.075279855944,
+            "gamma": 300.88245745011415,
+            "class_weight": "balanced"
+        },
+        "f1_validacao": 0.4534833715241821,
+        "assinatura": "2ee123c0f269b2ebedbfa49af7754fdad94d95c701c159d1c6f85326c8aff4a9"
+    }
+}

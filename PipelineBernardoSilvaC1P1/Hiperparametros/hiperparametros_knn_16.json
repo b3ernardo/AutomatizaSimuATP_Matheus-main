@@ -1,0 +1,866 @@
+{
+    "0/5|2": {
+        "parametros": {
+            "n_neighbors": 16,
+            "weights": "distance",
+            "p": 2
+        },
+        "f1_validacao": 0.9704064273443997,
+        "assinatura": "065dbbad719ae670f64f9499f4d0785b6f9fb43829bb4a4c3b4a48149ec113fd"
+    },
+    "0/5|3": {
+        "parametros": {
+            "n_neighbors": 1,
+            "weights": "uniform",
+            "p": 1
+        },
+        "f1_validacao": 0.8761209506615956,
+        "assinatura": "2e5fcc3df7fb100c031b4c90a7dff8a5d36eebfb3009134187e9950dc4ea365f"
+    },
+    "0/5|4": {
+        "parametros": {
+            "n_neighbors": 1,
+            "weights": "uniform",
+            "p": 1
+        },
+        "f1_validacao": 0.7959763791178867,
+        "assinatura": "34fdb3ac958aecd1242bb0407bd3a7e43f91f963c74b3c71bee28ae38b57ed8e"
+    },
+    "0/5|5": {
+        "parametros": {
+            "n_neighbors": 1,
+            "weights": "uniform",
+            "p": 1
+        },
+        "f1_validacao": 0.7787746723832691,
+        "assinatura": "c32516adacf19fb326e7b808397ddf1a0b0b871d1b0a683ab9ce9796a2936982"
+    },
+    "0/5|6": {
+        "parametros": {
+            "n_neighbors": 1,
+            "weights": "uniform",
+            "p": 1
+        },
+        "f1_validacao": 0.7728261368023209,
+        "assinatura": "21ae5ef4de8b6c99bbd624629f14d59ca0707c15a0e14743edfcbd61a4ed8f1a"
+    },
+    "0/5|7": {
+        "parametros": {
+            "n_neighbors": 1,
+            "weights": "uniform",
+            "p": 1
+        },
+        "f1_validacao": 0.7637015818745193,
+        "assinatura": "eeb65420de8e9e34ffde5cd8c8f8d9ffe26a8442988da3d2bd533bd07cf93780"
+    },
+    "0/5|8": {
+        "parametros": {
+            "n_neighbors": 1,
+            "weights": "uniform",
+            "p": 1
+        },
+        "f1_validacao": 0.7407382999043329,
+        "assinatura": "da339f3926fd2286c19edb0f2915f2970331295a6e4042925148f85dcb04e99a"
+    },
+    "0/5|9": {
+        "parametros": {
+            "n_neighbors": 1,
+            "weights": "uniform",
+            "p": 1
+        },
+        "f1_validacao": 0.7063928813045455,
+        "assinatura": "de66d868a036b943b86349e653994d6e62f907df1ebfe6956d7d4d7f4cc7ae0a"
+    },
+    "0/5|10": {
+        "parametros": {
+            "n_neighbors": 1,
+            "weights": "uniform",
+            "p": 1
+        },
+        "f1_validacao": 0.6987244606346701,
+        "assinatura": "57976854ca1aec71f99905eeb536a82e599d0cf024721a20ade6c6cb13707bfa"
+    },
+    "0/5|11": {
+        "parametros": {
+            "n_neighbors": 1,
+            "weights": "uniform",
+            "p": 1
+        },
+        "f1_validacao": 0.7135997954959235,
+        "assinatura": "0fb69012ac1da2849e25fd0eb73555ca65f34826ea8d11d194ea692b4f9961fc"
+    },
+    "0/5|12": {
+        "parametros": {
+            "n_neighbors": 1,
+            "weights": "uniform",
+            "p": 1
+        },
+        "f1_validacao": 0.710632782564327,
+        "assinatura": "87e7758dad4fd64b5d97feee50a042e5a5bcb5ab58c10b432813eb72e0df43ca"
+    },
+    "0/5|13": {
+        "parametros": {
+            "n_neighbors": 1,
+            "weights": "uniform",
+            "p": 1
+        },
+        "f1_validacao": 0.685062924637841,
+        "assinatura": "88c973cd74eefcebf625c66579052ce034315d1cc2212c802a4307ab514794af"
+    },
+    "0/5|14": {
+        "parametros": {
+            "n_neighbors": 1,
+            "weights": "uniform",
+            "p": 1
+        },
+        "f1_validacao": 0.6773847962933855,
+        "assinatura": "01f42f72e71bf92ee2cc075cfef8629f23a78ed42b9dfbb59a83e122d4bd5d7a"
+    },
+    "0/5|15": {
+        "parametros": {
+            "n_neighbors": 1,
+            "weights": "uniform",
+            "p": 1
+        },
+        "f1_validacao": 0.6830303620878242,
+        "assinatura": "957414f46644390e2d982e998d50c2b21b623edb6755d0bebe3938654a480ae1"
+    },
+    "0/5|16": {
+        "parametros": {
+            "n_neighbors": 1,
+            "weights": "uniform",
+            "p": 1
+        },
+        "f1_validacao": 0.6596940245379959,
+        "assinatura": "fe59bd05469eb764a04d97deac828125e5e347b4f014975f1b8bfe74ff5170bc"
+    },
+    "0/5|17": {
+        "parametros": {
+            "n_neighbors": 1,
+            "weights": "uniform",
+            "p": 1
+        },
+        "f1_validacao": 0.660039636533605,
+        "assinatura": "6f26c2e7f2a7cda1bedf2f730deed7a904f7d2741cb99d2f0e1e3204e9ee604c"
+    },
+    "0/5|18": {
+        "parametros": {
+            "n_neighbors": 1,
+            "weights": "uniform",
+            "p": 1
+        },
+        "f1_validacao": 0.671354948434123,
+        "assinatura": "06fde60584b3bc27e51eb787943622dab9369ec6c172a7349f6cbf916da37f9e"
+    },
+    "0/5|19": {
+        "parametros": {
+            "n_neighbors": 1,
+            "weights": "uniform",
+            "p": 1
+        },
+        "f1_validacao": 0.666016242841357,
+        "assinatura": "024c50782572db23f98f3de43e00cbd7468f826f224d5cf0774c66d44c3b739d"
+    },
+    "0/5|20": {
+        "parametros": {
+            "n_neighbors": 1,
+            "weights": "uniform",
+            "p": 1
+        },
+        "f1_validacao": 0.6308334069886984,
+        "assinatura": "43c284ef2a60295c98469881962c9f19f8e78047edeff07e77280fcafc71829a"
+    },
+    "0/5|21": {
+        "parametros": {
+            "n_neighbors": 1,
+            "weights": "uniform",
+            "p": 1
+        },
+        "f1_validacao": 0.6420607547644183,
+        "assinatura": "5d36a70c9b99d7f40e6771eff6e70862f45d9a92c356a76bcffc2d69a63514a0"
+    },
+    "0/5|22": {
+        "parametros": {
+            "n_neighbors": 1,
+            "weights": "uniform",
+            "p": 1
+        },
+        "f1_validacao": 0.6492347298101102,
+        "assinatura": "d7a2cbc57f072242028f47eb24f56dddc918841d47b490f50fbab24a31a31fa0"
+    },
+    "0/5|23": {
+        "parametros": {
+            "n_neighbors": 1,
+            "weights": "uniform",
+            "p": 1
+        },
+        "f1_validacao": 0.6499208828640435,
+        "assinatura": "328788520aeec78e57c00607adc1453db8918c7e9a19e42f819ee2931e9a90fa"
+    },
+    "0/5|24": {
+        "parametros": {
+            "n_neighbors": 1,
+            "weights": "uniform",
+            "p": 1
+        },
+        "f1_validacao": 0.6380172771490813,
+        "assinatura": "7c389f1c36801961115f1ce036626e519d5ea3727e65e96ef01bebe1a58ee19c"
+    },
+    "0/5|25": {
+        "parametros": {
+            "n_neighbors": 1,
+            "weights": "uniform",
+            "p": 1
+        },
+        "f1_validacao": 0.6280395848276721,
+        "assinatura": "7d7b9f10c4b6c66af7f618e260b1b618a2a19eef512407c29afecb6010563167"
+    },
+    "0/5|26": {
+        "parametros": {
+            "n_neighbors": 1,
+            "weights": "uniform",
+            "p": 1
+        },
+        "f1_validacao": 0.6271453232634125,
+        "assinatura": "b8745d02a12c1b20c66c3a31b1b5eca29fbc7985e362f088edb28601baf8c170"
+    },
+    "0/5|27": {
+        "parametros": {
+            "n_neighbors": 1,
+            "weights": "uniform",
+            "p": 1
+        },
+        "f1_validacao": 0.6268495718054927,
+        "assinatura": "c73fec9dbb3d694b3ef2b61b95a07d971781e466c71e7ea943c44d8016c2f6b2"
+    },
+    "0/5|28": {
+        "parametros": {
+            "n_neighbors": 1,
+            "weights": "uniform",
+            "p": 1
+        },
+        "f1_validacao": 0.5880352178970714,
+        "assinatura": "2012f446048b4a4dab106ace7fd4f6cadc48c17840b74e0780cfc9ff13c38f8e"
+    },
+    "0/5|29": {
+        "parametros": {
+            "n_neighbors": 1,
+            "weights": "uniform",
+            "p": 1
+        },
+        "f1_validacao": 0.5677052420107849,
+        "assinatura": "4d8454b1a55c4b31e994114aba2ebf083a7ee7baf3fa9474e5c772ddf5a58f4b"
+    },
+    "0/5|30": {
+        "parametros": {
+            "n_neighbors": 1,
+            "weights": "uniform",
+            "p": 1
+        },
+        "f1_validacao": 0.5607843274706457,
+        "assinatura": "f701eb0e11b30bae84ace2e089db46aa8cbc3d901b903cc40004657e0db6b336"
+    },
+    "0/5|31": {
+        "parametros": {
+            "n_neighbors": 1,
+            "weights": "uniform",
+            "p": 1
+        },
+        "f1_validacao": 0.5613251182684587,
+        "assinatura": "bdc3c20c7ed2d4443dec4b1807c0d6926dcfcbc39894a0d19319829d06a7cbb3"
+    },
+    "0/5|32": {
+        "parametros": {
+            "n_neighbors": 1,
+            "weights": "uniform",
+            "p": 1
+        },
+        "f1_validacao": 0.5633661330463767,
+        "assinatura": "4ecb795ba5839ea29502edb3dbaadd118729f3fd27c314afedd40e79c52b7e5d"
+    },
+    "0/5|33": {
+        "parametros": {
+            "n_neighbors": 1,
+            "weights": "uniform",
+            "p": 1
+        },
+        "f1_validacao": 0.558463788455345,
+        "assinatura": "37abb4d8c343c515094d8cec9b2324c5396bab4d8bf74428e5028ad9b327598a"
+    },
+    "0/10|2": {
+        "parametros": {
+            "n_neighbors": 8,
+            "weights": "distance",
+            "p": 1
+        },
+        "f1_validacao": 0.9676465818998882,
+        "assinatura": "bbb03c2be688b47a50de265152eb834d8b15dd63aaed80afb23318a77facec0d"
+    },
+    "0/10|3": {
+        "parametros": {
+            "n_neighbors": 5,
+            "weights": "distance",
+            "p": 1
+        },
+        "f1_validacao": 0.8769998555406453,
+        "assinatura": "b4e788ccb12c4733b593591ba95d857dc733672419d77d65cc85aeb9a0aa0d16"
+    },
+    "0/10|4": {
+        "parametros": {
+            "n_neighbors": 1,
+            "weights": "uniform",
+            "p": 1
+        },
+        "f1_validacao": 0.7839646587732227,
+        "assinatura": "5cdbcee682a5027afd6e59811147f3b11b37ba245ef858e4f6030b3885b3fe99"
+    },
+    "0/10|5": {
+        "parametros": {
+            "n_neighbors": 1,
+            "weights": "uniform",
+            "p": 1
+        },
+        "f1_validacao": 0.7430507315792546,
+        "assinatura": "1d5a2a874aee9005258699c229d413d66c2d20284c8de6885e918370cb46ec78"
+    },
+    "0/10|6": {
+        "parametros": {
+            "n_neighbors": 1,
+            "weights": "uniform",
+            "p": 1
+        },
+        "f1_validacao": 0.7329792221677126,
+        "assinatura": "b8e92afb6537591619c3345a0c2bcd2efa6e2acc5f389c709ed0a08949043f3a"
+    },
+    "0/10|7": {
+        "parametros": {
+            "n_neighbors": 1,
+            "weights": "uniform",
+            "p": 1
+        },
+        "f1_validacao": 0.7351966587943766,
+        "assinatura": "b7293af5e5bb1af995b2b705c4aee8dc61be08d48cc2a6289f282cfdc682a07d"
+    },
+    "0/10|8": {
+        "parametros": {
+            "n_neighbors": 2,
+            "weights": "distance",
+            "p": 1
+        },
+        "f1_validacao": 0.6869023302056322,
+        "assinatura": "9480e660b7820d5e687109a37bf164aeee65ddc5da3875758ab7f13b9e1d4064"
+    },
+    "0/10|9": {
+        "parametros": {
+            "n_neighbors": 1,
+            "weights": "uniform",
+            "p": 1
+        },
+        "f1_validacao": 0.6679521421773653,
+        "assinatura": "250b93739bec9a02532bb60c18b536cb59c98770958766f781798010e83675bc"
+    },
+    "0/10|10": {
+        "parametros": {
+            "n_neighbors": 25,
+            "weights": "distance",
+            "p": 1
+        },
+        "f1_validacao": 0.6575156367022643,
+        "assinatura": "04c25d8137829b80eac32dcb789d7370e3107861c083a10a51a8a132a2565a63"
+    },
+    "0/10|11": {
+        "parametros": {
+            "n_neighbors": 1,
+            "weights": "uniform",
+            "p": 1
+        },
+        "f1_validacao": 0.6833401740216052,
+        "assinatura": "954b65076458dbadb3b9db188f59802ef89db18e74aaf45b2c128a522a6c2dca"
+    },
+    "0/10|12": {
+        "parametros": {
+            "n_neighbors": 1,
+            "weights": "uniform",
+            "p": 1
+        },
+        "f1_validacao": 0.6817753145313269,
+        "assinatura": "c7932104ca1766fbce68c1df1f5db9d0d63b9f236d0999360b9d9e9e4fcdd373"
+    },
+    "0/10|13": {
+        "parametros": {
+            "n_neighbors": 1,
+            "weights": "uniform",
+            "p": 1
+        },
+        "f1_validacao": 0.6503007608695202,
+        "assinatura": "ca2d00830b1a6527f1ecde4a5d02b991526fbfe4ee4866874be136e3015c1e5e"
+    },
+    "0/10|14": {
+        "parametros": {
+            "n_neighbors": 1,
+            "weights": "uniform",
+            "p": 1
+        },
+        "f1_validacao": 0.6528789303125266,
+        "assinatura": "eea8e8f609c5387dfa8a359e4de2f9ff426ee1b447942fb23446e97ec4550318"
+    },
+    "0/10|15": {
+        "parametros": {
+            "n_neighbors": 1,
+            "weights": "uniform",
+            "p": 1
+        },
+        "f1_validacao": 0.6574003930306195,
+        "assinatura": "b7f1c52070bb0ee9119a7d390dc2ce37a76229064f039656f1877443b719e774"
+    },
+    "0/10|16": {
+        "parametros": {
+            "n_neighbors": 1,
+            "weights": "uniform",
+            "p": 1
+        },
+        "f1_validacao": 0.6455051864538859,
+        "assinatura": "5fd93210d9c6b0383ee33f23dea9e21af26e05e85ab6a49fe1535f882ecd649b"
+    },
+    "0/10|17": {
+        "parametros": {
+            "n_neighbors": 1,
+            "weights": "uniform",
+            "p": 1
+        },
+        "f1_validacao": 0.6297970208968355,
+        "assinatura": "ca68310da9629fafb6cf21aed8a2fd2fabd1a53809e925e3566e0f9d8d5b4fd5"
+    },
+    "0/10|18": {
+        "parametros": {
+            "n_neighbors": 1,
+            "weights": "uniform",
+            "p": 1
+        },
+        "f1_validacao": 0.6319377820219122,
+        "assinatura": "ee633a257f44e2c913caf88dc057619e34f8c64cbf34e02fd9cce7e3c2879694"
+    },
+    "0/10|19": {
+        "parametros": {
+            "n_neighbors": 1,
+            "weights": "uniform",
+            "p": 1
+        },
+        "f1_validacao": 0.634235825356833,
+        "assinatura": "b600a4ed8ad5c42bb20bb2e95f8ea0cf4dc154805a9755cd71292cf589eba7da"
+    },
+    "0/10|20": {
+        "parametros": {
+            "n_neighbors": 1,
+            "weights": "uniform",
+            "p": 1
+        },
+        "f1_validacao": 0.6003248680635557,
+        "assinatura": "6249222aa4734f00b8b3f55dadc4b544eda20c5112fdf7287cc4380e49b725ae"
+    },
+    "0/10|21": {
+        "parametros": {
+            "n_neighbors": 1,
+            "weights": "uniform",
+            "p": 1
+        },
+        "f1_validacao": 0.6146356287218495,
+        "assinatura": "cc8bf7b8e000fb1081f695926a08227b6a11809eb8280c057deed2547c877e8e"
+    },
+    "0/10|22": {
+        "parametros": {
+            "n_neighbors": 1,
+            "weights": "uniform",
+            "p": 1
+        },
+        "f1_validacao": 0.6011456142176084,
+        "assinatura": "2a495e4b19fc0b34fb0460f817a4b185154620b68b58d62105be498fcaf4fec7"
+    },
+    "0/10|23": {
+        "parametros": {
+            "n_neighbors": 1,
+            "weights": "uniform",
+            "p": 1
+        },
+        "f1_validacao": 0.5972496229201822,
+        "assinatura": "c5b5e3cfb18868783a4ac76500b652e63066eaf029c879e68a405e5405e46806"
+    },
+    "0/10|24": {
+        "parametros": {
+            "n_neighbors": 1,
+            "weights": "uniform",
+            "p": 1
+        },
+        "f1_validacao": 0.5894733827715657,
+        "assinatura": "9537f05bf9ba01cd76bc3d944168c934560d2b7d5eb2fca0e74e81d7026ddc33"
+    },
+    "0/10|25": {
+        "parametros": {
+            "n_neighbors": 1,
+            "weights": "uniform",
+            "p": 1
+        },
+        "f1_validacao": 0.5755073677612638,
+        "assinatura": "ef2d8e8b35a770a24b7c2272fefe4fbbaa329bc8515ad1f62873973c46348557"
+    },
+    "0/10|26": {
+        "parametros": {
+            "n_neighbors": 1,
+            "weights": "uniform",
+            "p": 1
+        },
+        "f1_validacao": 0.5711858132316928,
+        "assinatura": "15fde5ee49d640803e58e4778a08f272af1ccfaeff759c2c8e2049151bf6f41d"
+    },
+    "0/10|27": {
+        "parametros": {
+            "n_neighbors": 1,
+            "weights": "uniform",
+            "p": 1
+        },
+        "f1_validacao": 0.5692339820602147,
+        "assinatura": "4bdca61566a7bcf6b531b037467d51406793aa39bcea868360001395027383ea"
+    },
+    "0/10|28": {
+        "parametros": {
+            "n_neighbors": 1,
+            "weights": "uniform",
+            "p": 1
+        },
+        "f1_validacao": 0.5287632007695938,
+        "assinatura": "f1b8b5ca2068168f7ae02175c0e41d49828957cd83201f0091b14f976f5cb032"
+    },
+    "0/10|29": {
+        "parametros": {
+            "n_neighbors": 1,
+            "weights": "uniform",
+            "p": 1
+        },
+        "f1_validacao": 0.527394968081619,
+        "assinatura": "4ad5758ddf10e4bd005728c93fdda147edaf1ea43c063041fd08a4f0bb1c6b97"
+    },
+    "0/10|30": {
+        "parametros": {
+            "n_neighbors": 1,
+            "weights": "uniform",
+            "p": 1
+        },
+        "f1_validacao": 0.5173056360230408,
+        "assinatura": "da1a66141896cc291239f0e3d4b4d7d14a3fb9a5fa367602c8eb80931c9ad9c5"
+    },
+    "0/10|31": {
+        "parametros": {
+            "n_neighbors": 1,
+            "weights": "uniform",
+            "p": 1
+        },
+        "f1_validacao": 0.5108559570902462,
+        "assinatura": "38cfe77be5d1b664be310504a4f16514b14ed886e2d65fdafdb3aa313dd60d00"
+    },
+    "0/10|32": {
+        "parametros": {
+            "n_neighbors": 1,
+            "weights": "uniform",
+            "p": 1
+        },
+        "f1_validacao": 0.5209946183394201,
+        "assinatura": "9d1c5b1a43007c5c166c768d16cd995f51484a25cfce97cc021b43c0d069baf8"
+    },
+    "0/10|33": {
+        "parametros": {
+            "n_neighbors": 1,
+            "weights": "uniform",
+            "p": 1
+        },
+        "f1_validacao": 0.5147112993228952,
+        "assinatura": "461c41443f2c18fd3c0af9ee34542819723c47b48679fe853b9deb024b0a63b2"
+    },
+    "0/20|2": {
+        "parametros": {
+            "n_neighbors": 15,
+            "weights": "distance",
+            "p": 1
+        },
+        "f1_validacao": 0.9627602978566037,
+        "assinatura": "32e817e2881f7d2f6f6b029cca08e724798a90a5bff3d744e5b7f698a4653dfa"
+    },
+    "0/20|3": {
+        "parametros": {
+            "n_neighbors": 17,
+            "weights": "distance",
+            "p": 1
+        },
+        "f1_validacao": 0.842818139142999,
+        "assinatura": "c68730866175b8105ba6b266963a43db5f880daccda756a15d407b1b466f3c68"
+    },
+    "0/20|4": {
+        "parametros": {
+            "n_neighbors": 3,
+            "weights": "uniform",
+            "p": 2
+        },
+        "f1_validacao": 0.7315612742957357,
+        "assinatura": "3259963faa879e8b32d323983217988c5e71d32333fb89ec7f755ea991d41067"
+    },
+    "0/20|5": {
+        "parametros": {
+            "n_neighbors": 4,
+            "weights": "distance",
+            "p": 1
+        },
+        "f1_validacao": 0.6887050261311682,
+        "assinatura": "29d9a1025bdf517207449bda855579241c5bde37f7f64003d5c1d83fca77f3af"
+    },
+    "0/20|6": {
+        "parametros": {
+            "n_neighbors": 4,
+            "weights": "distance",
+            "p": 1
+        },
+        "f1_validacao": 0.6768962214030763,
+        "assinatura": "c0d159c1854ee9a013b57bd9f4fff83ff353c4b10261df535df9a8e65f49d9d0"
+    },
+    "0/20|7": {
+        "parametros": {
+            "n_neighbors": 5,
+            "weights": "distance",
+            "p": 1
+        },
+        "f1_validacao": 0.6798895252209164,
+        "assinatura": "815b9a35d5a2e44e24601c0c61fc3487e0efb4f8e4abc2ae147e64a96b4ebdcc"
+    },
+    "0/20|8": {
+        "parametros": {
+            "n_neighbors": 25,
+            "weights": "distance",
+            "p": 1
+        },
+        "f1_validacao": 0.6202677626538643,
+        "assinatura": "c3583ee5efbf0fdbe8133b9061b192061568428aa5a938ed11493ace416fb0da"
+    },
+    "0/20|9": {
+        "parametros": {
+            "n_neighbors": 11,
+            "weights": "distance",
+            "p": 1
+        },
+        "f1_validacao": 0.6007889116396063,
+        "assinatura": "bd35a4f21fb32787b5cd8eb54e7844d9e395e7ba58fd37d111244f0843c91625"
+    },
+    "0/20|10": {
+        "parametros": {
+            "n_neighbors": 13,
+            "weights": "distance",
+            "p": 1
+        },
+        "f1_validacao": 0.6063417497273689,
+        "assinatura": "55f7a4427a39185eaaa6659cb1068dff70641091560e581a2f91d81e163e5642"
+    },
+    "0/20|11": {
+        "parametros": {
+            "n_neighbors": 4,
+            "weights": "distance",
+            "p": 1
+        },
+        "f1_validacao": 0.6314521057250289,
+        "assinatura": "f04f1ccdf1926b54dff0ff9adc40d94cb573f0f1a4abbbc14b866edc351f3872"
+    },
+    "0/20|12": {
+        "parametros": {
+            "n_neighbors": 3,
+            "weights": "distance",
+            "p": 1
+        },
+        "f1_validacao": 0.6328610804846564,
+        "assinatura": "0732fd0ad58282e01ddaec19d3177aac931808d2126b0c16cc9e6c06afa69ad1"
+    },
+    "0/20|13": {
+        "parametros": {
+            "n_neighbors": 5,
+            "weights": "distance",
+            "p": 1
+        },
+        "f1_validacao": 0.6021569194562928,
+        "assinatura": "060268bfabe7cfa8cb3e81877f5a9ee604f87f0010486cc48c614586606a507d"
+    },
+    "0/20|14": {
+        "parametros": {
+            "n_neighbors": 4,
+            "weights": "distance",
+            "p": 1
+        },
+        "f1_validacao": 0.5875931688180873,
+        "assinatura": "3097b93d38284a99b8fa4628ccc8336ce9c2361a5bb448d9e0209b528d253e8c"
+    },
+    "0/20|15": {
+        "parametros": {
+            "n_neighbors": 3,
+            "weights": "distance",
+            "p": 1
+        },
+        "f1_validacao": 0.5809275292180038,
+        "assinatura": "e615ebdf58808976d096ba87956bb0e2a6429db1560886cab5815ea6a3c55b91"
+    },
+    "0/20|16": {
+        "parametros": {
+            "n_neighbors": 3,
+            "weights": "distance",
+            "p": 1
+        },
+        "f1_validacao": 0.5600203505023125,
+        "assinatura": "a39eb6fc180acf03ac72ff635a5ad3a5e5830d32025cda2e09045c9d88375c2b"
+    },
+    "0/20|17": {
+        "parametros": {
+            "n_neighbors": 1,
+            "weights": "uniform",
+            "p": 1
+        },
+        "f1_validacao": 0.5483345849574028,
+        "assinatura": "a9a6f6a02a2c0f18e7517f4932fc7d1d5b6de5e7bb1d5a0b1ab4ebf69b794682"
+    },
+    "0/20|18": {
+        "parametros": {
+            "n_neighbors": 1,
+            "weights": "uniform",
+            "p": 1
+        },
+        "f1_validacao": 0.544120989173118,
+        "assinatura": "c0aae5b50b0c55dedf27064f43ff977b840b749d805a9766c3cde51cec82d094"
+    },
+    "0/20|19": {
+        "parametros": {
+            "n_neighbors": 1,
+            "weights": "uniform",
+            "p": 1
+        },
+        "f1_validacao": 0.5297068392464244,
+        "assinatura": "478ff6092ca644cdde146d6889530fdcce10c1f9e9329d642b25891eea6f4cec"
+    },
+    "0/20|20": {
+        "parametros": {
+            "n_neighbors": 1,
+            "weights": "uniform",
+            "p": 1
+        },
+        "f1_validacao": 0.5117151660217945,
+        "assinatura": "f59539ca859f29aad662b4efcc3a085697fe0b38c5008fa6d460b54263d69e90"
+    },
+    "0/20|21": {
+        "parametros": {
+            "n_neighbors": 1,
+            "weights": "uniform",
+            "p": 1
+        },
+        "f1_validacao": 0.5200469927107094,
+        "assinatura": "94fcc1875eae744e421241753fbc6c8c3f47d8c797ed23720880de2140888917"
+    },
+    "0/20|22": {
+        "parametros": {
+            "n_neighbors": 3,
+            "weights": "distance",
+            "p": 1
+        },
+        "f1_validacao": 0.5053058755896298,
+        "assinatura": "ad317978e31a7773dda06361bbb42fd9d9acd2fe6284da6fa0b517a19c3c17ef"
+    },
+    "0/20|23": {
+        "parametros": {
+            "n_neighbors": 3,
+            "weights": "distance",
+            "p": 1
+        },
+        "f1_validacao": 0.49215406472566414,
+        "assinatura": "6b792ba44d76cdacb3cec20f250425c8c077c4e325f0cbd8d3a16b0325cea92e"
+    },
+    "0/20|24": {
+        "parametros": {
+            "n_neighbors": 3,
+            "weights": "distance",
+            "p": 1
+        },
+        "f1_validacao": 0.49021656308341877,
+        "assinatura": "7ce4fb1905a4d9e609ab614761e03e5e4a1a7b412621316dacddb60dcdd45f8b"
+    },
+    "0/20|25": {
+        "parametros": {
+            "n_neighbors": 3,
+            "weights": "distance",
+            "p": 1
+        },
+        "f1_validacao": 0.4763383550402346,
+        "assinatura": "81a80c417a00b4452ea132f981fdae5807d6d333fc3495d0d34a4acf75131cf8"
+    },
+    "0/20|26": {
+        "parametros": {
+            "n_neighbors": 3,
+            "weights": "distance",
+            "p": 1
+        },
+        "f1_validacao": 0.46558980686828716,
+        "assinatura": "adc37d966b95c21a43c298e46384b8ee6b93e0f65b6f0dbd2772c6470ddac1d5"
+    },
+    "0/20|27": {
+        "parametros": {
+            "n_neighbors": 3,
+            "weights": "distance",
+            "p": 1
+        },
+        "f1_validacao": 0.4632772065985112,
+        "assinatura": "c7829891bcde635fecbdf1c493fc20efd7f880301468f3206949fa092a850b20"
+    },
+    "0/20|28": {
+        "parametros": {
+            "n_neighbors": 7,
+            "weights": "distance",
+            "p": 1
+        },
+        "f1_validacao": 0.45349224085010764,
+        "assinatura": "6af32ec51dc2632acb16efd9aa21505cc933d5b9189518ae66c0b9b32547919e"
+    },
+    "0/20|29": {
+        "parametros": {
+            "n_neighbors": 5,
+            "weights": "distance",
+            "p": 1
+        },
+        "f1_validacao": 0.45336743893710496,
+        "assinatura": "bfd6ede9ae07f255823babe61a35c8f8851b94661b9fd35de978f6b1f7035be1"
+    },
+    "0/20|30": {
+        "parametros": {
+            "n_neighbors": 1,
+            "weights": "uniform",
+            "p": 1
+        },
+        "f1_validacao": 0.438873740829572,
+        "assinatura": "7c3df8e197ac3b7ed2270509b882d1c09d5470dcd1eea54afcac3a8b09f19f63"
+    },
+    "0/20|31": {
+        "parametros": {
+            "n_neighbors": 1,
+            "weights": "uniform",
+            "p": 1
+        },
+        "f1_validacao": 0.4515017298528412,
+        "assinatura": "4ec7a1ef5ca1de3a8a027e2c5147b737794e0766b7cc7b6fa9d339b73e1facdf"
+    },
+    "0/20|32": {
+        "parametros": {
+            "n_neighbors": 1,
+            "weights": "uniform",
+            "p": 1
+        },
+        "f1_validacao": 0.4373194245690334,
+        "assinatura": "db4a7e23e6fc214794fb4eb8b083b93f22ab0a6f2a73f84ba570ad3d1ab7d7fb"
+    },
+    "0/20|33": {
+        "parametros": {
+            "n_neighbors": 1,
+            "weights": "uniform",
+            "p": 1
+        },
+        "f1_validacao": 0.428179364352531,
+        "assinatura": "00edf1667342f0fd034b96e652a973663bd7c928d1534c73f03bed7eb19ae8cd"
+    }
+}

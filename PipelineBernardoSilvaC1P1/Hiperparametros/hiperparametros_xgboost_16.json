@@ -1,0 +1,1250 @@
+{
+    "0/5|2": {
+        "parametros": {
+            "n_estimators": 500,
+            "max_depth": 5,
+            "learning_rate": 0.015860158387400774,
+            "subsample": 0.739707688782265,
+            "colsample_bytree": 0.7596155483069659,
+            "min_child_weight": 2,
+            "reg_lambda": 1.237441021071885
+        },
+        "f1_validacao": 0.9635946097053834,
+        "assinatura": "4a37d0371bfc30bceee79a94461fc6f38ece9ac6599a647eb691bc2d661b6316"
+    },
+    "0/5|3": {
+        "parametros": {
+            "n_estimators": 300,
+            "max_depth": 8,
+            "learning_rate": 0.020161470436196486,
+            "subsample": 0.7011334382772492,
+            "colsample_bytree": 0.8173713968299974,
+            "min_child_weight": 1,
+            "reg_lambda": 0.027933631680187216
+        },
+        "f1_validacao": 0.8957883372164105,
+        "assinatura": "69bcbdb90bba9068ef0997122dcaccfe383951274dbcc5637da41599c11cfd83"
+    },
+    "0/5|4": {
+        "parametros": {
+            "n_estimators": 300,
+            "max_depth": 5,
+            "learning_rate": 0.1338135798710328,
+            "subsample": 0.9966270867792693,
+            "colsample_bytree": 0.8126146629507989,
+            "min_child_weight": 1,
+            "reg_lambda": 0.07151067909509433
+        },
+        "f1_validacao": 0.8014255010082749,
+        "assinatura": "2695221569b5ee61396ad5647111c7784fcf3b70d6f334ab2c2aeeca58bbb8ac"
+    },
+    "0/5|5": {
+        "parametros": {
+            "n_estimators": 300,
+            "max_depth": 7,
+            "learning_rate": 0.08085078790454195,
+            "subsample": 0.9987456378934791,
+            "colsample_bytree": 0.9275003191083656,
+            "min_child_weight": 1,
+            "reg_lambda": 0.015624910574256082
+        },
+        "f1_validacao": 0.7842279007831466,
+        "assinatura": "06847af4513b5f1f6619a38b66fdbd49ec945be56eb3ffc273d3e0f89bb1be05"
+    },
+    "0/5|6": {
+        "parametros": {
+            "n_estimators": 300,
+            "max_depth": 6,
+            "learning_rate": 0.1528406131465581,
+            "subsample": 0.9965094736632832,
+            "colsample_bytree": 0.7272242512019677,
+            "min_child_weight": 1,
+            "reg_lambda": 0.026259765992309485
+        },
+        "f1_validacao": 0.7696207590406356,
+        "assinatura": "f43f0266dd9a1fd8e0f30088a588cd95eaa0a6f6b887b9ca54a8739129d30030"
+    },
+    "0/5|7": {
+        "parametros": {
+            "n_estimators": 200,
+            "max_depth": 8,
+            "learning_rate": 0.060071252005207694,
+            "subsample": 0.9298047612474004,
+            "colsample_bytree": 0.7113972750313586,
+            "min_child_weight": 2,
+            "reg_lambda": 0.01827476839829729
+        },
+        "f1_validacao": 0.7579451810934577,
+        "assinatura": "c88d82bff1c4e18fafe59c0cc0405d8a9d476d8f08ba6dc2bb761b91faefbc73"
+    },
+    "0/5|8": {
+        "parametros": {
+            "n_estimators": 100,
+            "max_depth": 8,
+            "learning_rate": 0.1951950071841127,
+            "subsample": 0.9547975967841758,
+            "colsample_bytree": 0.7794621455299049,
+            "min_child_weight": 1,
+            "reg_lambda": 3.757843302476839
+        },
+        "f1_validacao": 0.7383202270818525,
+        "assinatura": "18f5b067357c00f420cc9c82b166cb84d386c2981a45f6deb18dfb732568531e"
+    },
+    "0/5|9": {
+        "parametros": {
+            "n_estimators": 100,
+            "max_depth": 8,
+            "learning_rate": 0.1510692418420553,
+            "subsample": 0.8010515272762118,
+            "colsample_bytree": 0.7362291031645042,
+            "min_child_weight": 1,
+            "reg_lambda": 0.008874804650747187
+        },
+        "f1_validacao": 0.7272865342690257,
+        "assinatura": "06cb750591ff8f38b8511cf99521580baa917a3f550856e6485e8b8a0eba2d96"
+    },
+    "0/5|10": {
+        "parametros": {
+            "n_estimators": 100,
+            "max_depth": 6,
+            "learning_rate": 0.2027095769015746,
+            "subsample": 0.9872393435099965,
+            "colsample_bytree": 0.773997036816183,
+            "min_child_weight": 1,
+            "reg_lambda": 0.14225871770035567
+        },
+        "f1_validacao": 0.7207167261008086,
+        "assinatura": "c386a724714f9afb6a2460a24214041101cf181b9af3e9eeef7a6872714a6628"
+    },
+    "0/5|11": {
+        "parametros": {
+            "n_estimators": 200,
+            "max_depth": 6,
+            "learning_rate": 0.08841790166555996,
+            "subsample": 0.9771827696963126,
+            "colsample_bytree": 0.7374901877169459,
+            "min_child_weight": 1,
+            "reg_lambda": 0.008077632820128062
+        },
+        "f1_validacao": 0.7221395447782786,
+        "assinatura": "b2036079416a7504242c83053cc787646a378d2c04a3da537a19ab89fe252ba7"
+    },
+    "0/5|12": {
+        "parametros": {
+            "n_estimators": 300,
+            "max_depth": 7,
+            "learning_rate": 0.04472351141404607,
+            "subsample": 0.9357387802607012,
+            "colsample_bytree": 0.9702192261740583,
+            "min_child_weight": 1,
+            "reg_lambda": 0.005058051522721408
+        },
+        "f1_validacao": 0.7235820643012493,
+        "assinatura": "9d4bc5ab539fd105f5e5a530cf79c2b34717f71d0bb26bb6000586bd8fc0640f"
+    },
+    "0/5|13": {
+        "parametros": {
+            "n_estimators": 200,
+            "max_depth": 8,
+            "learning_rate": 0.2269040691455974,
+            "subsample": 0.809419407217936,
+            "colsample_bytree": 0.9924970615433011,
+            "min_child_weight": 1,
+            "reg_lambda": 0.0025765216154748144
+        },
+        "f1_validacao": 0.7125187602784823,
+        "assinatura": "f571acd56daa9c793aaffef3eaf5156a8619f181fb37be8d2d13d2e03f0fdd80"
+    },
+    "0/5|14": {
+        "parametros": {
+            "n_estimators": 200,
+            "max_depth": 6,
+            "learning_rate": 0.04597518458152439,
+            "subsample": 0.8661230472261046,
+            "colsample_bytree": 0.873523253011856,
+            "min_child_weight": 1,
+            "reg_lambda": 0.007259965919100646
+        },
+        "f1_validacao": 0.6996356041106211,
+        "assinatura": "34488febba7ee70402e9de0b7053575bb54f2aa37a67b96ceb2dbff84d3beb4f"
+    },
+    "0/5|15": {
+        "parametros": {
+            "n_estimators": 200,
+            "max_depth": 8,
+            "learning_rate": 0.2257818183996108,
+            "subsample": 0.842081222568737,
+            "colsample_bytree": 0.8396210881070157,
+            "min_child_weight": 1,
+            "reg_lambda": 0.0019101789410445036
+        },
+        "f1_validacao": 0.6868699729083481,
+        "assinatura": "e8844b359960ed6e8998a08c8f5ad871d2ddce83814ef4d3c856b91dcd1664fc"
+    },
+    "0/5|16": {
+        "parametros": {
+            "n_estimators": 300,
+            "max_depth": 7,
+            "learning_rate": 0.17775623943685068,
+            "subsample": 0.8839622270164297,
+            "colsample_bytree": 0.8343475805130428,
+            "min_child_weight": 1,
+            "reg_lambda": 0.019135350433554268
+        },
+        "f1_validacao": 0.6882471649257044,
+        "assinatura": "d485a5ceb03099bc35f8317415bb6b0b542da4c264463770cf0ee705c0d82a35"
+    },
+    "0/5|17": {
+        "parametros": {
+            "n_estimators": 300,
+            "max_depth": 7,
+            "learning_rate": 0.13800829502268555,
+            "subsample": 0.881504590405392,
+            "colsample_bytree": 0.8693904494882463,
+            "min_child_weight": 1,
+            "reg_lambda": 0.0017369099658695757
+        },
+        "f1_validacao": 0.6825630991019944,
+        "assinatura": "e7cd4277caed6e369717e0b6441ffdd3ea1b682e2812968d692a3e2e8bae1027"
+    },
+    "0/5|18": {
+        "parametros": {
+            "n_estimators": 200,
+            "max_depth": 8,
+            "learning_rate": 0.2944591689195732,
+            "subsample": 0.8564397169914139,
+            "colsample_bytree": 0.9649807164886085,
+            "min_child_weight": 1,
+            "reg_lambda": 0.002826041178176478
+        },
+        "f1_validacao": 0.7005970466475312,
+        "assinatura": "aa86143ae80b03963f0698ead330c1700b930565a56316d73617eba4fa0a2065"
+    },
+    "0/5|19": {
+        "parametros": {
+            "n_estimators": 300,
+            "max_depth": 7,
+            "learning_rate": 0.2834720045286759,
+            "subsample": 0.9503430207987119,
+            "colsample_bytree": 0.9191572987659749,
+            "min_child_weight": 3,
+            "reg_lambda": 0.024338247335592176
+        },
+        "f1_validacao": 0.6782985465538612,
+        "assinatura": "a0b73401543464d67dae99fa5237f4a314d66be994795188487aaff1057de759"
+    },
+    "0/5|20": {
+        "parametros": {
+            "n_estimators": 100,
+            "max_depth": 8,
+            "learning_rate": 0.21306523996897433,
+            "subsample": 0.9557866862217237,
+            "colsample_bytree": 0.7384911937120441,
+            "min_child_weight": 1,
+            "reg_lambda": 0.01921005432535129
+        },
+        "f1_validacao": 0.6499196575433139,
+        "assinatura": "65a9ff36e1e6be1f070f089cb8ceb31806a0b6dd2a73948defc57ccc40e6edbe"
+    },
+    "0/5|21": {
+        "parametros": {
+            "n_estimators": 200,
+            "max_depth": 8,
+            "learning_rate": 0.2322033556794016,
+            "subsample": 0.800410235611807,
+            "colsample_bytree": 0.8775099158847007,
+            "min_child_weight": 1,
+            "reg_lambda": 1.039874024560329
+        },
+        "f1_validacao": 0.6624422924249942,
+        "assinatura": "2af951e284f69d82957b13e5f3b50e93deac3ab65f7fedc85dddffb512e70c4d"
+    },
+    "0/5|22": {
+        "parametros": {
+            "n_estimators": 200,
+            "max_depth": 8,
+            "learning_rate": 0.2255116797847167,
+            "subsample": 0.878040422706658,
+            "colsample_bytree": 0.7077086155007706,
+            "min_child_weight": 1,
+            "reg_lambda": 0.2691450174524135
+        },
+        "f1_validacao": 0.6453395849122351,
+        "assinatura": "3ac9ab9a1e0dc7a3da5a26acfe893f88394afb913a6f3512e02a137312fbcf40"
+    },
+    "0/5|23": {
+        "parametros": {
+            "n_estimators": 300,
+            "max_depth": 5,
+            "learning_rate": 0.08219428265889092,
+            "subsample": 0.8880617675616789,
+            "colsample_bytree": 0.7277119529536047,
+            "min_child_weight": 1,
+            "reg_lambda": 0.2509431980789444
+        },
+        "f1_validacao": 0.6530769391596254,
+        "assinatura": "25f6992761a4d739eee383212be789bb20e21b2ee4376f2b1f84054575bd6748"
+    },
+    "0/5|24": {
+        "parametros": {
+            "n_estimators": 100,
+            "max_depth": 7,
+            "learning_rate": 0.29927886400430787,
+            "subsample": 0.8455681850218625,
+            "colsample_bytree": 0.9020267402125015,
+            "min_child_weight": 1,
+            "reg_lambda": 0.06558403896073368
+        },
+        "f1_validacao": 0.6510366508285994,
+        "assinatura": "9bf88a2610436fae5e7aa96441e11dc0ce37e64e83a0c93abd370e5ddeb275a8"
+    },
+    "0/5|25": {
+        "parametros": {
+            "n_estimators": 100,
+            "max_depth": 5,
+            "learning_rate": 0.16930223058927005,
+            "subsample": 0.933262163856804,
+            "colsample_bytree": 0.775440207754356,
+            "min_child_weight": 1,
+            "reg_lambda": 0.15223660500314617
+        },
+        "f1_validacao": 0.6605140818540434,
+        "assinatura": "74813fd2cea6dbcc533e1c38d510799615a6a8b554608fe8be5a586b04a76eab"
+    },
+    "0/5|26": {
+        "parametros": {
+            "n_estimators": 200,
+            "max_depth": 7,
+            "learning_rate": 0.10514465539825742,
+            "subsample": 0.9837475763886411,
+            "colsample_bytree": 0.9414022813437269,
+            "min_child_weight": 1,
+            "reg_lambda": 0.0021111618260944245
+        },
+        "f1_validacao": 0.6314174572891339,
+        "assinatura": "92899f053cb2c8ae603f3a4bc3cc4ba79d9a01010b7b126d69192a30f41b9beb"
+    },
+    "0/5|27": {
+        "parametros": {
+            "n_estimators": 300,
+            "max_depth": 6,
+            "learning_rate": 0.08100123252668344,
+            "subsample": 0.9817597143043333,
+            "colsample_bytree": 0.9457284115863835,
+            "min_child_weight": 1,
+            "reg_lambda": 0.0012209066129554155
+        },
+        "f1_validacao": 0.6220219093175451,
+        "assinatura": "56261b01ad394b313b875533340e79fd21891c91450e4e81e54a4797a7b802e0"
+    },
+    "0/5|28": {
+        "parametros": {
+            "n_estimators": 400,
+            "max_depth": 8,
+            "learning_rate": 0.19298285329474985,
+            "subsample": 0.7977691095564016,
+            "colsample_bytree": 0.7765097522548929,
+            "min_child_weight": 1,
+            "reg_lambda": 3.5194404936253587
+        },
+        "f1_validacao": 0.604900435804254,
+        "assinatura": "8c05ee5fec43302ed8b5b903bb35f1dfefd618b5b396856901e09306440af2da"
+    },
+    "0/5|29": {
+        "parametros": {
+            "n_estimators": 300,
+            "max_depth": 6,
+            "learning_rate": 0.06563165795090524,
+            "subsample": 0.9009798016075583,
+            "colsample_bytree": 0.8588787899423902,
+            "min_child_weight": 1,
+            "reg_lambda": 0.4456619463030415
+        },
+        "f1_validacao": 0.5883784975922454,
+        "assinatura": "4ff19632225288093e5ac90545ad32510bf9304832e87467f4fb256576ab4bd3"
+    },
+    "0/5|30": {
+        "parametros": {
+            "n_estimators": 400,
+            "max_depth": 6,
+            "learning_rate": 0.15195521565906298,
+            "subsample": 0.889662862140314,
+            "colsample_bytree": 0.9688625464148322,
+            "min_child_weight": 2,
+            "reg_lambda": 0.009313300495500746
+        },
+        "f1_validacao": 0.5756403843111135,
+        "assinatura": "afdae48a45358eeb0da81b252c72ade6ab20b59211cb3db13f8d3dde35a5af5b"
+    },
+    "0/5|31": {
+        "parametros": {
+            "n_estimators": 300,
+            "max_depth": 6,
+            "learning_rate": 0.09793283955053052,
+            "subsample": 0.8669999076761125,
+            "colsample_bytree": 0.9125171244675265,
+            "min_child_weight": 1,
+            "reg_lambda": 0.011879267889733923
+        },
+        "f1_validacao": 0.5793945005389693,
+        "assinatura": "5ca1b399bb20fd0a2053588dbc61a0261b15c3a8efe63019c4e8f9ee0b942fb0"
+    },
+    "0/5|32": {
+        "parametros": {
+            "n_estimators": 200,
+            "max_depth": 7,
+            "learning_rate": 0.22638053504756384,
+            "subsample": 0.8190323703046322,
+            "colsample_bytree": 0.785561132441301,
+            "min_child_weight": 1,
+            "reg_lambda": 0.5752893293419349
+        },
+        "f1_validacao": 0.5720607230865051,
+        "assinatura": "f5d1585f4979b1ddb0edf6709e0806b3c15e468ae24d8dda30f854251ff95386"
+    },
+    "0/5|33": {
+        "parametros": {
+            "n_estimators": 100,
+            "max_depth": 6,
+            "learning_rate": 0.23488518376736023,
+            "subsample": 0.7654831732092493,
+            "colsample_bytree": 0.9693151275959074,
+            "min_child_weight": 1,
+            "reg_lambda": 0.006611890451610726
+        },
+        "f1_validacao": 0.5853420532100521,
+        "assinatura": "795f4261f4c38874231963d8b3fa0c7edd22cb0bd7f051d94acbacb746dc7573"
+    },
+    "0/10|2": {
+        "parametros": {
+            "n_estimators": 500,
+            "max_depth": 2,
+            "learning_rate": 0.024905412630808515,
+            "subsample": 0.9924637515688719,
+            "colsample_bytree": 0.9323932890354242,
+            "min_child_weight": 3,
+            "reg_lambda": 0.1310128268333408
+        },
+        "f1_validacao": 0.9665088422656017,
+        "assinatura": "b516897530ee62695899e85b84d56900a910a7fc4c3c58350eccf5055ed585d6"
+    },
+    "0/10|3": {
+        "parametros": {
+            "n_estimators": 300,
+            "max_depth": 6,
+            "learning_rate": 0.0738502020994407,
+            "subsample": 0.878362558591454,
+            "colsample_bytree": 0.9699354364984681,
+            "min_child_weight": 1,
+            "reg_lambda": 0.0020238462663414104
+        },
+        "f1_validacao": 0.8862543460588936,
+        "assinatura": "66426aa0fcd701f1da7927b3650033680f2381c22a6fb35ddee9fbe881a4d9b0"
+    },
+    "0/10|4": {
+        "parametros": {
+            "n_estimators": 200,
+            "max_depth": 7,
+            "learning_rate": 0.13679521523784346,
+            "subsample": 0.8338210375584919,
+            "colsample_bytree": 0.7276261076762198,
+            "min_child_weight": 4,
+            "reg_lambda": 0.128170856343886
+        },
+        "f1_validacao": 0.7967632376676721,
+        "assinatura": "a94a51c75a707ea7164cd0ff7c8643d9b96bcff5fcb7f3f422da37883daf9b4b"
+    },
+    "0/10|5": {
+        "parametros": {
+            "n_estimators": 300,
+            "max_depth": 8,
+            "learning_rate": 0.11065075717675087,
+            "subsample": 0.8243947179880713,
+            "colsample_bytree": 0.7153099644154214,
+            "min_child_weight": 1,
+            "reg_lambda": 0.3093226505441953
+        },
+        "f1_validacao": 0.7953369522226762,
+        "assinatura": "73db9e1b877b5cd51d56af33433e14af52994a23561a6b07ea0f99a2ac37b65a"
+    },
+    "0/10|6": {
+        "parametros": {
+            "n_estimators": 300,
+            "max_depth": 8,
+            "learning_rate": 0.16899972892593917,
+            "subsample": 0.9246518127923875,
+            "colsample_bytree": 0.752581814619256,
+            "min_child_weight": 1,
+            "reg_lambda": 0.0060974818971046025
+        },
+        "f1_validacao": 0.7725052241292653,
+        "assinatura": "e809f9988b88a3f77ed09e7d54e6427d0c9d1e8e0fedb919cb8d86232f8f3877"
+    },
+    "0/10|7": {
+        "parametros": {
+            "n_estimators": 300,
+            "max_depth": 5,
+            "learning_rate": 0.09343179079628926,
+            "subsample": 0.939149013803676,
+            "colsample_bytree": 0.9431613023500065,
+            "min_child_weight": 1,
+            "reg_lambda": 0.015508498306239646
+        },
+        "f1_validacao": 0.7672661388291747,
+        "assinatura": "6c7469fd93b5a0d9cb4321f40cd5f2df90c1d4267c3b3ef8dd2405501258a9fe"
+    },
+    "0/10|8": {
+        "parametros": {
+            "n_estimators": 200,
+            "max_depth": 5,
+            "learning_rate": 0.09165259502670241,
+            "subsample": 0.9547033224325302,
+            "colsample_bytree": 0.7754586158025718,
+            "min_child_weight": 1,
+            "reg_lambda": 0.0026545233880864304
+        },
+        "f1_validacao": 0.7413729562250703,
+        "assinatura": "ed12d5b12cdf9df2bca9e2e1ec2bac0d45109123011bea05c91216339c9f9ed5"
+    },
+    "0/10|9": {
+        "parametros": {
+            "n_estimators": 100,
+            "max_depth": 7,
+            "learning_rate": 0.1310149879687578,
+            "subsample": 0.9303213815680648,
+            "colsample_bytree": 0.7668462181373412,
+            "min_child_weight": 1,
+            "reg_lambda": 0.007887122084369442
+        },
+        "f1_validacao": 0.7207578886033014,
+        "assinatura": "003b56107be74347756e0213e220b173e7fe76cf422fd9c63852e75659f180cd"
+    },
+    "0/10|10": {
+        "parametros": {
+            "n_estimators": 200,
+            "max_depth": 7,
+            "learning_rate": 0.23863018976503972,
+            "subsample": 0.9776129019503922,
+            "colsample_bytree": 0.822478841484401,
+            "min_child_weight": 1,
+            "reg_lambda": 0.16701456292014427
+        },
+        "f1_validacao": 0.7282835002157195,
+        "assinatura": "c6dc0f86f4938d212a63278fc2026998c418b819b0eaab7238fbf18103517e00"
+    },
+    "0/10|11": {
+        "parametros": {
+            "n_estimators": 100,
+            "max_depth": 6,
+            "learning_rate": 0.07248745577877466,
+            "subsample": 0.9136811831127897,
+            "colsample_bytree": 0.7326019580503603,
+            "min_child_weight": 1,
+            "reg_lambda": 0.1594866062834167
+        },
+        "f1_validacao": 0.7180109344028127,
+        "assinatura": "8cff95e79d336b97af0bb2e0662405c1ee86ff306c97d963e85cad3a7704368f"
+    },
+    "0/10|12": {
+        "parametros": {
+            "n_estimators": 300,
+            "max_depth": 4,
+            "learning_rate": 0.11224636467833835,
+            "subsample": 0.9803295466159947,
+            "colsample_bytree": 0.9777254819601555,
+            "min_child_weight": 1,
+            "reg_lambda": 0.011739084934053049
+        },
+        "f1_validacao": 0.7110946410477266,
+        "assinatura": "988e1bbd453a4395f04e579314198401a822240d3640edee0305e54dd0c6668e"
+    },
+    "0/10|13": {
+        "parametros": {
+            "n_estimators": 200,
+            "max_depth": 8,
+            "learning_rate": 0.2168071120140432,
+            "subsample": 0.84484924311203,
+            "colsample_bytree": 0.8792592451442012,
+            "min_child_weight": 2,
+            "reg_lambda": 0.009213917930218586
+        },
+        "f1_validacao": 0.6945965160419896,
+        "assinatura": "58936b87ff6fbaa6a0baf1579bbb25aac65935e49eef8bde25e22394fab5e15e"
+    },
+    "0/10|14": {
+        "parametros": {
+            "n_estimators": 300,
+            "max_depth": 6,
+            "learning_rate": 0.1415828429329745,
+            "subsample": 0.8362583289872249,
+            "colsample_bytree": 0.7544931913385579,
+            "min_child_weight": 1,
+            "reg_lambda": 0.005274076765613325
+        },
+        "f1_validacao": 0.7050605681266955,
+        "assinatura": "809de3c1436be685849cdb6ae66de81a3827bac174ae8940c0313385da826fa0"
+    },
+    "0/10|15": {
+        "parametros": {
+            "n_estimators": 100,
+            "max_depth": 8,
+            "learning_rate": 0.20948275417579512,
+            "subsample": 0.7858519337793634,
+            "colsample_bytree": 0.8514776850764375,
+            "min_child_weight": 1,
+            "reg_lambda": 0.023499663171043152
+        },
+        "f1_validacao": 0.6783555665085618,
+        "assinatura": "1e032f1d6da5ffab13fb63e0091308b84380abf6301748e36fbfc71b743c2102"
+    },
+    "0/10|16": {
+        "parametros": {
+            "n_estimators": 200,
+            "max_depth": 7,
+            "learning_rate": 0.10042084943342039,
+            "subsample": 0.991873706324127,
+            "colsample_bytree": 0.8027907734318128,
+            "min_child_weight": 1,
+            "reg_lambda": 0.00414032806271323
+        },
+        "f1_validacao": 0.670466232365601,
+        "assinatura": "ef4a53eaf357b092fb0eedf2ccdedfab0a9fcf9abb5413ba2759350efa194f5a"
+    },
+    "0/10|17": {
+        "parametros": {
+            "n_estimators": 200,
+            "max_depth": 8,
+            "learning_rate": 0.27862244741647196,
+            "subsample": 0.892776103734842,
+            "colsample_bytree": 0.7539807015841876,
+            "min_child_weight": 1,
+            "reg_lambda": 0.10026032735332388
+        },
+        "f1_validacao": 0.6688321812955064,
+        "assinatura": "36b518a180c9bee0f4d7110d80d1798cc712a286e7c53eb6b5ec2fbe09ee5f3d"
+    },
+    "0/10|18": {
+        "parametros": {
+            "n_estimators": 200,
+            "max_depth": 8,
+            "learning_rate": 0.042647060011041654,
+            "subsample": 0.9156403859262398,
+            "colsample_bytree": 0.713492347483617,
+            "min_child_weight": 1,
+            "reg_lambda": 0.013374633520283313
+        },
+        "f1_validacao": 0.6707534637157739,
+        "assinatura": "b8afa67a354728a6817e0f18665e0b4c54d0a95a0dd88a690e44d3f0d5977628"
+    },
+    "0/10|19": {
+        "parametros": {
+            "n_estimators": 200,
+            "max_depth": 7,
+            "learning_rate": 0.24547330953428473,
+            "subsample": 0.7169190383367025,
+            "colsample_bytree": 0.8357933321345119,
+            "min_child_weight": 1,
+            "reg_lambda": 0.0024106312380798175
+        },
+        "f1_validacao": 0.6509722060644789,
+        "assinatura": "4e9265fb30516e7d63be7a04802e5cbb396b10294d80db224941e9ad1be9fa1f"
+    },
+    "0/10|20": {
+        "parametros": {
+            "n_estimators": 200,
+            "max_depth": 8,
+            "learning_rate": 0.2962211538875086,
+            "subsample": 0.9753083264910892,
+            "colsample_bytree": 0.7962762005040067,
+            "min_child_weight": 2,
+            "reg_lambda": 0.0022963241836283514
+        },
+        "f1_validacao": 0.6447149396461788,
+        "assinatura": "2d5eb267ef73f9c8970c6d8e4e7f4912e9c8d4a6175a6481b4c72fc904b72b91"
+    },
+    "0/10|21": {
+        "parametros": {
+            "n_estimators": 100,
+            "max_depth": 8,
+            "learning_rate": 0.2251823174894227,
+            "subsample": 0.855770244275507,
+            "colsample_bytree": 0.8577058047037683,
+            "min_child_weight": 1,
+            "reg_lambda": 0.0030177123163010484
+        },
+        "f1_validacao": 0.649307340532845,
+        "assinatura": "e1729d4d32248ecca989de6ede959c08e3bab2f585b82fca3284ac7c01560f9a"
+    },
+    "0/10|22": {
+        "parametros": {
+            "n_estimators": 400,
+            "max_depth": 8,
+            "learning_rate": 0.13940986867624366,
+            "subsample": 0.9565088935684969,
+            "colsample_bytree": 0.9117603530812647,
+            "min_child_weight": 1,
+            "reg_lambda": 0.004169606469010443
+        },
+        "f1_validacao": 0.6498810806318981,
+        "assinatura": "75991e4faa040ee9ed65064cb7b5f694f3c27d2fed54ec2bc6939cd01b77fa14"
+    },
+    "0/10|23": {
+        "parametros": {
+            "n_estimators": 100,
+            "max_depth": 7,
+            "learning_rate": 0.1960418952272102,
+            "subsample": 0.969734872761468,
+            "colsample_bytree": 0.7216321111059689,
+            "min_child_weight": 1,
+            "reg_lambda": 0.002224161994628474
+        },
+        "f1_validacao": 0.6633875782168688,
+        "assinatura": "6acc43fbdc68dc666a3d9a074a71e620ff9381859f8141864080000291e2aaeb"
+    },
+    "0/10|24": {
+        "parametros": {
+            "n_estimators": 300,
+            "max_depth": 7,
+            "learning_rate": 0.24472592703977847,
+            "subsample": 0.9294710603338534,
+            "colsample_bytree": 0.8361932599417192,
+            "min_child_weight": 1,
+            "reg_lambda": 0.004368257659868411
+        },
+        "f1_validacao": 0.6364506404559962,
+        "assinatura": "4538fba0184d2ebf37683da047240724e37dcad5fecf884b6b57ca93676a65cf"
+    },
+    "0/10|25": {
+        "parametros": {
+            "n_estimators": 100,
+            "max_depth": 6,
+            "learning_rate": 0.2914960595005911,
+            "subsample": 0.9279310102065217,
+            "colsample_bytree": 0.7628094558740023,
+            "min_child_weight": 2,
+            "reg_lambda": 0.0012319639660227776
+        },
+        "f1_validacao": 0.6253503409726313,
+        "assinatura": "85c2aa196bd343258e416a96923742697dc5b95fa0efa6051f5c559e3a334171"
+    },
+    "0/10|26": {
+        "parametros": {
+            "n_estimators": 300,
+            "max_depth": 8,
+            "learning_rate": 0.08790816992743519,
+            "subsample": 0.7592726729774567,
+            "colsample_bytree": 0.7664674435920262,
+            "min_child_weight": 1,
+            "reg_lambda": 0.0033860555991340165
+        },
+        "f1_validacao": 0.631044802474643,
+        "assinatura": "e60db8469cf5bdc754db2dccc7fb7e5360678f5cef7f0470232c9a1d5a46a450"
+    },
+    "0/10|27": {
+        "parametros": {
+            "n_estimators": 100,
+            "max_depth": 8,
+            "learning_rate": 0.16699945166459215,
+            "subsample": 0.9421703087442882,
+            "colsample_bytree": 0.8199860002375755,
+            "min_child_weight": 1,
+            "reg_lambda": 0.07290509681283837
+        },
+        "f1_validacao": 0.6173497721061723,
+        "assinatura": "c4206e02c9f88fc6eee960936a2f26c49bf27fdeb18904e19d31945cf3fd7a05"
+    },
+    "0/10|28": {
+        "parametros": {
+            "n_estimators": 300,
+            "max_depth": 5,
+            "learning_rate": 0.20847472627080393,
+            "subsample": 0.8090159324566637,
+            "colsample_bytree": 0.7484210603260852,
+            "min_child_weight": 1,
+            "reg_lambda": 0.8759510116314699
+        },
+        "f1_validacao": 0.5924504030933437,
+        "assinatura": "b82a7d2f374a6e885e9b214cc38b62c7a6f928503f636322007f063dead7b22d"
+    },
+    "0/10|29": {
+        "parametros": {
+            "n_estimators": 300,
+            "max_depth": 6,
+            "learning_rate": 0.02851424841013748,
+            "subsample": 0.9649327010945676,
+            "colsample_bytree": 0.9138708178549536,
+            "min_child_weight": 1,
+            "reg_lambda": 0.06896632916264601
+        },
+        "f1_validacao": 0.5890468036704151,
+        "assinatura": "bd2c992c47642a6a0f83800688e4572f848ea8da88d4d8995c35eaef4f6dcff7"
+    },
+    "0/10|30": {
+        "parametros": {
+            "n_estimators": 100,
+            "max_depth": 8,
+            "learning_rate": 0.07599001017581833,
+            "subsample": 0.9854776137094362,
+            "colsample_bytree": 0.7204371949876308,
+            "min_child_weight": 1,
+            "reg_lambda": 0.0031163111760067986
+        },
+        "f1_validacao": 0.5898311679529885,
+        "assinatura": "99900c088de3b13fd1699d7dd0829c42e511ac188b41304bf717425206af5f78"
+    },
+    "0/10|31": {
+        "parametros": {
+            "n_estimators": 500,
+            "max_depth": 8,
+            "learning_rate": 0.021842101342212573,
+            "subsample": 0.863621295829148,
+            "colsample_bytree": 0.7193209290657974,
+            "min_child_weight": 1,
+            "reg_lambda": 0.3705961349284317
+        },
+        "f1_validacao": 0.5584865621026526,
+        "assinatura": "c7416cf610b17e0c9d5908b8e0c7eb03e2be5a7bb7e2f7b285f0005615baef95"
+    },
+    "0/10|32": {
+        "parametros": {
+            "n_estimators": 500,
+            "max_depth": 8,
+            "learning_rate": 0.010961133848414911,
+            "subsample": 0.8531719888514062,
+            "colsample_bytree": 0.7358139012631703,
+            "min_child_weight": 1,
+            "reg_lambda": 0.0248228349527478
+        },
+        "f1_validacao": 0.578319006683461,
+        "assinatura": "c00d280849609ff1e9963847611709941cbb1dc3cdf0ea3df918a171e3872ceb"
+    },
+    "0/10|33": {
+        "parametros": {
+            "n_estimators": 400,
+            "max_depth": 8,
+            "learning_rate": 0.022746733796749713,
+            "subsample": 0.841452687493614,
+            "colsample_bytree": 0.7484319797899561,
+            "min_child_weight": 1,
+            "reg_lambda": 0.006724644638610968
+        },
+        "f1_validacao": 0.5743897011558142,
+        "assinatura": "30925adf930cda89e54f021f98a08b7e841916b6aab298dd258f4b0972f7cfd8"
+    },
+    "0/20|2": {
+        "parametros": {
+            "n_estimators": 200,
+            "max_depth": 4,
+            "learning_rate": 0.026002266591486356,
+            "subsample": 0.8070977284813236,
+            "colsample_bytree": 0.8988295198637837,
+            "min_child_weight": 2,
+            "reg_lambda": 0.0935322082043568
+        },
+        "f1_validacao": 0.9673968183338431,
+        "assinatura": "db388cb99705caa15a4da822ab4fdd29cf59a5d846907a0051d70e407975ba88"
+    },
+    "0/20|3": {
+        "parametros": {
+            "n_estimators": 300,
+            "max_depth": 5,
+            "learning_rate": 0.22993014184398408,
+            "subsample": 0.7118978752806763,
+            "colsample_bytree": 0.7068461225916413,
+            "min_child_weight": 1,
+            "reg_lambda": 0.04793172003587826
+        },
+        "f1_validacao": 0.8669125499394414,
+        "assinatura": "605dcea1bb62d03bb6e7e0d2872c145ea9e8b5799bc2d91b0f06ef0bbf62737e"
+    },
+    "0/20|4": {
+        "parametros": {
+            "n_estimators": 200,
+            "max_depth": 7,
+            "learning_rate": 0.060657239242960334,
+            "subsample": 0.9656276055773885,
+            "colsample_bytree": 0.7682228298079594,
+            "min_child_weight": 1,
+            "reg_lambda": 0.016177626935165022
+        },
+        "f1_validacao": 0.7799295256416447,
+        "assinatura": "1187013a443c4b380fa09cec6a0813aa0e4e4c0f438d1258c3fda8f4fe90bd03"
+    },
+    "0/20|5": {
+        "parametros": {
+            "n_estimators": 200,
+            "max_depth": 8,
+            "learning_rate": 0.04977054845773435,
+            "subsample": 0.8489371782836503,
+            "colsample_bytree": 0.7302220062682505,
+            "min_child_weight": 2,
+            "reg_lambda": 0.00314655805415203
+        },
+        "f1_validacao": 0.7635779094959597,
+        "assinatura": "4788a1999f3f41bad4fb2b0a2317bfefd36dfbca44bdd6320f9c506d38d0c4a9"
+    },
+    "0/20|6": {
+        "parametros": {
+            "n_estimators": 100,
+            "max_depth": 8,
+            "learning_rate": 0.0780655956413721,
+            "subsample": 0.7804717694767116,
+            "colsample_bytree": 0.7674264006630722,
+            "min_child_weight": 1,
+            "reg_lambda": 0.0038502634896568624
+        },
+        "f1_validacao": 0.7547991393216432,
+        "assinatura": "3936a5efb5d4795969f07558753fecfa2b6658e58d42dcb540af1a60239a5957"
+    },
+    "0/20|7": {
+        "parametros": {
+            "n_estimators": 100,
+            "max_depth": 7,
+            "learning_rate": 0.1458530715704257,
+            "subsample": 0.8376154247275395,
+            "colsample_bytree": 0.8800760307635146,
+            "min_child_weight": 1,
+            "reg_lambda": 0.03766337786207218
+        },
+        "f1_validacao": 0.7498288086683808,
+        "assinatura": "b898a213f444669015906c5dc1aba360b2e1894b940f105df0b3c3637885b81d"
+    },
+    "0/20|8": {
+        "parametros": {
+            "n_estimators": 100,
+            "max_depth": 6,
+            "learning_rate": 0.14653223747423785,
+            "subsample": 0.8886388313882573,
+            "colsample_bytree": 0.8073072702475114,
+            "min_child_weight": 1,
+            "reg_lambda": 0.6421607874205035
+        },
+        "f1_validacao": 0.7151965610977761,
+        "assinatura": "65aff2d5f0791588270cb7c33810be49f5e4ca561fbf7198ba83c3dcc4f7bd73"
+    },
+    "0/20|9": {
+        "parametros": {
+            "n_estimators": 100,
+            "max_depth": 8,
+            "learning_rate": 0.15235092189221067,
+            "subsample": 0.9998438664815986,
+            "colsample_bytree": 0.8976535985862353,
+            "min_child_weight": 1,
+            "reg_lambda": 0.0035686073349584474
+        },
+        "f1_validacao": 0.6973026992543624,
+        "assinatura": "f6af0c7407112ebc1cbea557eae615d40d56f5a8cb3525cd15d30e3cbe9a2f54"
+    },
+    "0/20|10": {
+        "parametros": {
+            "n_estimators": 400,
+            "max_depth": 8,
+            "learning_rate": 0.019294404754416832,
+            "subsample": 0.785864928630059,
+            "colsample_bytree": 0.8016268927491121,
+            "min_child_weight": 1,
+            "reg_lambda": 0.046947310607576925
+        },
+        "f1_validacao": 0.6810962503544035,
+        "assinatura": "9f1de6e56ee1cdaec6dc8e7bc1bc07b2c4bbddcb8409d0e8f15ed046e6bbfd44"
+    },
+    "0/20|11": {
+        "parametros": {
+            "n_estimators": 200,
+            "max_depth": 5,
+            "learning_rate": 0.13644264235506645,
+            "subsample": 0.9854536094593849,
+            "colsample_bytree": 0.7140416705697257,
+            "min_child_weight": 2,
+            "reg_lambda": 0.01946111355812393
+        },
+        "f1_validacao": 0.7001519055977169,
+        "assinatura": "6b91caeb2230aaf10267cd9fa82338f5fe439b1b862297680252f9c0e160ab97"
+    },
+    "0/20|12": {
+        "parametros": {
+            "n_estimators": 400,
+            "max_depth": 6,
+            "learning_rate": 0.039123852454436336,
+            "subsample": 0.8334762909833369,
+            "colsample_bytree": 0.8990428786621533,
+            "min_child_weight": 1,
+            "reg_lambda": 0.3751237686736937
+        },
+        "f1_validacao": 0.6962648442342875,
+        "assinatura": "6f614fa66546bbf8f167136c7a1cda88f88040cac31024fca18e24063ffcf662"
+    },
+    "0/20|13": {
+        "parametros": {
+            "n_estimators": 500,
+            "max_depth": 4,
+            "learning_rate": 0.04881507250063452,
+            "subsample": 0.9892432309874857,
+            "colsample_bytree": 0.7130317909516751,
+            "min_child_weight": 2,
+            "reg_lambda": 0.8810062859426387
+        },
+        "f1_validacao": 0.6727961848990445,
+        "assinatura": "97ba4afa5212a999190fe06fd3f5ffe55af129215f93310ae00c616d6128ebb6"
+    },
+    "0/20|14": {
+        "parametros": {
+            "n_estimators": 100,
+            "max_depth": 7,
+            "learning_rate": 0.15825425280353472,
+            "subsample": 0.8984746597431396,
+            "colsample_bytree": 0.7576630599026135,
+            "min_child_weight": 2,
+            "reg_lambda": 4.775123091179149
+        },
+        "f1_validacao": 0.6666891751843861,
+        "assinatura": "763b464f207ae532b938a1788668468a94ff3b96bad704896320b3c542859b9c"
+    },
+    "0/20|15": {
+        "parametros": {
+            "n_estimators": 100,
+            "max_depth": 8,
+            "learning_rate": 0.20325055947274648,
+            "subsample": 0.927636666302776,
+            "colsample_bytree": 0.8728675103284512,
+            "min_child_weight": 1,
+            "reg_lambda": 0.029003785268036476
+        },
+        "f1_validacao": 0.6783583503073154,
+        "assinatura": "810ae6e7101b1f042209d0bd002780c9e2dd7a018b10337cc0d99a946b8ed944"
+    },
+    "0/20|16": {
+        "parametros": {
+            "n_estimators": 200,
+            "max_depth": 8,
+            "learning_rate": 0.03654346221900527,
+            "subsample": 0.7518295290985935,
+            "colsample_bytree": 0.7011063634585619,
+            "min_child_weight": 1,
+            "reg_lambda": 0.0020055487409064935
+        },
+        "f1_validacao": 0.6574348889055859,
+        "assinatura": "f1f6a62f6a3dc9bad3a9fd9633ca81f5d9482af5c605631be80a0e6f5a6c42ee"
+    },
+    "0/20|17": {
+        "parametros": {
+            "n_estimators": 200,
+            "max_depth": 7,
+            "learning_rate": 0.25049251782262216,
+            "subsample": 0.8901882937964966,
+            "colsample_bytree": 0.7266825603955035,
+            "min_child_weight": 1,
+            "reg_lambda": 0.008719682855560414
+        },
+        "f1_validacao": 0.6698391821443609,
+        "assinatura": "c825038188783136754a765c88783a6b7dcb433a33687a3826e1e2909fd79ced"
+    },
+    "0/20|18": {
+        "parametros": {
+            "n_estimators": 100,
+            "max_depth": 7,
+            "learning_rate": 0.13475061433298782,
+            "subsample": 0.8985324714646,
+            "colsample_bytree": 0.7288991244796205,
+            "min_child_weight": 2,
+            "reg_lambda": 0.001440042599443612
+        },
+        "f1_validacao": 0.6504767545409417,
+        "assinatura": "0ba0919ed050353aa2995cf8ba46da03638f55f555a0d71d75dfc7d10957b8fb"
+    },
+    "0/20|19": {
+        "parametros": {
+            "n_estimators": 400,
+            "max_depth": 3,
+            "learning_rate": 0.1862013355474112,
+            "subsample": 0.9198896233512238,
+            "colsample_bytree": 0.974143340165543,
+            "min_child_weight": 1,
+            "reg_lambda": 0.0061264307604350626
+        },
+        "f1_validacao": 0.6514519527863298,
+        "assinatura": "ab665d60c3fcd47e7bd7f90359845c8a04fc0bd45f3967eeed5aae48201c859b"
+    },
+    "0/20|20": {
+        "parametros": {
+            "n_estimators": 100,
+            "max_depth": 7,
+            "learning_rate": 0.09886689236925342,
+            "subsample": 0.8601358214098594,
+            "colsample_bytree": 0.7210685595826455,
+            "min_child_weight": 1,
+            "reg_lambda": 0.022885099798650443
+        },
+        "f1_validacao": 0.6310043526991345,
+        "assinatura": "c24bcb59ad97103295fbe15513d66714988bddbdfe04eae8d7549db486a8d95c"
+    },
+    "0/20|21": {
+        "parametros": {
+            "n_estimators": 300,
+            "max_depth": 8,
+            "learning_rate": 0.2804218214222295,
+            "subsample": 0.8764724502468376,
+            "colsample_bytree": 0.9261419868897016,
+            "min_child_weight": 1,
+            "reg_lambda": 0.008594085905909685
+        },
+        "f1_validacao": 0.6385109793431261,
+        "assinatura": "5c67985d0cde580b91eb7afec200dc0747fcffd710781801cb71c1920d92e398"
+    },
+    "0/20|22": {
+        "parametros": {
+            "n_estimators": 200,
+            "max_depth": 7,
+            "learning_rate": 0.025027686596410966,
+            "subsample": 0.9213077518064716,
+            "colsample_bytree": 0.8465002127226672,
+            "min_child_weight": 1,
+            "reg_lambda": 0.001012970900130974
+        },
+        "f1_validacao": 0.6387679227635964,
+        "assinatura": "4964c90f338859b4fc6ddf1665dd19b7847b4f975d0314af639471d6be5cff8b"
+    },
+    "0/20|23": {
+        "parametros": {
+            "n_estimators": 200,
+            "max_depth": 8,
+            "learning_rate": 0.020136880955077277,
+            "subsample": 0.9674276076268145,
+            "colsample_bytree": 0.711132152837442,
+            "min_child_weight": 1,
+            "reg_lambda": 0.1168667355112243
+        },
+        "f1_validacao": 0.6447885180414831,
+        "assinatura": "6212b0acbfcaf5fc33eae98aaa892b8ddd2a1073b9eeb4d5c6a1b932ea0c8931"
+    },
+    "0/20|24": {
+        "parametros": {
+            "n_estimators": 100,
+            "max_depth": 7,
+            "learning_rate": 0.0927716957548294,
+            "subsample": 0.9612508281682177,
+            "colsample_bytree": 0.7271780658089358,
+            "min_child_weight": 1,
+            "reg_lambda": 0.006375226073478886
+        },
+        "f1_validacao": 0.6356698233526468,
+        "assinatura": "8d8f4248f752744878ff80ea4941eaa94c7564c1e72083e55591ad2689022e14"
+    },
+    "0/20|25": {
+        "parametros": {
+            "n_estimators": 200,
+            "max_depth": 7,
+            "learning_rate": 0.13113418997880455,
+            "subsample": 0.7829576890380794,
+            "colsample_bytree": 0.9062656868276674,
+            "min_child_weight": 1,
+            "reg_lambda": 0.007661688842520561
+        },
+        "f1_validacao": 0.627117920027074,
+        "assinatura": "7000a2883b7a7dade9da67479cfec816d7add3010aef440315ce11c30adb5960"
+    },
+    "0/20|26": {
+        "parametros": {
+            "n_estimators": 200,
+            "max_depth": 8,
+            "learning_rate": 0.048753015702207914,
+            "subsample": 0.71218232406641,
+            "colsample_bytree": 0.8032907364892552,
+            "min_child_weight": 1,
+            "reg_lambda": 0.03170811754300672
+        },
+        "f1_validacao": 0.6114143504165848,
+        "assinatura": "44d84da6757933bb8635e05d964e12e9519e118cf0fba8008faa3a6e962644f6"
+    },
+    "0/20|27": {
+        "parametros": {
+            "n_estimators": 200,
+            "max_depth": 8,
+            "learning_rate": 0.02994517079032143,
+            "subsample": 0.821607779790676,
+            "colsample_bytree": 0.9199876767017428,
+            "min_child_weight": 1,
+            "reg_lambda": 0.0010473264639463146
+        },
+        "f1_validacao": 0.5900436792998237,
+        "assinatura": "b0afd6ae321cafeede1c7678b60c00637dd48bf26879c578ce6d8c41a4687922"
+    },
+    "0/20|28": {
+        "parametros": {
+            "n_estimators": 500,
+            "max_depth": 7,
+            "learning_rate": 0.018840752244176077,
+            "subsample": 0.8770137604871475,
+            "colsample_bytree": 0.8141072960904969,
+            "min_child_weight": 1,
+            "reg_lambda": 0.09573622690787259
+        },
+        "f1_validacao": 0.5744524529238303,
+        "assinatura": "2689388d26c5e1238d2df5d0806402b937df433a9836c5f421982447fb2377e6"
+    },
+    "0/20|29": {
+        "parametros": {
+            "n_estimators": 100,
+            "max_depth": 8,
+            "learning_rate": 0.2241916720631146,
+            "subsample": 0.8800081841435045,
+            "colsample_bytree": 0.7237703943682494,
+            "min_child_weight": 1,
+            "reg_lambda": 0.22034292828839733
+        },
+        "f1_validacao": 0.5713930031029429,
+        "assinatura": "a5e50cb27584d0d352b90b16abb12235f0f8138fae98f77db6a1c4020142711d"
+    },
+    "0/20|30": {
+        "parametros": {
+            "n_estimators": 100,
+            "max_depth": 7,
+            "learning_rate": 0.1696289635052816,
+            "subsample": 0.9224279590651352,
+            "colsample_bytree": 0.7613816894421559,
+            "min_child_weight": 1,
+            "reg_lambda": 0.0016569142615227152
+        },
+        "f1_validacao": 0.5651090039217221,
+        "assinatura": "fde1b005178501b20b2f7e563af0969cc177deeeee48e63f78c9a2074890fc0f"
+    },
+    "0/20|31": {
+        "parametros": {
+            "n_estimators": 300,
+            "max_depth": 8,
+            "learning_rate": 0.03158420879675494,
+            "subsample": 0.96670349249162,
+            "colsample_bytree": 0.7534774733401713,
+            "min_child_weight": 2,
+            "reg_lambda": 0.02902827443176247
+        },
+        "f1_validacao": 0.5640449621027033,
+        "assinatura": "7ef198f66eb08b48acb0bc8903e38ddae6532b815362313a2302d3867c8a6f93"
+    },
+    "0/20|32": {
+        "parametros": {
+            "n_estimators": 100,
+            "max_depth": 8,
+            "learning_rate": 0.06869546364318617,
+            "subsample": 0.9262826611549014,
+            "colsample_bytree": 0.8411527852967903,
+            "min_child_weight": 1,
+            "reg_lambda": 0.0023833276930686816
+        },
+        "f1_validacao": 0.5604429670272145,
+        "assinatura": "f32ea1d264cbf3781ebf8a474d5fb54b9ee0c0a905519fe4a6ab677f73bd7478"
+    },
+    "0/20|33": {
+        "parametros": {
+            "n_estimators": 300,
+            "max_depth": 7,
+            "learning_rate": 0.010449048408967734,
+            "subsample": 0.931229271776367,
+            "colsample_bytree": 0.9358084398704881,
+            "min_child_weight": 1,
+            "reg_lambda": 0.0034274960731334593
+        },
+        "f1_validacao": 0.5693048035954213,
+        "assinatura": "3346a34f445108aa13c0fac38bc1c04329f3dbb717655376a414f99ffeda0a4d"
+    }
+}

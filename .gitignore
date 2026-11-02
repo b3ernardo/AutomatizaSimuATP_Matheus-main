@@ -15,6 +15,10 @@ PipelineBernardoSilvaC1P1/TodosCartoesRodadosSemRetirarCargas/
 
 # Parquets gerados
 PipelineBernardoSilvaC1P1/Parquets/
+PipelineBernardoSilvaC1P1/Parquets16/
+PipelineBernardoSilvaC1P1/DatasetAtributos/
+PipelineBernardoSilvaC1P1/DatasetAtributos16/
+PipelineBernardoSilvaC1P1/Otimizacao/DatasetAtributosMedidores16/
 
 # Arquivos grandes e dados gerados
 *.zip

@@ -11,7 +11,7 @@ from sklearn.model_selection import train_test_split
 # ============================================================
 # Diretórios
 DIRETORIO_PIPELINE = Path(__file__).resolve().parent
-DIRETORIO_DATASETS = DIRETORIO_PIPELINE / "DatasetAtributos"
+DIRETORIO_DATASETS = DIRETORIO_PIPELINE / "DatasetAtributos16"
 
 # Janelas temporais em relação ao TTOQ
 JANELAS = [
