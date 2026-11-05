@@ -15,7 +15,7 @@
             "p": 1
         },
         "f1_validacao": 0.8761209506615956,
-        "assinatura": "2e5fcc3df7fb100c031b4c90a7dff8a5d36eebfb3009134187e9950dc4ea365f"
+        "assinatura": "8d5eaddfd896bdca0ea702d846707b613ee7ce22c7ca01833576ddf9c8c7e436"
     },
     "0/5|4": {
         "parametros": {
@@ -24,7 +24,7 @@
             "p": 1
         },
         "f1_validacao": 0.7959763791178867,
-        "assinatura": "34fdb3ac958aecd1242bb0407bd3a7e43f91f963c74b3c71bee28ae38b57ed8e"
+        "assinatura": "b21f34c1711aa8c129ef63b36319821c68f1add501e36ccbe1bb2744d125abc4"
     },
     "0/5|5": {
         "parametros": {
@@ -33,7 +33,7 @@
             "p": 1
         },
         "f1_validacao": 0.7787746723832691,
-        "assinatura": "c32516adacf19fb326e7b808397ddf1a0b0b871d1b0a683ab9ce9796a2936982"
+        "assinatura": "0fcefff6c218b809f203ca61b51366b78f8c07e9225234fee5d10f41aab5844b"
     },
     "0/5|6": {
         "parametros": {
@@ -42,7 +42,7 @@
             "p": 1
         },
         "f1_validacao": 0.7728261368023209,
-        "assinatura": "21ae5ef4de8b6c99bbd624629f14d59ca0707c15a0e14743edfcbd61a4ed8f1a"
+        "assinatura": "dcc967020581ea2aa0bce16dc3925fa86152ed81fa2a031b6aa1a774a2aa2b8b"
     },
     "0/5|7": {
         "parametros": {
@@ -51,7 +51,7 @@
             "p": 1
         },
         "f1_validacao": 0.7637015818745193,
-        "assinatura": "eeb65420de8e9e34ffde5cd8c8f8d9ffe26a8442988da3d2bd533bd07cf93780"
+        "assinatura": "95939bd2fb0c809d667e5901276ae5e163eb2be5f92770c6cbe99cae23a67acc"
     },
     "0/5|8": {
         "parametros": {
@@ -60,7 +60,7 @@
             "p": 1
         },
         "f1_validacao": 0.7407382999043329,
-        "assinatura": "da339f3926fd2286c19edb0f2915f2970331295a6e4042925148f85dcb04e99a"
+        "assinatura": "63bfaec601605efc9b2304760595ceccb12ec26ce1d25e75b9f36091e0dc1a42"
     },
     "0/5|9": {
         "parametros": {
@@ -69,7 +69,7 @@
             "p": 1
         },
         "f1_validacao": 0.7063928813045455,
-        "assinatura": "de66d868a036b943b86349e653994d6e62f907df1ebfe6956d7d4d7f4cc7ae0a"
+        "assinatura": "46acc9ef7c03531125fbcf96257bbdd0600b96612b56da6640420e1e55e82ed1"
     },
     "0/5|10": {
         "parametros": {
@@ -78,7 +78,7 @@
             "p": 1
         },
         "f1_validacao": 0.6987244606346701,
-        "assinatura": "57976854ca1aec71f99905eeb536a82e599d0cf024721a20ade6c6cb13707bfa"
+        "assinatura": "29783c32eafb335e9d9bf6002046ff1ce5831512e9c13351310a32db10fc3cd2"
     },
     "0/5|11": {
         "parametros": {
@@ -87,7 +87,7 @@
             "p": 1
         },
         "f1_validacao": 0.7135997954959235,
-        "assinatura": "0fb69012ac1da2849e25fd0eb73555ca65f34826ea8d11d194ea692b4f9961fc"
+        "assinatura": "4cd93c9034179cd54c6ab1b893405ea12fa6587685d6f50da3414725c1998c8f"
     },
     "0/5|12": {
         "parametros": {
@@ -96,7 +96,7 @@
             "p": 1
         },
         "f1_validacao": 0.710632782564327,
-        "assinatura": "87e7758dad4fd64b5d97feee50a042e5a5bcb5ab58c10b432813eb72e0df43ca"
+        "assinatura": "bda41ed3efc5892de0e3ecb9a9be9e6565429d6ec9c8584a3f3585cded979f0d"
     },
     "0/5|13": {
         "parametros": {
@@ -105,7 +105,7 @@
             "p": 1
         },
         "f1_validacao": 0.685062924637841,
-        "assinatura": "88c973cd74eefcebf625c66579052ce034315d1cc2212c802a4307ab514794af"
+        "assinatura": "1f7679ec075aa189ed746c6bed0d6f35d83b3918cb39f78822185ae9388d3e21"
     },
     "0/5|14": {
         "parametros": {
@@ -114,7 +114,7 @@
             "p": 1
         },
         "f1_validacao": 0.6773847962933855,
-        "assinatura": "01f42f72e71bf92ee2cc075cfef8629f23a78ed42b9dfbb59a83e122d4bd5d7a"
+        "assinatura": "a67d7fe4c1bca4e9b4c6eae3b386d2aa885442c6cd56d864440d11b66a131e0f"
     },
     "0/5|15": {
         "parametros": {
@@ -123,7 +123,7 @@
             "p": 1
         },
         "f1_validacao": 0.6830303620878242,
-        "assinatura": "957414f46644390e2d982e998d50c2b21b623edb6755d0bebe3938654a480ae1"
+        "assinatura": "d278ee5cdda0d8c3235b6cbac9a90431bbb4258c65b1e454a514a825f872c46b"
     },
     "0/5|16": {
         "parametros": {
@@ -132,7 +132,7 @@
             "p": 1
         },
         "f1_validacao": 0.6596940245379959,
-        "assinatura": "fe59bd05469eb764a04d97deac828125e5e347b4f014975f1b8bfe74ff5170bc"
+        "assinatura": "bc09406509fef66e34551b62110e259b20f1b40f8198bb3693c03467589ea271"
     },
     "0/5|17": {
         "parametros": {
@@ -141,7 +141,7 @@
             "p": 1
         },
         "f1_validacao": 0.660039636533605,
-        "assinatura": "6f26c2e7f2a7cda1bedf2f730deed7a904f7d2741cb99d2f0e1e3204e9ee604c"
+        "assinatura": "9e973d23c6e55c6167b232f657ec30723ac41fafba7237cc92b65abbacf46d0c"
     },
     "0/5|18": {
         "parametros": {
@@ -150,7 +150,7 @@
             "p": 1
         },
         "f1_validacao": 0.671354948434123,
-        "assinatura": "06fde60584b3bc27e51eb787943622dab9369ec6c172a7349f6cbf916da37f9e"
+        "assinatura": "62203399d5a444eef17169e304f637d8126fe0cf0e3be5c4043bff1ff9f5465b"
     },
     "0/5|19": {
         "parametros": {
@@ -159,7 +159,7 @@
             "p": 1
         },
         "f1_validacao": 0.666016242841357,
-        "assinatura": "024c50782572db23f98f3de43e00cbd7468f826f224d5cf0774c66d44c3b739d"
+        "assinatura": "7117b1f345181c4e90bb8bad4dd2febce94bb425e256ca5c21f839c6f9cc74a5"
     },
     "0/5|20": {
         "parametros": {
@@ -168,7 +168,7 @@
             "p": 1
         },
         "f1_validacao": 0.6308334069886984,
-        "assinatura": "43c284ef2a60295c98469881962c9f19f8e78047edeff07e77280fcafc71829a"
+        "assinatura": "a48e942ec6f865742930d0d645c4cc4ed2c53e14abe5f6f5426cc2b76d66de2d"
     },
     "0/5|21": {
         "parametros": {
@@ -177,7 +177,7 @@
             "p": 1
         },
         "f1_validacao": 0.6420607547644183,
-        "assinatura": "5d36a70c9b99d7f40e6771eff6e70862f45d9a92c356a76bcffc2d69a63514a0"
+        "assinatura": "f3bbb215b4fe8a1417d0cd664059a5d8abf3f91793a9f9d109ba5d7e786036eb"
     },
     "0/5|22": {
         "parametros": {
@@ -186,7 +186,7 @@
             "p": 1
         },
         "f1_validacao": 0.6492347298101102,
-        "assinatura": "d7a2cbc57f072242028f47eb24f56dddc918841d47b490f50fbab24a31a31fa0"
+        "assinatura": "e3fedf9bcd073cf8d02b58348adc9ac00416285b896b5143a6089516d33e8971"
     },
     "0/5|23": {
         "parametros": {
@@ -195,7 +195,7 @@
             "p": 1
         },
         "f1_validacao": 0.6499208828640435,
-        "assinatura": "328788520aeec78e57c00607adc1453db8918c7e9a19e42f819ee2931e9a90fa"
+        "assinatura": "54a87bf59f9fdb906690021e9f8c2fbc0a7346f715861fce966ffea2f0690290"
     },
     "0/5|24": {
         "parametros": {
@@ -204,7 +204,7 @@
             "p": 1
         },
         "f1_validacao": 0.6380172771490813,
-        "assinatura": "7c389f1c36801961115f1ce036626e519d5ea3727e65e96ef01bebe1a58ee19c"
+        "assinatura": "6c59acfcb38cb8790527a5c30f344432452c360f5bb89cadbeafe5b456229f7a"
     },
     "0/5|25": {
         "parametros": {
@@ -213,7 +213,7 @@
             "p": 1
         },
         "f1_validacao": 0.6280395848276721,
-        "assinatura": "7d7b9f10c4b6c66af7f618e260b1b618a2a19eef512407c29afecb6010563167"
+        "assinatura": "500c0b416d8db886b788bf709b40fd273cf3079956e06ea49cb1986f1f6c9c1b"
     },
     "0/5|26": {
         "parametros": {
@@ -222,7 +222,7 @@
             "p": 1
         },
         "f1_validacao": 0.6271453232634125,
-        "assinatura": "b8745d02a12c1b20c66c3a31b1b5eca29fbc7985e362f088edb28601baf8c170"
+        "assinatura": "b4f06b088a2e80553559e8c107f8776eff9e9c02b099cbbff93724632ade6993"
     },
     "0/5|27": {
         "parametros": {
@@ -231,7 +231,7 @@
             "p": 1
         },
         "f1_validacao": 0.6268495718054927,
-        "assinatura": "c73fec9dbb3d694b3ef2b61b95a07d971781e466c71e7ea943c44d8016c2f6b2"
+        "assinatura": "86350d2fc8eb2b0203587c75757e1f05e73cbb375319b46274c00b125e41a5e7"
     },
     "0/5|28": {
         "parametros": {
@@ -240,7 +240,7 @@
             "p": 1
         },
         "f1_validacao": 0.5880352178970714,
-        "assinatura": "2012f446048b4a4dab106ace7fd4f6cadc48c17840b74e0780cfc9ff13c38f8e"
+        "assinatura": "5ba1df6827ce216afd92bc36de786ff7275200f72199f863b63781ddd279e51d"
     },
     "0/5|29": {
         "parametros": {
@@ -249,7 +249,7 @@
             "p": 1
         },
         "f1_validacao": 0.5677052420107849,
-        "assinatura": "4d8454b1a55c4b31e994114aba2ebf083a7ee7baf3fa9474e5c772ddf5a58f4b"
+        "assinatura": "616bac0a39168283cd2f156c2ff8d8ddeb7b6398bcef2bd973c88711451f55c5"
     },
     "0/5|30": {
         "parametros": {
@@ -258,7 +258,7 @@
             "p": 1
         },
         "f1_validacao": 0.5607843274706457,
-        "assinatura": "f701eb0e11b30bae84ace2e089db46aa8cbc3d901b903cc40004657e0db6b336"
+        "assinatura": "0bdc566f894f4e9ff3f74afed792a7e0dbcadc1a5de092588e63565a9a971a59"
     },
     "0/5|31": {
         "parametros": {
@@ -267,7 +267,7 @@
             "p": 1
         },
         "f1_validacao": 0.5613251182684587,
-        "assinatura": "bdc3c20c7ed2d4443dec4b1807c0d6926dcfcbc39894a0d19319829d06a7cbb3"
+        "assinatura": "f3cd9f4ef0f692ee8d7a3560338aa3281e5128e9380808073c7ca6c027b77bfe"
     },
     "0/5|32": {
         "parametros": {
@@ -276,7 +276,7 @@
             "p": 1
         },
         "f1_validacao": 0.5633661330463767,
-        "assinatura": "4ecb795ba5839ea29502edb3dbaadd118729f3fd27c314afedd40e79c52b7e5d"
+        "assinatura": "62217c7cea4ca9508af75cd7de5f18335948eb9f44c0dd89b88204d6ad3c2113"
     },
     "0/5|33": {
         "parametros": {
@@ -285,7 +285,7 @@
             "p": 1
         },
         "f1_validacao": 0.558463788455345,
-        "assinatura": "37abb4d8c343c515094d8cec9b2324c5396bab4d8bf74428e5028ad9b327598a"
+        "assinatura": "d973324ffebe6e800d1305e7cd6add2079d73dd2cbe40cc036bffcd015fbbe7f"
     },
     "0/10|2": {
         "parametros": {
@@ -294,7 +294,7 @@
             "p": 1
         },
         "f1_validacao": 0.9676465818998882,
-        "assinatura": "bbb03c2be688b47a50de265152eb834d8b15dd63aaed80afb23318a77facec0d"
+        "assinatura": "03de77cdf2afe6c133be0eecc3cebc109803a15d728ec62331d8d0b840f89e9e"
     },
     "0/10|3": {
         "parametros": {
@@ -303,7 +303,7 @@
             "p": 1
         },
         "f1_validacao": 0.8769998555406453,
-        "assinatura": "b4e788ccb12c4733b593591ba95d857dc733672419d77d65cc85aeb9a0aa0d16"
+        "assinatura": "b1ff2317c7db7311a7019f98652c1899dae941c062b566206a7d3e18c9efc362"
     },
     "0/10|4": {
         "parametros": {
@@ -312,7 +312,7 @@
             "p": 1
         },
         "f1_validacao": 0.7839646587732227,
-        "assinatura": "5cdbcee682a5027afd6e59811147f3b11b37ba245ef858e4f6030b3885b3fe99"
+        "assinatura": "e25fdfc1a58587c70d0a2df5140552fce9bff15c4ad1d20310342a8261b0b180"
     },
     "0/10|5": {
         "parametros": {
@@ -321,7 +321,7 @@
             "p": 1
         },
         "f1_validacao": 0.7430507315792546,
-        "assinatura": "1d5a2a874aee9005258699c229d413d66c2d20284c8de6885e918370cb46ec78"
+        "assinatura": "62de0498b109d7ae92ec93ee6225d760498813d6687e2e7be900e783ce8cfddc"
     },
     "0/10|6": {
         "parametros": {
@@ -330,25 +330,25 @@
             "p": 1
         },
         "f1_validacao": 0.7329792221677126,
-        "assinatura": "b8e92afb6537591619c3345a0c2bcd2efa6e2acc5f389c709ed0a08949043f3a"
+        "assinatura": "046f951770ee157fdc00ae9188707897f7b6792f449a1686ff13c3844009a3d0"
     },
     "0/10|7": {
-        "parametros": {
-            "n_neighbors": 1,
-            "weights": "uniform",
-            "p": 1
-        },
-        "f1_validacao": 0.7351966587943766,
-        "assinatura": "b7293af5e5bb1af995b2b705c4aee8dc61be08d48cc2a6289f282cfdc682a07d"
-    },
-    "0/10|8": {
         "parametros": {
             "n_neighbors": 2,
             "weights": "distance",
             "p": 1
         },
+        "f1_validacao": 0.7358901222627217,
+        "assinatura": "3f85377f98df64f19ea1427db9f9600db6d3ccb54b5556e5567bceac5cac4986"
+    },
+    "0/10|8": {
+        "parametros": {
+            "n_neighbors": 1,
+            "weights": "uniform",
+            "p": 1
+        },
         "f1_validacao": 0.6869023302056322,
-        "assinatura": "9480e660b7820d5e687109a37bf164aeee65ddc5da3875758ab7f13b9e1d4064"
+        "assinatura": "f44e2148c601d013b63192d365aeeb49ffba6269ef2df309c12ef3eed5ab24de"
     },
     "0/10|9": {
         "parametros": {
@@ -357,7 +357,7 @@
             "p": 1
         },
         "f1_validacao": 0.6679521421773653,
-        "assinatura": "250b93739bec9a02532bb60c18b536cb59c98770958766f781798010e83675bc"
+        "assinatura": "1621270991a51503a81b30dc34c5ababb757b1a82f701df4a25749ea2057ceb8"
     },
     "0/10|10": {
         "parametros": {
@@ -365,8 +365,8 @@
             "weights": "distance",
             "p": 1
         },
-        "f1_validacao": 0.6575156367022643,
-        "assinatura": "04c25d8137829b80eac32dcb789d7370e3107861c083a10a51a8a132a2565a63"
+        "f1_validacao": 0.6574961549177328,
+        "assinatura": "d7d8530b7df9ce16ed0d542d7cf30d53f3dc8153916fa60dcc4b79e516d60dd6"
     },
     "0/10|11": {
         "parametros": {
@@ -374,17 +374,17 @@
             "weights": "uniform",
             "p": 1
         },
-        "f1_validacao": 0.6833401740216052,
-        "assinatura": "954b65076458dbadb3b9db188f59802ef89db18e74aaf45b2c128a522a6c2dca"
+        "f1_validacao": 0.6832535939350253,
+        "assinatura": "fe2bcf4d8d896a0a7f3f744150cd7922084c3a6ca74a6e8dedb4d64fcc7dfc87"
     },
     "0/10|12": {
         "parametros": {
-            "n_neighbors": 1,
-            "weights": "uniform",
+            "n_neighbors": 2,
+            "weights": "distance",
             "p": 1
         },
-        "f1_validacao": 0.6817753145313269,
-        "assinatura": "c7932104ca1766fbce68c1df1f5db9d0d63b9f236d0999360b9d9e9e4fcdd373"
+        "f1_validacao": 0.6817159574551631,
+        "assinatura": "692666f15c6715fe6b8513d1468e2f5a20d9b1dcc33a4b2ded7a26fbbee448ef"
     },
     "0/10|13": {
         "parametros": {
@@ -393,7 +393,7 @@
             "p": 1
         },
         "f1_validacao": 0.6503007608695202,
-        "assinatura": "ca2d00830b1a6527f1ecde4a5d02b991526fbfe4ee4866874be136e3015c1e5e"
+        "assinatura": "f22acc63374279ded2eda4546329a592b78bc8a258519ff672b211910994f250"
     },
     "0/10|14": {
         "parametros": {
@@ -402,7 +402,7 @@
             "p": 1
         },
         "f1_validacao": 0.6528789303125266,
-        "assinatura": "eea8e8f609c5387dfa8a359e4de2f9ff426ee1b447942fb23446e97ec4550318"
+        "assinatura": "888cda7662d85f89c607f2ec55fd610544ced6d665ecae070a5460933557374b"
     },
     "0/10|15": {
         "parametros": {
@@ -411,7 +411,7 @@
             "p": 1
         },
         "f1_validacao": 0.6574003930306195,
-        "assinatura": "b7f1c52070bb0ee9119a7d390dc2ce37a76229064f039656f1877443b719e774"
+        "assinatura": "a2c09c1f83ee66d5bee958cae758932ef3a7c07a135ac2b024ec711a882728f4"
     },
     "0/10|16": {
         "parametros": {
@@ -420,7 +420,7 @@
             "p": 1
         },
         "f1_validacao": 0.6455051864538859,
-        "assinatura": "5fd93210d9c6b0383ee33f23dea9e21af26e05e85ab6a49fe1535f882ecd649b"
+        "assinatura": "87fc6e57be542e859e51e766b5b6719fe462151cb31265464e4f4862c1e3a36a"
     },
     "0/10|17": {
         "parametros": {
@@ -429,7 +429,7 @@
             "p": 1
         },
         "f1_validacao": 0.6297970208968355,
-        "assinatura": "ca68310da9629fafb6cf21aed8a2fd2fabd1a53809e925e3566e0f9d8d5b4fd5"
+        "assinatura": "5f41bb8f32eedcf9ff4571fe62805cb0b3627924fc41108cef6b74a25a78952f"
     },
     "0/10|18": {
         "parametros": {
@@ -438,7 +438,7 @@
             "p": 1
         },
         "f1_validacao": 0.6319377820219122,
-        "assinatura": "ee633a257f44e2c913caf88dc057619e34f8c64cbf34e02fd9cce7e3c2879694"
+        "assinatura": "201b9b1f39063ff22b00e0b9c83c87fb2234c54aaa7d66092ccbae1ae5807164"
     },
     "0/10|19": {
         "parametros": {
@@ -447,7 +447,7 @@
             "p": 1
         },
         "f1_validacao": 0.634235825356833,
-        "assinatura": "b600a4ed8ad5c42bb20bb2e95f8ea0cf4dc154805a9755cd71292cf589eba7da"
+        "assinatura": "31e7bf5004c8b937b318cd14f2d10f81b43457069b5a65cf0715e69b21545d61"
     },
     "0/10|20": {
         "parametros": {
@@ -456,7 +456,7 @@
             "p": 1
         },
         "f1_validacao": 0.6003248680635557,
-        "assinatura": "6249222aa4734f00b8b3f55dadc4b544eda20c5112fdf7287cc4380e49b725ae"
+        "assinatura": "e47a3497df0575cc6373e469c38de36daad7930c30802edfeb3766c1d06d6a10"
     },
     "0/10|21": {
         "parametros": {
@@ -465,7 +465,7 @@
             "p": 1
         },
         "f1_validacao": 0.6146356287218495,
-        "assinatura": "cc8bf7b8e000fb1081f695926a08227b6a11809eb8280c057deed2547c877e8e"
+        "assinatura": "eb6ab6df6f88633ec564ca2d7715e4c9b457eeb8a4b251091aa2e060693a25ac"
     },
     "0/10|22": {
         "parametros": {
@@ -474,7 +474,7 @@
             "p": 1
         },
         "f1_validacao": 0.6011456142176084,
-        "assinatura": "2a495e4b19fc0b34fb0460f817a4b185154620b68b58d62105be498fcaf4fec7"
+        "assinatura": "f86f7f985bfba0f6f5b376c734965e82982d1430d7b35aded1d6f51aba650b8c"
     },
     "0/10|23": {
         "parametros": {
@@ -483,7 +483,7 @@
             "p": 1
         },
         "f1_validacao": 0.5972496229201822,
-        "assinatura": "c5b5e3cfb18868783a4ac76500b652e63066eaf029c879e68a405e5405e46806"
+        "assinatura": "89a74abdafd092d837133a75c1ad7c64618e73a98b600c791ec5f0fcd705a42d"
     },
     "0/10|24": {
         "parametros": {
@@ -492,7 +492,7 @@
             "p": 1
         },
         "f1_validacao": 0.5894733827715657,
-        "assinatura": "9537f05bf9ba01cd76bc3d944168c934560d2b7d5eb2fca0e74e81d7026ddc33"
+        "assinatura": "04e884f55ffd33535038fb3159932dac7d64c85f29fc76ad6f0e3d28aacf85a2"
     },
     "0/10|25": {
         "parametros": {
@@ -501,7 +501,7 @@
             "p": 1
         },
         "f1_validacao": 0.5755073677612638,
-        "assinatura": "ef2d8e8b35a770a24b7c2272fefe4fbbaa329bc8515ad1f62873973c46348557"
+        "assinatura": "45a79a261ef3e8480afd5eff632b09d40c6bdba467e3a16d2ad33379e58301a9"
     },
     "0/10|26": {
         "parametros": {
@@ -510,7 +510,7 @@
             "p": 1
         },
         "f1_validacao": 0.5711858132316928,
-        "assinatura": "15fde5ee49d640803e58e4778a08f272af1ccfaeff759c2c8e2049151bf6f41d"
+        "assinatura": "b2ea256ef237ed0152a5b63dfb1464d54362e1f0774d1bb995667840d51044ac"
     },
     "0/10|27": {
         "parametros": {
@@ -518,8 +518,8 @@
             "weights": "uniform",
             "p": 1
         },
-        "f1_validacao": 0.5692339820602147,
-        "assinatura": "4bdca61566a7bcf6b531b037467d51406793aa39bcea868360001395027383ea"
+        "f1_validacao": 0.569371156271463,
+        "assinatura": "ba26790260d42e46afba9c87e4f6c64410f2c9ecbe9a83195cce685e395d613d"
     },
     "0/10|28": {
         "parametros": {
@@ -528,7 +528,7 @@
             "p": 1
         },
         "f1_validacao": 0.5287632007695938,
-        "assinatura": "f1b8b5ca2068168f7ae02175c0e41d49828957cd83201f0091b14f976f5cb032"
+        "assinatura": "208641b765bb57d55a6bc5f4bc323741b341d4d5ce6d7704667c77b329a5544b"
     },
     "0/10|29": {
         "parametros": {
@@ -537,7 +537,7 @@
             "p": 1
         },
         "f1_validacao": 0.527394968081619,
-        "assinatura": "4ad5758ddf10e4bd005728c93fdda147edaf1ea43c063041fd08a4f0bb1c6b97"
+        "assinatura": "17913fb6b3fefd65c2ca3fa120e75eac341595de2ae7ee4ef64bc25cbca01fde"
     },
     "0/10|30": {
         "parametros": {
@@ -545,8 +545,8 @@
             "weights": "uniform",
             "p": 1
         },
-        "f1_validacao": 0.5173056360230408,
-        "assinatura": "da1a66141896cc291239f0e3d4b4d7d14a3fb9a5fa367602c8eb80931c9ad9c5"
+        "f1_validacao": 0.5168611915785963,
+        "assinatura": "4e776fd35554f0faa9113de418cfa23c1f53ee14aeb9ae91c91a4a7e5d79c7d2"
     },
     "0/10|31": {
         "parametros": {
@@ -555,7 +555,7 @@
             "p": 1
         },
         "f1_validacao": 0.5108559570902462,
-        "assinatura": "38cfe77be5d1b664be310504a4f16514b14ed886e2d65fdafdb3aa313dd60d00"
+        "assinatura": "c46e91e9acb5677f2c93c7414ec0d9ac1352fb3ffc093aaee73ef749fd048b39"
     },
     "0/10|32": {
         "parametros": {
@@ -563,8 +563,8 @@
             "weights": "uniform",
             "p": 1
         },
-        "f1_validacao": 0.5209946183394201,
-        "assinatura": "9d1c5b1a43007c5c166c768d16cd995f51484a25cfce97cc021b43c0d069baf8"
+        "f1_validacao": 0.5208322806770823,
+        "assinatura": "f4eeae9d6b0e9ed6cb4555c7224b1feebd3780c8ed715a43fcd66c9b0d629595"
     },
     "0/10|33": {
         "parametros": {
@@ -572,8 +572,8 @@
             "weights": "uniform",
             "p": 1
         },
-        "f1_validacao": 0.5147112993228952,
-        "assinatura": "461c41443f2c18fd3c0af9ee34542819723c47b48679fe853b9deb024b0a63b2"
+        "f1_validacao": 0.5147693023220745,
+        "assinatura": "a57d7e09f129e30c2f1524f157a6f5cc95f4e256c0d0f35845667a90686c97a1"
     },
     "0/20|2": {
         "parametros": {
@@ -582,7 +582,7 @@
             "p": 1
         },
         "f1_validacao": 0.9627602978566037,
-        "assinatura": "32e817e2881f7d2f6f6b029cca08e724798a90a5bff3d744e5b7f698a4653dfa"
+        "assinatura": "cf3810a596066d94b555ea1ca3609af79fd9e9144d0895ff0afb75d4b4ba7e5c"
     },
     "0/20|3": {
         "parametros": {
@@ -591,7 +591,7 @@
             "p": 1
         },
         "f1_validacao": 0.842818139142999,
-        "assinatura": "c68730866175b8105ba6b266963a43db5f880daccda756a15d407b1b466f3c68"
+        "assinatura": "3cc981b54fc21803c8f6ba7b0142648fa34806c10b790000b4454623ea6e04d4"
     },
     "0/20|4": {
         "parametros": {
@@ -600,7 +600,7 @@
             "p": 2
         },
         "f1_validacao": 0.7315612742957357,
-        "assinatura": "3259963faa879e8b32d323983217988c5e71d32333fb89ec7f755ea991d41067"
+        "assinatura": "7c810fffa37c084c0e41a083ed1e27e15a40e6141e818d0f0f0b64c6788cafac"
     },
     "0/20|5": {
         "parametros": {
@@ -609,7 +609,7 @@
             "p": 1
         },
         "f1_validacao": 0.6887050261311682,
-        "assinatura": "29d9a1025bdf517207449bda855579241c5bde37f7f64003d5c1d83fca77f3af"
+        "assinatura": "ab759f0ba3dbabd79e015d3916a2a4d5f970821f168b7741afd0f77765c04052"
     },
     "0/20|6": {
         "parametros": {
@@ -618,7 +618,7 @@
             "p": 1
         },
         "f1_validacao": 0.6768962214030763,
-        "assinatura": "c0d159c1854ee9a013b57bd9f4fff83ff353c4b10261df535df9a8e65f49d9d0"
+        "assinatura": "d372fbb664e6127291d503477bb288c641d819db076c0e43d4b8c55e3ec7127f"
     },
     "0/20|7": {
         "parametros": {
@@ -627,7 +627,7 @@
             "p": 1
         },
         "f1_validacao": 0.6798895252209164,
-        "assinatura": "815b9a35d5a2e44e24601c0c61fc3487e0efb4f8e4abc2ae147e64a96b4ebdcc"
+        "assinatura": "45905f9de4a69823bfa8e68b228dec997ccb82b415c4a19c29da866fa395e98e"
     },
     "0/20|8": {
         "parametros": {
@@ -636,7 +636,7 @@
             "p": 1
         },
         "f1_validacao": 0.6202677626538643,
-        "assinatura": "c3583ee5efbf0fdbe8133b9061b192061568428aa5a938ed11493ace416fb0da"
+        "assinatura": "ddfa09c5011d48c8d728c4d14e761fcf67682611d596cd9a70734399e8e16677"
     },
     "0/20|9": {
         "parametros": {
@@ -645,7 +645,7 @@
             "p": 1
         },
         "f1_validacao": 0.6007889116396063,
-        "assinatura": "bd35a4f21fb32787b5cd8eb54e7844d9e395e7ba58fd37d111244f0843c91625"
+        "assinatura": "fc4f906f3854337cf5cf3521819e809ffcb77e61baefae5749685363e1151575"
     },
     "0/20|10": {
         "parametros": {
@@ -654,7 +654,7 @@
             "p": 1
         },
         "f1_validacao": 0.6063417497273689,
-        "assinatura": "55f7a4427a39185eaaa6659cb1068dff70641091560e581a2f91d81e163e5642"
+        "assinatura": "ad061d3efaa002505af6893a9be1eb293356629f3fbc1c59af67fda7c712eb4f"
     },
     "0/20|11": {
         "parametros": {
@@ -663,7 +663,7 @@
             "p": 1
         },
         "f1_validacao": 0.6314521057250289,
-        "assinatura": "f04f1ccdf1926b54dff0ff9adc40d94cb573f0f1a4abbbc14b866edc351f3872"
+        "assinatura": "a2120445080c9d168ebf4b2d0b7dd2483705494da462c85c4b204ded345d1acb"
     },
     "0/20|12": {
         "parametros": {
@@ -672,7 +672,7 @@
             "p": 1
         },
         "f1_validacao": 0.6328610804846564,
-        "assinatura": "0732fd0ad58282e01ddaec19d3177aac931808d2126b0c16cc9e6c06afa69ad1"
+        "assinatura": "0a1bbd4cbb3111734346d565493b811cbca77213cee61c9ca28db7a1484f56dd"
     },
     "0/20|13": {
         "parametros": {
@@ -681,7 +681,7 @@
             "p": 1
         },
         "f1_validacao": 0.6021569194562928,
-        "assinatura": "060268bfabe7cfa8cb3e81877f5a9ee604f87f0010486cc48c614586606a507d"
+        "assinatura": "bb61f991e82f84993508e9e2c297f266c444189f6a41e2d4e56e42b4ca738c78"
     },
     "0/20|14": {
         "parametros": {
@@ -690,7 +690,7 @@
             "p": 1
         },
         "f1_validacao": 0.5875931688180873,
-        "assinatura": "3097b93d38284a99b8fa4628ccc8336ce9c2361a5bb448d9e0209b528d253e8c"
+        "assinatura": "d6d2e8203e22c55da61cd75d3b1f4450a8e35d4960340e1256580f8dbdbbf257"
     },
     "0/20|15": {
         "parametros": {
@@ -699,7 +699,7 @@
             "p": 1
         },
         "f1_validacao": 0.5809275292180038,
-        "assinatura": "e615ebdf58808976d096ba87956bb0e2a6429db1560886cab5815ea6a3c55b91"
+        "assinatura": "f9f254a63e58d64baab8cbd5d0ab56c3b0c148f6fff853fdd44de3a3e87fb217"
     },
     "0/20|16": {
         "parametros": {
@@ -708,7 +708,7 @@
             "p": 1
         },
         "f1_validacao": 0.5600203505023125,
-        "assinatura": "a39eb6fc180acf03ac72ff635a5ad3a5e5830d32025cda2e09045c9d88375c2b"
+        "assinatura": "985f199801f546a00223636d88c08f141b9af660e5e82ad486c3677299dd9eef"
     },
     "0/20|17": {
         "parametros": {
@@ -717,7 +717,7 @@
             "p": 1
         },
         "f1_validacao": 0.5483345849574028,
-        "assinatura": "a9a6f6a02a2c0f18e7517f4932fc7d1d5b6de5e7bb1d5a0b1ab4ebf69b794682"
+        "assinatura": "b59bb7d6901588862a6ae8019c84806717261883c356fd5611a72ff6ff844ff6"
     },
     "0/20|18": {
         "parametros": {
@@ -726,7 +726,7 @@
             "p": 1
         },
         "f1_validacao": 0.544120989173118,
-        "assinatura": "c0aae5b50b0c55dedf27064f43ff977b840b749d805a9766c3cde51cec82d094"
+        "assinatura": "3420435dd5ee20200c95cce724acc72c0115c224a50ad791863ea3ca20188016"
     },
     "0/20|19": {
         "parametros": {
@@ -735,7 +735,7 @@
             "p": 1
         },
         "f1_validacao": 0.5297068392464244,
-        "assinatura": "478ff6092ca644cdde146d6889530fdcce10c1f9e9329d642b25891eea6f4cec"
+        "assinatura": "521d4ce0c4f8fe74e777a0c19eff69f197eb930c7584bc8ae9bffb6492acf9c1"
     },
     "0/20|20": {
         "parametros": {
@@ -744,7 +744,7 @@
             "p": 1
         },
         "f1_validacao": 0.5117151660217945,
-        "assinatura": "f59539ca859f29aad662b4efcc3a085697fe0b38c5008fa6d460b54263d69e90"
+        "assinatura": "172057f9d77d5c8137789a3c2a8ca6104fc688098e79a80029088541e14ba086"
     },
     "0/20|21": {
         "parametros": {
@@ -753,7 +753,7 @@
             "p": 1
         },
         "f1_validacao": 0.5200469927107094,
-        "assinatura": "94fcc1875eae744e421241753fbc6c8c3f47d8c797ed23720880de2140888917"
+        "assinatura": "2da104929dbaa74edc70f01c68b1e14d98c9975f0422f53fcf57b1a56e4c3bb8"
     },
     "0/20|22": {
         "parametros": {
@@ -762,7 +762,7 @@
             "p": 1
         },
         "f1_validacao": 0.5053058755896298,
-        "assinatura": "ad317978e31a7773dda06361bbb42fd9d9acd2fe6284da6fa0b517a19c3c17ef"
+        "assinatura": "02452d8b36095e9302e30134e8691da96807686006d33ae2b27c4acb5c4dd005"
     },
     "0/20|23": {
         "parametros": {
@@ -771,7 +771,7 @@
             "p": 1
         },
         "f1_validacao": 0.49215406472566414,
-        "assinatura": "6b792ba44d76cdacb3cec20f250425c8c077c4e325f0cbd8d3a16b0325cea92e"
+        "assinatura": "45d2ba5c3bd80b3d6c9bdb9fcf41576a6d291c7143709f1ca311fe29651a52b6"
     },
     "0/20|24": {
         "parametros": {
@@ -780,7 +780,7 @@
             "p": 1
         },
         "f1_validacao": 0.49021656308341877,
-        "assinatura": "7ce4fb1905a4d9e609ab614761e03e5e4a1a7b412621316dacddb60dcdd45f8b"
+        "assinatura": "5b2d1a9f57fa8923750672980a8cedae4921e12f1b4955b4945719d896219b27"
     },
     "0/20|25": {
         "parametros": {
@@ -789,7 +789,7 @@
             "p": 1
         },
         "f1_validacao": 0.4763383550402346,
-        "assinatura": "81a80c417a00b4452ea132f981fdae5807d6d333fc3495d0d34a4acf75131cf8"
+        "assinatura": "6608952834e206525fcb9d8bb18b64747989d6a2f6034396af5bf35dc0e938fa"
     },
     "0/20|26": {
         "parametros": {
@@ -798,7 +798,7 @@
             "p": 1
         },
         "f1_validacao": 0.46558980686828716,
-        "assinatura": "adc37d966b95c21a43c298e46384b8ee6b93e0f65b6f0dbd2772c6470ddac1d5"
+        "assinatura": "7fde29cad277fe4286e75c89e657b78305ab729f9022ba904d29f3da4f17bc86"
     },
     "0/20|27": {
         "parametros": {
@@ -807,7 +807,7 @@
             "p": 1
         },
         "f1_validacao": 0.4632772065985112,
-        "assinatura": "c7829891bcde635fecbdf1c493fc20efd7f880301468f3206949fa092a850b20"
+        "assinatura": "35f5c6e56b1e89d826bdb3a6c1af39fec769bfed20d3dfa0f82cb5b0334ccde5"
     },
     "0/20|28": {
         "parametros": {
@@ -816,7 +816,7 @@
             "p": 1
         },
         "f1_validacao": 0.45349224085010764,
-        "assinatura": "6af32ec51dc2632acb16efd9aa21505cc933d5b9189518ae66c0b9b32547919e"
+        "assinatura": "3abbc6b178592ca1eee9f725d55d899698b32a7159171dd384854ebf228462c9"
     },
     "0/20|29": {
         "parametros": {
@@ -825,7 +825,7 @@
             "p": 1
         },
         "f1_validacao": 0.45336743893710496,
-        "assinatura": "bfd6ede9ae07f255823babe61a35c8f8851b94661b9fd35de978f6b1f7035be1"
+        "assinatura": "da68a34075b28f3acae403c607148030ea89f9f34b3e2f7a3eac27e59a9e92a9"
     },
     "0/20|30": {
         "parametros": {
@@ -834,7 +834,7 @@
             "p": 1
         },
         "f1_validacao": 0.438873740829572,
-        "assinatura": "7c3df8e197ac3b7ed2270509b882d1c09d5470dcd1eea54afcac3a8b09f19f63"
+        "assinatura": "c4c705e97acfc1d13201776f15f4d81ca094e0d9226967085c683fda1c1462d2"
     },
     "0/20|31": {
         "parametros": {
@@ -843,7 +843,7 @@
             "p": 1
         },
         "f1_validacao": 0.4515017298528412,
-        "assinatura": "4ec7a1ef5ca1de3a8a027e2c5147b737794e0766b7cc7b6fa9d339b73e1facdf"
+        "assinatura": "04fa1319fff3f12fb53198f2b2f82886eed78e4dd4ed9af95268c6a3e9ddbe10"
     },
     "0/20|32": {
         "parametros": {
@@ -852,7 +852,7 @@
             "p": 1
         },
         "f1_validacao": 0.4373194245690334,
-        "assinatura": "db4a7e23e6fc214794fb4eb8b083b93f22ab0a6f2a73f84ba570ad3d1ab7d7fb"
+        "assinatura": "f2b03297e616d05bb4623f9fc03aad44f18789304e111c7bfe6b1ef6c95cfa7f"
     },
     "0/20|33": {
         "parametros": {
@@ -861,6 +861,6 @@
             "p": 1
         },
         "f1_validacao": 0.428179364352531,
-        "assinatura": "00edf1667342f0fd034b96e652a973663bd7c928d1534c73f03bed7eb19ae8cd"
+        "assinatura": "346a09a336b558bc54129f5a933e5ca5fc2788f2d12793ffcc42d4d4c209cb53"
     }
 }

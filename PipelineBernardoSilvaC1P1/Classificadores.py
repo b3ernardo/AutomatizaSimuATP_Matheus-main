@@ -94,7 +94,7 @@ MODO_HIPERPARAMETROS = {
 # Se RF/RL foram gerados em outra máquina com versões diferentes, pode haver
 # incompatibilidade mesmo com os mesmos dados. Só use False após CONFERIR
 # manualmente que datasets, partições, atributos e protocolo são idênticos.
-VALIDAR_ASSINATURA_CACHE = False
+VALIDAR_ASSINATURA_CACHE = True
 
 # Ao escolher "otimizar", guarda cópia do JSON anterior antes de substituí-lo.
 CRIAR_BACKUP_AO_REOTIMIZAR = True
