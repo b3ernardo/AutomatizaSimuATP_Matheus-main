@@ -1,0 +1,29 @@
+{
+    "semente": 42,
+    "tamanho_populacao": 10,
+    "numero_geracoes": 3,
+    "numero_regioes": 8,
+    "janela": "0/5",
+    "numero_folds": 5,
+    "avaliacoes_rf": 30,
+    "avaliacoes_cache": 0,
+    "solucoes_finais": [
+        {
+            "medidores": [
+                "M05",
+                "M11",
+                "M14",
+                "M16",
+                "M19",
+                "M24",
+                "M25",
+                "M27",
+                "M29"
+            ],
+            "numero_medidores": 9,
+            "macro_f1": 0.9437420242168428,
+            "f1": 9,
+            "f2": 0.056257975783157166
+        }
+    ]
+}

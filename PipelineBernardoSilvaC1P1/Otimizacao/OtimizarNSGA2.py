@@ -1,58 +1,57 @@
-import hashlib
 import json
 import sys
-import time
 from pathlib import Path
-
-import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import f1_score
 from sklearn.model_selection import StratifiedKFold, train_test_split
 from pymoo.core.problem import ElementwiseProblem
-from pymoo.core.sampling import Sampling
-from pymoo.core.repair import Repair
-from pymoo.algorithms.moo.nsga2 import NSGA2
-from pymoo.operators.crossover.pntx import TwoPointCrossover
+from pymoo.operators.sampling.rnd import BinaryRandomSampling
+from pymoo.operators.crossover.ux import UniformCrossover
 from pymoo.operators.mutation.bitflip import BitflipMutation
+from pymoo.algorithms.moo.nsga2 import NSGA2
 from pymoo.optimize import minimize
-
-# Permite importar as regionalizações da pasta principal da pipeline
-DIRETORIO_PIPELINE = Path(__file__).resolve().parent.parent
-sys.path.insert(0, str(DIRETORIO_PIPELINE))
-from Regionalizacoes import REGIONALIZACOES
-
+from pymoo.visualization.scatter import Scatter
 
 # ============================================================
-# Configurações
+# CONFIGURAÇÕES
 # ============================================================
 DIRETORIO_OTIMIZACAO = Path(__file__).resolve().parent
+# Diretório do pipeline original
+DIRETORIO_PIPELINE = DIRETORIO_OTIMIZACAO.parent
+# Diretório para salvar os resultados das execuções
+DIRETORIO_RESULTADOS = DIRETORIO_OTIMIZACAO / "Resultados"
 
-CAMINHO_DATASET_ORIGINAL = (
-    DIRETORIO_PIPELINE / "DatasetAtributos16" / "atributos_0_5.parquet"
-)
+sys.path.insert(0, str(DIRETORIO_PIPELINE))
 
-CAMINHO_DATASET_MEDIDORES = (
-    DIRETORIO_OTIMIZACAO / "DatasetAtributosMedidores16" / "atributos_0_5.parquet"
-)
+from Regionalizacoes import REGIONALIZACOES
 
-CAMINHO_CACHE_RF = DIRETORIO_PIPELINE / "hiperparametros_rf_16.json"
-DIRETORIO_RESULTADOS = DIRETORIO_OTIMIZACAO / "ResultadosNSGA2"
+NUMERO_REGIOES = 8 # número de regiões
+NOME_JANELA = "0/5" # janela
+PROPORCAO_TESTE = 0.20 # proporção destinada ao conjunto de teste
+SEMENTE = 42 # semente para reprodutibilidade
+NUMERO_FOLDS = 5 # número de folds da validação cruzada
 
-NUMERO_REGIOES = 8
-NOME_JANELA = "0/5"
-TEST_SIZE = 0.20
-RANDOM_STATE = 42
-N_ESTIMATORS = 500
-N_FOLDS = 5
+TAMANHO_POPULACAO = 100 # tamanho da população do NSGA-II
+NUMERO_GERACOES = 100 # número de gerações do NSGA-II
 
-MAXIMO_MEDIDORES = 7
-DESEMPENHO_MINIMO = 0.90
-TAMANHO_POPULACAO = 100
-NUMERO_GERACOES = 50
-SEMENTE = 42
+# Caminho do parquet com os dados dos atributos para cada medidor
+CAMINHO_DATASET = DIRETORIO_OTIMIZACAO / "DatasetAtributosMedidores16" / "atributos_0_5.parquet"
+# Caminho do json com os hiperparâmetros otimizados para a RF
+CAMINHO_HIPERPARAMETROS = DIRETORIO_PIPELINE / "Hiperparametros" / "hiperparametros_rf_16.json"
+# Caminho do json do cache de avaliações do RF
+CAMINHO_CACHE = DIRETORIO_OTIMIZACAO / "CacheAvaliacoes" / "cache_avaliacoes.json"
 
+# Medidores que podem ser utilizados nas configurações
+MEDIDORES_DISPONIVEIS = [
+    "SUB", "M02", "M03", "M04", "M05", "M06", "M07", "M08",
+    "M11", "M14", "M16", "M17", "M19", "M20", "M21", "M22",
+    "M24", "M25", "M26", "M27", "M28", "M29", "M32", "M33", 
+    "M34"
+]
+
+# Atributos definidos na etapa de seleção
 ATRIBUTOS_DE_INTERESSE = [
     "soma_modulo_corrente_H1_maximo",
     "soma_modulo_corrente_H1_media",
@@ -62,772 +61,382 @@ ATRIBUTOS_DE_INTERESSE = [
     "soma_modulo_tensao_H1_minimo",
 ]
 
-# Uma posição binária para cada barra do IEEE 34.
-MEDIDORES_TODOS = [
-    "SUB",
-    "M02", "M03", "M04", "M05", "M06", "M07", "M08",
-    "M09", "M10", "M11", "M12", "M13", "M14", "M15",
-    "M16", "M17", "M18", "M19", "M20", "M21", "M22",
-    "M23", "M24", "M25", "M26", "M27", "M28", "M29",
-    "M30", "M31", "M32", "M33", "M34",
-]
+# ============================================================
+# CACHE DAS AVALIAÇÕES
+# ============================================================
+def carregar_cache():
+    # Se o arquivo ainda não existe, inicia com um cache vazio
+    if not CAMINHO_CACHE.is_file():
+        return {}
 
-# Medidores não disponíveis no sistema.
-# As posições correspondentes permanecem sempre iguais a zero.
-MEDIDORES_INDISPONIVEIS = {
-    "M09", "M10", "M12", "M13", "M15",
-    "M18", "M23", "M30", "M31",
-}
+    # Carrega as avaliações realizadas em execuções anteriores
+    with CAMINHO_CACHE.open("r", encoding="utf-8") as arquivo:
+        return json.load(arquivo)
+
+def salvar_cache(cache):
+    # Cria a pasta do cache caso ela ainda não exista
+    CAMINHO_CACHE.parent.mkdir(parents=True, exist_ok=True)
+
+    # Salva o cache atualizado
+    with CAMINHO_CACHE.open("w", encoding="utf-8") as arquivo:
+        json.dump(cache, arquivo, indent=4, ensure_ascii=False)
 
 # ============================================================
-# Preparação dos dados e dos hiperparâmetros
+# CARREGAMENTO DOS HIPERPARÂMETROS
 # ============================================================
 def carregar_hiperparametros():
-    if not CAMINHO_CACHE_RF.is_file():
-        raise FileNotFoundError(
-            f"JSON de hiperparâmetros não encontrado: {CAMINHO_CACHE_RF}"
-        )
+    if not CAMINHO_HIPERPARAMETROS.is_file():
+        raise FileNotFoundError(f"Arquivo não encontrado: {CAMINHO_HIPERPARAMETROS}")
 
-    with CAMINHO_CACHE_RF.open("r", encoding="utf-8") as arquivo:
+    # Abre o arquivo JSON e transforma seu conteúdo em um objeto Python
+    with CAMINHO_HIPERPARAMETROS.open("r", encoding="utf-8") as arquivo:
         cache = json.load(arquivo)
 
-    chave = f"{NOME_JANELA}|{NUMERO_REGIOES}"
-    registro = cache.get(chave)
+    chave = f"{NOME_JANELA}|{NUMERO_REGIOES}" # "0/5|8"
 
-    if not isinstance(registro, dict) or not isinstance(
-        registro.get("parametros"), dict
-    ):
-        raise ValueError(
-            f"Hiperparâmetros não encontrados no JSON para a chave '{chave}'."
-        )
+    if chave not in cache:
+        raise ValueError(f"Hiperparâmetros não encontrados para '{chave}'.")
 
-    # Reutiliza os hiperparâmetros otimizados originalmente para a SUB.
-    # A assinatura antiga não deve ser comparada, pois as colunas mudaram.
-    return registro["parametros"]
-
+    # Pega os hiperparâmetros para a respectiva janela e quantidade de regiões
+    return cache[chave]["parametros"]
 
 # ============================================================
-# Avaliação das combinações de medidores
+# DECODIFICAÇÃO DA CONFIGURAÇÃO DE MEDIDORES
 # ============================================================
-class AvaliadorMedidores:
-    def __init__(self):
-        if not CAMINHO_DATASET_ORIGINAL.is_file():
-            raise FileNotFoundError(
-                f"Dataset original não encontrado: {CAMINHO_DATASET_ORIGINAL}"
-            )
+# Decodifica o vetor binário x para obter os medidores selecionados
+def decodificar_medidores(x):
+    medidores = []
 
-        if not CAMINHO_DATASET_MEDIDORES.is_file():
-            raise FileNotFoundError(
-                f"Dataset dos medidores não encontrado: {CAMINHO_DATASET_MEDIDORES}"
-            )
+    # Supondo MEDIDORES_DISPONIVEIS = ["SUB", "M02", "M03", "M04", "M05"] e x = [0, 1, 0, 1, 0], o zip faz:
+    # ("SUB", 0)
+    # ("M02", 1)
+    # ("M03", 0)
+    # ("M04", 1)
+    # ("M05", 0)
+    for medidor, selecionado in zip(MEDIDORES_DISPONIVEIS, x):
+        if selecionado:
+            medidores.append(medidor)
 
-        df_original = pd.read_parquet(CAMINHO_DATASET_ORIGINAL)
-        df_medidores = pd.read_parquet(CAMINHO_DATASET_MEDIDORES)
-
-        for nome, df in [
-            ("original", df_original),
-            ("medidores", df_medidores),
-        ]:
-            if df["arquivo"].duplicated().any():
-                raise ValueError(
-                    f"Há simulações duplicadas no dataset {nome}."
-                )
-
-        if set(df_original["arquivo"]) != set(df_medidores["arquivo"]):
-            raise ValueError(
-                "Os datasets original e dos medidores não contêm "
-                "as mesmas simulações."
-            )
-
-        # Reproduz o split do ClassificadorFinal.py:
-        # mesma ordem do dataset original, estratificação por barra
-        # e mesma semente.
-        arquivos_treino, arquivos_teste = train_test_split(
-            df_original["arquivo"],
-            test_size=TEST_SIZE,
-            random_state=RANDOM_STATE,
-            stratify=df_original["barra"],
-        )
-
-        self.arquivos_treino = list(arquivos_treino)
-        self.arquivos_teste = list(arquivos_teste)
-
-        self.df_treino = (
-            df_medidores.set_index("arquivo").loc[self.arquivos_treino]
-        )
-
-        df_original_treino = (
-            df_original.set_index("arquivo").loc[self.arquivos_treino]
-        )
-
-        if not np.array_equal(
-            self.df_treino["barra"].to_numpy(dtype=int),
-            df_original_treino["barra"].to_numpy(dtype=int),
-        ):
-            raise ValueError(
-                "As barras não coincidem entre os dois datasets."
-            )
-
-        # Mantém a regionalização do classificador original.
-        mapa_barra_regiao = {}
-        regioes = REGIONALIZACOES[NUMERO_REGIOES]
-
-        if len(regioes) != NUMERO_REGIOES:
-            raise ValueError(
-                "Número incorreto de regiões na regionalização."
-            )
-
-        for regiao, barras in regioes.items():
-            for barra in barras:
-                if barra in mapa_barra_regiao:
-                    raise ValueError(
-                        f"Barra {barra} presente em mais de uma região."
-                    )
-
-                mapa_barra_regiao[barra] = regiao
-
-        self.barras_treino = self.df_treino["barra"].astype(int)
-        self.y_treino = self.barras_treino.map(mapa_barra_regiao)
-
-        if (
-            self.y_treino.isna().any()
-            or self.y_treino.nunique() != NUMERO_REGIOES
-        ):
-            raise ValueError(
-                "Regionalização incompatível com as barras do treinamento."
-            )
-
-        # Os mesmos folds são reutilizados para todas as combinações.
-        validacao = StratifiedKFold(
-            n_splits=N_FOLDS,
-            shuffle=True,
-            random_state=RANDOM_STATE,
-        )
-
-        self.folds = list(
-            validacao.split(self.df_treino, self.barras_treino)
-        )
-
-        self.hiperparametros = carregar_hiperparametros()
-        self.regioes = sorted(regioes)
-        self.cache_avaliacoes = {}
-
-        # Identifica automaticamente os medidores disponíveis.
-        self.medidores_disponiveis = sorted({
-            coluna.split("_", 1)[0]
-            for coluna in df_medidores.columns
-            if any(
-                coluna.endswith("_" + atributo)
-                for atributo in ATRIBUTOS_DE_INTERESSE
-            )
-        })
-
-        # Coloca a SUB na primeira posição.
-        if "SUB" in self.medidores_disponiveis:
-            self.medidores_disponiveis.remove("SUB")
-            self.medidores_disponiveis.insert(0, "SUB")
-
-        # Verifica se os medidores encontrados no dataset correspondem
-        # exatamente às posições consideradas disponíveis.
-        medidores_esperados = [
-            medidor
-            for medidor in MEDIDORES_TODOS
-            if medidor not in MEDIDORES_INDISPONIVEIS
-        ]
-
-        if set(self.medidores_disponiveis) != set(medidores_esperados):
-            faltantes = (
-                set(medidores_esperados)
-                - set(self.medidores_disponiveis)
-            )
-
-            extras = (
-                set(self.medidores_disponiveis)
-                - set(medidores_esperados)
-            )
-
-            raise ValueError(
-                "Os medidores disponíveis no dataset não coincidem "
-                f"com a configuração esperada. Faltantes: {sorted(faltantes)}. "
-                f"Extras: {sorted(extras)}."
-            )
-
-        # Verifica se cada medidor possui os seis atributos.
-        for medidor in self.medidores_disponiveis:
-            colunas = [
-                f"{medidor}_{atributo}"
-                for atributo in ATRIBUTOS_DE_INTERESSE
-            ]
-
-            faltantes = set(colunas) - set(df_medidores.columns)
-
-            if faltantes:
-                raise ValueError(
-                    f"Atributos ausentes para {medidor}: "
-                    f"{sorted(faltantes)}"
-                )
-
-        print(f"Treinamento: {len(self.arquivos_treino)} simulações")
-        print(f"Teste reservado: {len(self.arquivos_teste)} simulações")
-        print(
-            f"Representação binária: {len(MEDIDORES_TODOS)} posições"
-        )
-        print(
-            f"Medidores disponíveis ({len(self.medidores_disponiveis)}): "
-            f"{self.medidores_disponiveis}"
-        )
-        print(
-            f"Medidores indisponíveis ({len(MEDIDORES_INDISPONIVEIS)}): "
-            f"{sorted(MEDIDORES_INDISPONIVEIS)}"
-        )
-        print(
-            f"Validação cruzada: {N_FOLDS} folds, "
-            "estratificados por barra"
-        )
-        print(
-            f"Hiperparâmetros: JSON original, "
-            f"chave '{NOME_JANELA}|{NUMERO_REGIOES}'"
-        )
-
-    def avaliar(self, medidores):
-        if not medidores:
-            raise ValueError(
-                "É necessário selecionar pelo menos um medidor."
-            )
-
-        if len(medidores) != len(set(medidores)):
-            raise ValueError(
-                "Há medidores repetidos na combinação."
-            )
-
-        desconhecidos = (
-            set(medidores) - set(self.medidores_disponiveis)
-        )
-
-        if desconhecidos:
-            raise ValueError(
-                f"Medidores desconhecidos: {sorted(desconhecidos)}"
-            )
-
-        # Ordenação canônica para reutilizar avaliações.
-        chave = tuple(
-            medidor
-            for medidor in self.medidores_disponiveis
-            if medidor in medidores
-        )
-
-        if chave in self.cache_avaliacoes:
-            return self.cache_avaliacoes[chave]
-
-        colunas = [
-            f"{medidor}_{atributo}"
-            for medidor in chave
-            for atributo in ATRIBUTOS_DE_INTERESSE
-        ]
-
-        X = self.df_treino[colunas].to_numpy(dtype=float)
-        y = self.y_treino.to_numpy()
-
-        if not np.isfinite(X).all():
-            raise ValueError(
-                f"NaN ou infinito nos atributos da combinação {chave}."
-            )
-
-        resultados_folds = []
-
-        for indices_treino, indices_validacao in self.folds:
-            modelo = RandomForestClassifier(
-                n_estimators=N_ESTIMATORS,
-                random_state=RANDOM_STATE,
-                n_jobs=-1,
-            )
-
-            modelo.set_params(**self.hiperparametros)
-
-            # Garante consistência entre as avaliações.
-            modelo.set_params(
-                random_state=RANDOM_STATE,
-                n_jobs=-1,
-            )
-
-            modelo.fit(
-                X[indices_treino],
-                y[indices_treino],
-            )
-
-            y_predito = modelo.predict(
-                X[indices_validacao]
-            )
-
-            f1 = f1_score(
-                y[indices_validacao],
-                y_predito,
-                average="macro",
-                labels=self.regioes,
-                zero_division=0,
-            )
-
-            resultados_folds.append(float(f1))
-
-        resultado = {
-            "medidores": list(chave),
-            "n_medidores": len(chave),
-            "f1_macro_medio": float(np.mean(resultados_folds)),
-            "f1_macro_desvio": float(np.std(resultados_folds)),
-            "f1_por_fold": resultados_folds,
-        }
-
-        self.cache_avaliacoes[chave] = resultado
-
-        return resultado
-
+    # x = [0, 1, 0, 1, 0] -> medidores = ["M02", "M04"]
+    return medidores
 
 # ============================================================
-# Cache persistente das avaliações do Random Forest
+# PREPARAÇÃO DOS DADOS
 # ============================================================
-def calcular_assinatura():
-    """Impede reutilizar resultados quando dados ou configurações mudam."""
+def preparar_dados():
+    if not CAMINHO_DATASET.is_file():
+        raise FileNotFoundError(f"Dataset não encontrado: {CAMINHO_DATASET}")
 
-    hash_objeto = hashlib.sha256()
+    # Lê o parquet com os atributos de cada medidor
+    df = pd.read_parquet(CAMINHO_DATASET)
 
-    configuracao = (
-        f"rf={N_ESTIMATORS}|folds={N_FOLDS}|seed={RANDOM_STATE}|"
-        f"regioes={NUMERO_REGIOES}|maximo={MAXIMO_MEDIDORES}|"
-        "objetivo=macro_f1_medio|versao=1"
+    # --------------------------------------------------------
+    # Split treino/teste
+    # --------------------------------------------------------
+    # Para cada barra, 80% das simulações (arquivos) vão para treinamento e 20% para teste
+    arquivos_treino, arquivos_teste = train_test_split(
+        df["arquivo"],
+        test_size=PROPORCAO_TESTE, # define 80/20
+        random_state=SEMENTE, # fixa a aleatoriedade, garantindo que a divisão seja sempre a mesma
+        stratify=df["barra"],
     )
 
-    hash_objeto.update(configuracao.encode("utf-8"))
+    # Pega só a parte de treinamento
+    df_treino = df.set_index("arquivo").loc[list(arquivos_treino)]
 
-    for caminho in [
-        CAMINHO_DATASET_ORIGINAL,
-        CAMINHO_DATASET_MEDIDORES,
-        CAMINHO_CACHE_RF,
-    ]:
-        with caminho.open("rb") as arquivo:
-            for bloco in iter(
-                lambda: arquivo.read(1024 * 1024),
-                b"",
-            ):
-                hash_objeto.update(bloco)
+    # --------------------------------------------------------
+    # Regionalização
+    # --------------------------------------------------------
+    regioes = REGIONALIZACOES[NUMERO_REGIOES] # busca a regionalização
+    mapa_barra_regiao = {}
 
-    return hash_objeto.hexdigest()
+    # Mapeia qual é a região de cada barra: mapa_barra_regiao = {2: "R1", 3: "R1", ..., 31: "R8"}
+    for nome_regiao, barras in regioes.items():
+        for barra in barras:
+            if barra in mapa_barra_regiao:
+                raise ValueError(f"A barra {barra} pertence a mais de uma região.")
 
+            mapa_barra_regiao[barra] = nome_regiao
 
-class CacheAvaliacoes:
-    def __init__(self, avaliador):
-        self.avaliador = avaliador
-        self.caminho = (
-            DIRETORIO_RESULTADOS / "avaliacoes.jsonl"
-        )
+    # --------------------------------------------------------
+    # Variável resposta: região de ocorrência da falta
+    # --------------------------------------------------------
+    # Pega, para cada simulação de treinamento, a barra onde a falta ocorreu
+    barras_treino = df_treino["barra"].astype(int)
 
-        self.assinatura = calcular_assinatura()
-        self.novas_avaliacoes = 0
+    # Substitui cada número de barra pela região correspondente
+    y_treino = barras_treino.map(mapa_barra_regiao)
 
-        recuperadas = 0
+    if y_treino.isna().any():
+        raise ValueError("Existem barras sem região definida.")
 
-        if self.caminho.is_file():
-            with self.caminho.open(
-                "r", encoding="utf-8"
-            ) as arquivo:
+    if y_treino.nunique() != NUMERO_REGIOES:
+        raise ValueError("Nem todas as regiões estão presentes no treinamento.")
 
-                for linha in arquivo:
-                    if not linha.strip():
-                        continue
+    # --------------------------------------------------------
+    # 5-fold Cross-Validation
+    # --------------------------------------------------------
+    # Divide as simulações de treinamento em k partes
+    validacao = StratifiedKFold(
+        n_splits=NUMERO_FOLDS,
+        shuffle=True,
+        random_state=SEMENTE,
+    )
 
-                    registro = json.loads(linha)
+    # Gera os índices de treinamento e validação de cada partição
+    # Em cada partição, 4/5 fica para treinamento e 1/5 para validação
+    # O StratifiedKFold ajuda a manter a proporção de barras em cada partição
+    particoes = list(validacao.split(df_treino, barras_treino))
 
-                    if registro.get("assinatura") != self.assinatura:
-                        continue
+    # --------------------------------------------------------
+    # Hiperparâmetros da Random Forest
+    # --------------------------------------------------------
+    hiperparametros = carregar_hiperparametros()
 
-                    resultado = registro["resultado"]
-                    chave = tuple(resultado["medidores"])
+    # --------------------------------------------------------
+    # Informações
+    # --------------------------------------------------------
+    print("=" * 70)
+    print("BASE DE AVALIAÇÃO")
+    print("=" * 70)
+    print(f"Simulações totais: {len(df)}")
+    print(f"Treinamento: {len(arquivos_treino)}")
+    print(f"Teste reservado: {len(arquivos_teste)}")
+    print(f"Regiões: {NUMERO_REGIOES}")
+    print(f"Validação cruzada: {NUMERO_FOLDS} folds")
+    print(f"Hiperparâmetros: {NOME_JANELA}|{NUMERO_REGIOES}\n")
 
-                    self.avaliador.cache_avaliacoes[chave] = resultado
-                    recuperadas += 1
-
-        print(
-            f"Avaliações recuperadas do cache: {recuperadas}",
-            flush=True,
-        )
-
-    def avaliar(self, medidores):
-        chave = tuple(
-            medidor
-            for medidor in self.avaliador.medidores_disponiveis
-            if medidor in medidores
-        )
-
-        if chave in self.avaliador.cache_avaliacoes:
-            return self.avaliador.cache_avaliacoes[chave]
-
-        inicio = time.perf_counter()
-
-        resultado = self.avaliador.avaliar(list(chave))
-
-        registro = {
-            "assinatura": self.assinatura,
-            "resultado": resultado,
-        }
-
-        with self.caminho.open(
-            "a", encoding="utf-8"
-        ) as arquivo:
-            arquivo.write(
-                json.dumps(registro, ensure_ascii=False) + "\n"
-            )
-
-        self.novas_avaliacoes += 1
-
-        duracao = time.perf_counter() - inicio
-
-        print(
-            f"Avaliação {self.novas_avaliacoes}: "
-            f"N={len(chave)} | "
-            f"Macro-F1={resultado['f1_macro_medio']:.4f} | "
-            f"{duracao:.1f}s | {list(chave)}",
-            flush=True,
-        )
-
-        return resultado
-
+    return df_treino, y_treino, particoes, hiperparametros, sorted(regioes)
 
 # ============================================================
-# Representação binária e operadores de seleção
+# AVALIAÇÃO DE UMA CONFIGURAÇÃO DE MEDIDORES
 # ============================================================
-class AmostragemValida(Sampling):
-    def _do(self, problem, n_samples, **kwargs):
-        X = np.zeros(
-            (n_samples, problem.n_var),
-            dtype=bool,
+def avaliar_configuracao(medidores, df_treino, y_treino, particoes, hiperparametros, regioes):
+    if len(medidores) == 0:
+        raise ValueError("É necessário selecionar pelo menos um medidor.")
+
+    if len(medidores) != len(set(medidores)):
+        raise ValueError("Há medidores repetidos.")
+
+    # --------------------------------------------------------
+    # Seleção dos atributos
+    # --------------------------------------------------------
+    # Busca os seis atributos referentes a cada medidor selecionado
+    colunas = [
+        f"{medidor}_{atributo}"
+        for medidor in medidores
+        for atributo in ATRIBUTOS_DE_INTERESSE
+    ]
+
+    colunas_ausentes = set(colunas) - set(df_treino.columns)
+
+    if colunas_ausentes:
+        raise ValueError("Atributos não encontrados:\n" + "\n".join(sorted(colunas_ausentes)))
+
+    # Define as variáveis de entrada conforme os atributos dos medidores selecionados
+    X = df_treino[colunas].to_numpy(dtype=float)
+
+    # Conjunto de variável resposta
+    y = y_treino.to_numpy()
+
+    if not np.isfinite(X).all():
+        raise ValueError("Existem valores NaN ou infinitos nos atributos.")
+
+    # --------------------------------------------------------
+    # Avaliação nas cinco partições
+    # --------------------------------------------------------
+    resultados_particoes = []
+
+    # Para cada partição
+    for indices_treino, indices_validacao in particoes:
+        modelo = RandomForestClassifier(random_state=SEMENTE, n_jobs=-1)
+
+        # Define os hiperparâmetros da RF
+        modelo.set_params(**hiperparametros)
+
+        # Treina o modelo da RF com os dados de treino da partição atual
+        modelo.fit(X[indices_treino], y[indices_treino])
+
+        # Realiza a predição com os dados de validação da partição atual
+        y_predito = modelo.predict(X[indices_validacao])
+
+        # Calcula o Macro-F1 da partição atual
+        # Macro-F1 = (F1_R1 + F1_R2 + ... + F1_R8) / 8
+        macro_f1 = f1_score(
+            y[indices_validacao],
+            y_predito,
+            average="macro",
+            labels=regioes,
+            zero_division=0,
         )
 
-        for i in range(n_samples):
-            quantidade = np.random.randint(
-                1, MAXIMO_MEDIDORES + 1
-            )
+        resultados_particoes.append(float(macro_f1))
 
-            escolhidos = np.random.choice(
-                problem.indices_disponiveis,
-                quantidade,
-                replace=False,
-            )
+    # --------------------------------------------------------
+    # Resultado
+    # --------------------------------------------------------
+    return {
+        "medidores": medidores,
+        "numero_medidores": len(medidores),
+        "numero_atributos": len(colunas),
+        "macro_f1_medio": float(np.mean(resultados_particoes)),
+        "macro_f1_desvio": float(np.std(resultados_particoes)),
+        "macro_f1_particoes": resultados_particoes,
+    }
+    
+# ============================================================
+# SALVAMENTO DOS RESULTADOS
+# ============================================================
+def salvar_resultados(resultado, problema):
+    DIRETORIO_RESULTADOS.mkdir(parents=True, exist_ok=True)
 
-            X[i, escolhidos] = True
+    solucoes_finais = []
 
-        return X
+    # Percorre as soluções da fronteira final
+    for x, f in zip(resultado.X, resultado.F):
+        medidores = decodificar_medidores(x)
 
+        solucoes_finais.append({
+            "medidores": medidores,
+            "numero_medidores": len(medidores),
+            "macro_f1": float(1 - f[1]),
+            "f1": int(f[0]),
+            "f2": float(f[1]),
+        })
 
-class RepararSelecao(Repair):
-    def _do(self, problem, X, **kwargs):
-        X = np.asarray(X, dtype=bool).copy()
+    dados = {
+        "semente": SEMENTE,
+        "tamanho_populacao": TAMANHO_POPULACAO,
+        "numero_geracoes": NUMERO_GERACOES,
+        "numero_regioes": NUMERO_REGIOES,
+        "janela": NOME_JANELA,
+        "numero_folds": NUMERO_FOLDS,
+        "avaliacoes_rf": problema.numero_avaliacoes_rf,
+        "avaliacoes_cache": problema.numero_avaliacoes_cache,
+        "solucoes_finais": solucoes_finais,
+    }
 
-        for individuo in X:
-            # Os pontos sem medidor permanecem sempre iguais a zero.
-            individuo[problem.indices_indisponiveis] = False
+    caminho = DIRETORIO_RESULTADOS / f"execucao_seed_{SEMENTE}.json"
 
-            selecionados = np.flatnonzero(individuo)
-
-            if len(selecionados) > MAXIMO_MEDIDORES:
-                remover = np.random.choice(
-                    selecionados,
-                    len(selecionados) - MAXIMO_MEDIDORES,
-                    replace=False,
-                )
-
-                individuo[remover] = False
-
-            if not individuo.any():
-                individuo[
-                    np.random.choice(problem.indices_disponiveis)
-                ] = True
-
-        return X
-
+    with caminho.open("w", encoding="utf-8") as arquivo:
+        json.dump(dados, arquivo, indent=4, ensure_ascii=False)
 
 # ============================================================
-# Problema multiobjetivo
-# Minimizar número de medidores e (1 - Macro-F1)
+# DEFINIÇÃO DO PROBLEMA MULTIOBJETIVO
 # ============================================================
+# Cada posição do vetor binário representa um medidor de MEDIDORES_DISPONIVEIS
 class ProblemaMedidores(ElementwiseProblem):
-    def __init__(self, cache):
-        self.cache = cache
-        self.medidores = MEDIDORES_TODOS
-
-        self.indices_disponiveis = np.array([
-            i
-            for i, medidor in enumerate(self.medidores)
-            if medidor not in MEDIDORES_INDISPONIVEIS
-        ])
-
-        self.indices_indisponiveis = np.array([
-            i
-            for i, medidor in enumerate(self.medidores)
-            if medidor in MEDIDORES_INDISPONIVEIS
-        ])
-
+    def __init__(self, df_treino, y_treino, particoes, hiperparametros, regioes):
         super().__init__(
-            n_var=len(self.medidores),
-            n_obj=2,
-            n_ieq_constr=1,
-            xl=0,
-            xu=1,
-            vtype=bool,
+            n_var=len(MEDIDORES_DISPONIVEIS), # número de variáveis de decisão do problema
+            n_obj=2, # quantas funções objetivo o problema possui
+            n_ieq_constr=1, # número de restrições de desigualdade
+            xl=0, # limite inferior das variáveis
+            xu=1, # limite superior das variáveis
+            vtype=bool, # tipo das variáveis de decisão (booleanas/binárias)
         )
+
+        self.df_treino = df_treino
+        self.y_treino = y_treino
+        self.particoes = particoes
+        self.hiperparametros = hiperparametros
+        self.regioes = regioes
+        self.cache = carregar_cache()
+        self.numero_avaliacoes_rf = 0
+        self.numero_avaliacoes_cache = 0
 
     def _evaluate(self, x, out, *args, **kwargs):
-        selecionados = [
-            medidor
-            for medidor, ativo in zip(self.medidores, x)
-            if ativo
-        ]
+        # Converte o vetor binário nos medidores selecionados
+        # Considerando ["SUB", "M02", "M03", "M04", "M05"]: [0, 1, 0, 1, 0] -> ["M02", "M04"]
+        medidores = decodificar_medidores(x) # nesse problema, x tem sempre tamanho 25
 
-        if not 1 <= len(selecionados) <= MAXIMO_MEDIDORES:
-            raise ValueError(
-                f"Indivíduo inválido: {selecionados}"
+        # Restrição de desigualdade: pelo menos um medidor deve ser selecionado
+        # Se len(medidores) = 2, temos: 1 - 2 = -1 <= 0 (válido)
+        # Se len(medidores) = 0, temos: 1 - 0 = 1 > 0 (inválido)
+        out["G"] = [1 - len(medidores)] # armazena os valores das restrições
+
+        # Se nenhum medidor foi selecionado, não executa a Random Forest
+        if len(medidores) == 0:
+            out["F"] = [0, 1]
+            return
+
+        # Usa o vetor binário como chave do cache: [0, 1, 0, 1, 0] -> "01010"
+        chave = "".join("1" if valor else "0" for valor in x)
+
+        # Se a configuração já foi avaliada, reutiliza o resultado
+        if chave in self.cache:
+            resultado = self.cache[chave]
+            self.numero_avaliacoes_cache += 1
+        else:
+            # Avalia a configuração utilizando a RF e 5-fold Cross-Validation
+            resultado = avaliar_configuracao(
+                medidores, # configuração, por ex.: ["M02", "M04"]
+                self.df_treino,
+                self.y_treino,
+                self.particoes,
+                self.hiperparametros,
+                self.regioes,
             )
 
-        indisponiveis_selecionados = (
-            set(selecionados) & MEDIDORES_INDISPONIVEIS
-        )
+            self.numero_avaliacoes_rf += 1
+            
+            # Salva o resultado no cache
+            self.cache[chave] = resultado
+            salvar_cache(self.cache)
 
-        if indisponiveis_selecionados:
-            raise ValueError(
-                "Medidores indisponíveis selecionados: "
-                f"{sorted(indisponiveis_selecionados)}"
-            )
+        # Objetivo 1: minimizar o número de medidores
+        f1 = len(medidores)
 
-        resultado = self.cache.avaliar(selecionados)
+        # Objetivo 2: minimizar o erro de classificação (ou maximizar o Macro-F1)
+        f2 = 1 - resultado["macro_f1_medio"]
 
-        macro_f1 = resultado["f1_macro_medio"]
-
-        out["F"] = [
-            len(selecionados),
-            1.0 - macro_f1,
-        ]
-
-        # No pymoo, uma restrição de desigualdade é satisfeita
-        # quando G <= 0.
-        out["G"] = [
-            DESEMPENHO_MINIMO - macro_f1,
-        ]
-
-
+        out["F"] = [f1, f2] # armazena os valores de f1 e f2
+   
 # ============================================================
-# Exportação das soluções de Pareto
-# ============================================================
-def salvar_pareto(resultado, problema):
-    if resultado.X is None:
-        raise RuntimeError(
-            "Nenhuma solução viável foi encontrada."
-        )
-
-    linhas = []
-
-    for individuo in np.atleast_2d(resultado.X):
-        medidores = [
-            medidor
-            for medidor, ativo in zip(
-                problema.medidores,
-                individuo,
-            )
-            if ativo
-        ]
-
-        avaliacao = problema.cache.avaliar(medidores)
-
-        linhas.append({
-            "numero_medidores": len(medidores),
-            "macro_f1_cv": avaliacao["f1_macro_medio"],
-            "desvio_f1_cv": avaliacao["f1_macro_desvio"],
-            "medidores": ";".join(medidores),
-        })
-
-    df = pd.DataFrame(linhas)
-
-    df = df.drop_duplicates(
-        subset="medidores"
-    )
-
-    df = df.sort_values(
-        ["numero_medidores", "macro_f1_cv"],
-        ascending=[True, False],
-    )
-
-    caminho = (
-        DIRETORIO_RESULTADOS
-        / "pareto.csv"
-    )
-
-    df.to_csv(
-        caminho,
-        index=False,
-        encoding="utf-8-sig",
-    )
-
-    print("\nFronteira de Pareto")
-    print(df.to_string(index=False))
-    print(f"Arquivo salvo: {caminho}\n", flush=True)
-
-    return df
-
-
-def salvar_grafico_pareto(df):
-    plt.figure(figsize=(8, 5))
-
-    plt.scatter(
-        df["numero_medidores"],
-        df["macro_f1_cv"],
-        s=80,
-    )
-
-    plt.plot(
-        df["numero_medidores"],
-        df["macro_f1_cv"],
-    )
-
-    for _, linha in df.iterrows():
-        plt.annotate(
-            linha["medidores"],
-            (
-                linha["numero_medidores"],
-                linha["macro_f1_cv"],
-            ),
-            xytext=(5, 5),
-            textcoords="offset points",
-            fontsize=8,
-        )
-
-    plt.xlabel("Número de medidores")
-    plt.ylabel("Macro-F1")
-    plt.title("Fronteira de Pareto")
-    plt.grid(alpha=0.3)
-    plt.tight_layout()
-
-    caminho = (
-        DIRETORIO_RESULTADOS
-        / "fronteira_pareto.png"
-    )
-
-    plt.savefig(
-        caminho,
-        dpi=300,
-        bbox_inches="tight",
-    )
-
-    plt.show()
-    plt.close()
-
-    print(f"Gráfico salvo: {caminho}", flush=True)
-
-
-def salvar_todas_avaliacoes(cache):
-    linhas = []
-
-    for resultado in (
-        cache.avaliador.cache_avaliacoes.values()
-    ):
-        linhas.append({
-            "numero_medidores": resultado["n_medidores"],
-            "macro_f1_cv": resultado["f1_macro_medio"],
-            "desvio_f1_cv": resultado["f1_macro_desvio"],
-            "medidores": ";".join(resultado["medidores"]),
-        })
-
-    if linhas:
-        df = pd.DataFrame(linhas).sort_values(
-            ["numero_medidores", "macro_f1_cv"],
-            ascending=[True, False],
-        )
-
-        df.to_csv(
-            DIRETORIO_RESULTADOS / "todas_avaliacoes.csv",
-            index=False,
-            encoding="utf-8-sig",
-        )
-
-
-# ============================================================
-# Execução do NSGA-II
-# ============================================================
-def executar_nsga2(cache):
-    problema = ProblemaMedidores(cache)
-
-    algoritmo = NSGA2(
-        pop_size=TAMANHO_POPULACAO,
-        sampling=AmostragemValida(),
-        crossover=TwoPointCrossover(),
-        mutation=BitflipMutation(
-            prob_var=1.0 / len(problema.indices_disponiveis)
-        ),
-        repair=RepararSelecao(),
-        eliminate_duplicates=True,
-    )
-
-    print("\n" + "=" * 70)
-    print("NSGA-II")
-    print(
-        f"População: {TAMANHO_POPULACAO} | "
-        f"Gerações: {NUMERO_GERACOES}"
-    )
-    print(
-        f"Representação: {problema.n_var} posições | "
-        f"{len(problema.indices_disponiveis)} disponíveis"
-    )
-    print(
-        f"Limite: 1 a {MAXIMO_MEDIDORES} medidores"
-    )
-    print(
-        f"Macro-F1 mínimo: {DESEMPENHO_MINIMO:.2f}"
-    )
-    print(
-        "Crossover: Two Point"
-    )
-    print(
-        "Mutação: Bit Flip | "
-        f"p = 1/{len(problema.indices_disponiveis)} "
-        f"= {1.0 / len(problema.indices_disponiveis):.4f}"
-    )
-    print(
-        "Objetivos: minimizar N e (1 - Macro-F1 CV)"
-    )
-    print("=" * 70, flush=True)
-
-    resultado = minimize(
-        problema,
-        algoritmo,
-        termination=("n_gen", NUMERO_GERACOES),
-        seed=SEMENTE,
-        verbose=True,
-    )
-
-    df_pareto = salvar_pareto(
-        resultado,
-        problema,
-    )
-
-    salvar_grafico_pareto(df_pareto)
-    salvar_todas_avaliacoes(cache)
-
-
-# ============================================================
-# Execução principal
+# EXECUÇÃO DO NSGA-II
 # ============================================================
 if __name__ == "__main__":
-    DIRETORIO_RESULTADOS.mkdir(
-        parents=True,
-        exist_ok=True,
+    # Retorna a base de treinamento, variável resposta, partições, hiperparâmetros usados e regionalização
+    df_treino, y_treino, particoes, hiperparametros, regioes = preparar_dados()
+
+    # Inicializa o problema
+    problema = ProblemaMedidores(df_treino, y_treino, particoes, hiperparametros, regioes)
+
+    # --------------------------------------------------------
+    # Configuração do NSGA-II
+    # --------------------------------------------------------
+    # BinaryRandomSampling: gera a população inicial binária aleatoriamente
+    # Considerando ["SUB", "M02", "M03", "M04"]:
+    # ex.: [0, 1, 0, 1] -> ["M02", "M04"]
+
+    # UniformCrossover: combina dois pais posição a posição, sendo que cada posição
+    # possui a mesma probabilidade de participar da troca
+    # ex.: [1, 1, 0, 0] + [0, 0, 1, 1] -> [1, 0, 1, 0]
+
+    # BitflipMutation: pode inverter bits do indivíduo, adicionando ou removendo medidores
+    # ex.: [1, 0, 1, 0] -> [1, 0, 0, 0]
+    algoritmo = NSGA2(
+        pop_size=TAMANHO_POPULACAO,
+        sampling=BinaryRandomSampling(),
+        crossover=UniformCrossover(),
+        mutation=BitflipMutation(),
+        eliminate_duplicates=True, # elimina indivíduos com vetores binários idênticos
     )
 
-    avaliador = AvaliadorMedidores()
-    cache = CacheAvaliacoes(avaliador)
-
-    executar_nsga2(cache)
-
-    print("\nExecução concluída.")
-    print(
-        f"Novas combinações avaliadas: "
-        f"{cache.novas_avaliacoes}"
+    # --------------------------------------------------------
+    # Execução da otimização
+    # --------------------------------------------------------
+    resultado = minimize(
+        problema, # problema multiobjetivo que será otimizado
+        algoritmo, # NSGA-II
+        ("n_gen", NUMERO_GERACOES), # critério de parada: encerra após atingir o número definido de gerações
+        seed=SEMENTE, # fixa a semente aleatória para permitir a reprodução da execução
+        verbose=True, # exibe no terminal as informações de progresso da otimização
     )
-    print(
-        "O conjunto de teste permaneceu reservado."
-    )
+        
+    print(f"\nAvaliações realizadas pela RF: {problema.numero_avaliacoes_rf}")
+    print(f"Resultados recuperados do cache: {problema.numero_avaliacoes_cache}")
+    
+    salvar_resultados(resultado, problema)
+
+    Scatter().add(resultado.F).show()
