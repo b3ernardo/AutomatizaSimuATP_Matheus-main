@@ -30,11 +30,12 @@ from Regionalizacoes import REGIONALIZACOES
 NUMERO_REGIOES = 8 # número de regiões
 NOME_JANELA = "0/5" # janela
 PROPORCAO_TESTE = 0.20 # proporção destinada ao conjunto de teste
-SEMENTE = 42 # semente para reprodutibilidade
+SEMENTE_AVALIACAO = 42
+SEMENTE_NSGA2 = 99 # alterar 42 - 123 - 2026 - 7 - 99
 NUMERO_FOLDS = 5 # número de folds da validação cruzada
 
 TAMANHO_POPULACAO = 100 # tamanho da população do NSGA-II
-NUMERO_GERACOES = 100 # número de gerações do NSGA-II
+NUMERO_GERACOES = 150 # número de gerações do NSGA-II
 
 # Caminho do parquet com os dados dos atributos para cada medidor
 CAMINHO_DATASET = DIRETORIO_OTIMIZACAO / "DatasetAtributosMedidores16" / "atributos_0_5.parquet"
@@ -137,7 +138,7 @@ def preparar_dados():
     arquivos_treino, arquivos_teste = train_test_split(
         df["arquivo"],
         test_size=PROPORCAO_TESTE, # define 80/20
-        random_state=SEMENTE, # fixa a aleatoriedade, garantindo que a divisão seja sempre a mesma
+        random_state=SEMENTE_AVALIACAO, # fixa a aleatoriedade, garantindo que a divisão seja sempre a mesma
         stratify=df["barra"],
     )
 
@@ -180,7 +181,7 @@ def preparar_dados():
     validacao = StratifiedKFold(
         n_splits=NUMERO_FOLDS,
         shuffle=True,
-        random_state=SEMENTE,
+        random_state=SEMENTE_AVALIACAO,
     )
 
     # Gera os índices de treinamento e validação de cada partição
@@ -249,7 +250,7 @@ def avaliar_configuracao(medidores, df_treino, y_treino, particoes, hiperparamet
 
     # Para cada partição
     for indices_treino, indices_validacao in particoes:
-        modelo = RandomForestClassifier(random_state=SEMENTE, n_jobs=-1)
+        modelo = RandomForestClassifier(random_state=SEMENTE_AVALIACAO, n_jobs=-1)
 
         # Define os hiperparâmetros da RF
         modelo.set_params(**hiperparametros)
@@ -305,7 +306,7 @@ def salvar_resultados(resultado, problema):
         })
 
     dados = {
-        "semente": SEMENTE,
+        "semente": SEMENTE_NSGA2,
         "tamanho_populacao": TAMANHO_POPULACAO,
         "numero_geracoes": NUMERO_GERACOES,
         "numero_regioes": NUMERO_REGIOES,
@@ -316,7 +317,7 @@ def salvar_resultados(resultado, problema):
         "solucoes_finais": solucoes_finais,
     }
 
-    caminho = DIRETORIO_RESULTADOS / f"execucao_seed_{SEMENTE}.json"
+    caminho = DIRETORIO_RESULTADOS / f"execucao_seed_{SEMENTE_NSGA2}.json"
 
     with caminho.open("w", encoding="utf-8") as arquivo:
         json.dump(dados, arquivo, indent=4, ensure_ascii=False)
@@ -430,7 +431,7 @@ if __name__ == "__main__":
         problema, # problema multiobjetivo que será otimizado
         algoritmo, # NSGA-II
         ("n_gen", NUMERO_GERACOES), # critério de parada: encerra após atingir o número definido de gerações
-        seed=SEMENTE, # fixa a semente aleatória para permitir a reprodução da execução
+        seed=SEMENTE_NSGA2, # fixa a semente aleatória para permitir a reprodução da execução
         verbose=True, # exibe no terminal as informações de progresso da otimização
     )
         

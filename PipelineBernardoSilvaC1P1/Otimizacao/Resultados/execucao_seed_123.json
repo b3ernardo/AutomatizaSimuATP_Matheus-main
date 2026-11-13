@@ -1,0 +1,97 @@
+{
+    "semente": 123,
+    "tamanho_populacao": 100,
+    "numero_geracoes": 150,
+    "numero_regioes": 8,
+    "janela": "0/5",
+    "numero_folds": 5,
+    "avaliacoes_rf": 0,
+    "avaliacoes_cache": 14914,
+    "solucoes_finais": [
+        {
+            "medidores": [
+                "M14",
+                "M28"
+            ],
+            "numero_medidores": 2,
+            "macro_f1": 0.9333104071464622,
+            "f1": 2,
+            "f2": 0.06668959285353782
+        },
+        {
+            "medidores": [
+                "M27"
+            ],
+            "numero_medidores": 1,
+            "macro_f1": 0.9207144519749881,
+            "f1": 1,
+            "f2": 0.07928554802501186
+        },
+        {
+            "medidores": [
+                "M14",
+                "M17",
+                "M21",
+                "M24",
+                "M25",
+                "M28"
+            ],
+            "numero_medidores": 6,
+            "macro_f1": 0.9511008467539332,
+            "f1": 6,
+            "f2": 0.04889915324606675
+        },
+        {
+            "medidores": [
+                "M14",
+                "M17",
+                "M22",
+                "M28"
+            ],
+            "numero_medidores": 4,
+            "macro_f1": 0.9473642127135357,
+            "f1": 4,
+            "f2": 0.05263578728646434
+        },
+        {
+            "medidores": [
+                "M14",
+                "M27",
+                "M28"
+            ],
+            "numero_medidores": 3,
+            "macro_f1": 0.9444438744286214,
+            "f1": 3,
+            "f2": 0.05555612557137857
+        },
+        {
+            "medidores": [
+                "M14",
+                "M17",
+                "M21",
+                "M24",
+                "M28"
+            ],
+            "numero_medidores": 5,
+            "macro_f1": 0.9507705989852585,
+            "f1": 5,
+            "f2": 0.04922940101474149
+        },
+        {
+            "medidores": [
+                "M14",
+                "M16",
+                "M17",
+                "M19",
+                "M21",
+                "M24",
+                "M27",
+                "M28"
+            ],
+            "numero_medidores": 8,
+            "macro_f1": 0.9513013775615322,
+            "f1": 8,
+            "f2": 0.04869862243846779
+        }
+    ]
+}
