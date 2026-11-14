@@ -12,7 +12,9 @@ from pymoo.operators.crossover.ux import UniformCrossover
 from pymoo.operators.mutation.bitflip import BitflipMutation
 from pymoo.algorithms.moo.nsga2 import NSGA2
 from pymoo.optimize import minimize
+from pymoo.core.callback import Callback
 from pymoo.visualization.scatter import Scatter
+from pymoo.indicators.hv import HV
 
 # ============================================================
 # CONFIGURAÇÕES
@@ -31,11 +33,14 @@ NUMERO_REGIOES = 8 # número de regiões
 NOME_JANELA = "0/5" # janela
 PROPORCAO_TESTE = 0.20 # proporção destinada ao conjunto de teste
 SEMENTE_AVALIACAO = 42
-SEMENTE_NSGA2 = 99 # alterar 42 - 123 - 2026 - 7 - 99
+SEMENTE_NSGA2 = 2026 # alterar 42 - 123 - 2026 - 7 - 99
 NUMERO_FOLDS = 5 # número de folds da validação cruzada
 
 TAMANHO_POPULACAO = 100 # tamanho da população do NSGA-II
 NUMERO_GERACOES = 150 # número de gerações do NSGA-II
+
+# Os indicadores devem ser calculados em 10 momentos distintos, igualmente espaçados
+MOMENTOS_INDICADORES = [15, 30, 45, 60, 75, 90, 105, 120, 135, 150]
 
 # Caminho do parquet com os dados dos atributos para cada medidor
 CAMINHO_DATASET = DIRETORIO_OTIMIZACAO / "DatasetAtributosMedidores16" / "atributos_0_5.parquet"
@@ -321,6 +326,38 @@ def salvar_resultados(resultado, problema):
 
     with caminho.open("w", encoding="utf-8") as arquivo:
         json.dump(dados, arquivo, indent=4, ensure_ascii=False)
+        
+# ============================================================
+# CÁLCULO DO HIPERVOLUME
+# ============================================================
+def calcular_hipervolume(F, pontos_referencia):
+    indicador = HV(ref_point=np.array(pontos_referencia))
+    return float(indicador(F))
+
+# ============================================================
+# DEFINIÇÃO DO VETOR ANTI-UTÓPICO
+# ============================================================
+# O vetor anti-utópico representa uma aproximação dos piores valores de cada objetivo na fronteira de Pareto
+def obter_vetor_anti_utopico():
+    valores_objetivos = []
+
+    # Percorre os arquivos de resultados das diferentes seeds
+    for caminho in DIRETORIO_RESULTADOS.glob("execucao_seed_*.json"):
+        with caminho.open("r", encoding="utf-8") as arquivo:
+            dados = json.load(arquivo)
+
+        # Reúne os valores de f1 e f2 de todas as soluções das fronteiras finais
+        for solucao in dados["solucoes_finais"]:
+            valores_objetivos.append([
+                solucao["f1"],
+                solucao["f2"],
+            ])
+
+    # Converte os valores dos objetivos para uma matriz NumPy
+    F = np.array(valores_objetivos)
+
+    # Obtém o pior valor encontrado para cada objetivo: vetor_anti_utopico = [max(f1), max(f2)]
+    return np.max(F, axis=0)
 
 # ============================================================
 # DEFINIÇÃO DO PROBLEMA MULTIOBJETIVO
@@ -392,11 +429,44 @@ class ProblemaMedidores(ElementwiseProblem):
         f2 = 1 - resultado["macro_f1_medio"]
 
         out["F"] = [f1, f2] # armazena os valores de f1 e f2
+
+# ============================================================
+# CALLBACK PARA OBTER DADOS DOS INDICADORES EM CADA MOMENTO
+# ============================================================
+# Recebe uma notificação do objeto de algoritmo a momento de interesse
+class CallbackIndicadores(Callback):
+    def __init__(self) -> None:
+        super().__init__()
+        self.hipervolumes = {}
+
+    def notify(self, algorithm):
+        geracao = algorithm.n_gen
+
+        # Olha só as gerações dos momentos de interesse
+        if geracao not in MOMENTOS_INDICADORES:
+            return
+
+        # Fronteira não dominada da geração atual
+        F = algorithm.opt.get("F").copy()
+
+        # Calcula o hipervolume da fronteira
+        hipervolume = calcular_hipervolume(F, PONTO_REFERENCIA_HV)
+
+        # Armazena o resultado
+        self.hipervolumes[geracao] = hipervolume
+
+        print(f"Geração {geracao:3d} | HV = {hipervolume:.6f}")
    
 # ============================================================
 # EXECUÇÃO DO NSGA-II
 # ============================================================
 if __name__ == "__main__":
+    # Define o vetor anti-utópico a partir das fronteiras finais das cinco execuções
+    vetor_anti_utopico = obter_vetor_anti_utopico()
+
+    # O ponto de referência do hipervolume é definido como 1,1 vezes o vetor anti-utópico
+    PONTO_REFERENCIA_HV = 1.1 * vetor_anti_utopico
+
     # Retorna a base de treinamento, variável resposta, partições, hiperparâmetros usados e regionalização
     df_treino, y_treino, particoes, hiperparametros, regioes = preparar_dados()
 
@@ -432,6 +502,7 @@ if __name__ == "__main__":
         algoritmo, # NSGA-II
         ("n_gen", NUMERO_GERACOES), # critério de parada: encerra após atingir o número definido de gerações
         seed=SEMENTE_NSGA2, # fixa a semente aleatória para permitir a reprodução da execução
+        callback = CallbackIndicadores(), # callback para dados dos indicadores
         verbose=True, # exibe no terminal as informações de progresso da otimização
     )
         
