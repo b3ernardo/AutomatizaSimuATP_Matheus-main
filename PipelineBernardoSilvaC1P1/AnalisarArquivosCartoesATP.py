@@ -7,11 +7,7 @@ import pandas as pd
 # ============================================================
 DIRETORIO_PIPELINE = Path(__file__).resolve().parent
 
-DIRETORIO_CARTOES = (
-    DIRETORIO_PIPELINE
-    / "TodosCartoesRodadosSemRetirarCargas"
-    / "CartoesATP"
-)
+DIRETORIO_CARTOES = DIRETORIO_PIPELINE / "TodosCartoesRodadosSemRetirarCargas"
 
 # ============================================================
 # Localização dos cartões ATP

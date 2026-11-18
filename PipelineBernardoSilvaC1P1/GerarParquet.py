@@ -31,11 +31,7 @@ LIMITE_TESTE = None # define até quantos cartões vão rodar
 # ============================================================
 # Diretórios
 # ============================================================
-DIRETORIO_CARTOES = (
-    DIRETORIO_PIPELINE
-    / "TodosCartoesRodadosSemRetirarCargas"
-    / "CartoesATP"
-)
+DIRETORIO_CARTOES = DIRETORIO_PIPELINE / "TodosCartoesRodadosSemRetirarCargas"
 RUNATP_PATH = DIRETORIO_REPOSITORIO_RAIZ / "runATP.exe" # executável que inicia as simulações do ATP
 DIRETORIO_TEMP = DIRETORIO_PIPELINE / "temp_atp"
 DIRETORIO_PARQUETS = DIRETORIO_PIPELINE / "Parquets16"

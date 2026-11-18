@@ -39,7 +39,7 @@ from Regionalizacoes import REGIONALIZACOES
 
 
 # ============================================================
-# CONFIGURAÇÕES — ALTERE AQUI
+# CONFIGURAÇÕES
 # ============================================================
 DIRETORIO_PIPELINE = Path(__file__).resolve().parent
 DIRETORIO_DATASETS = DIRETORIO_PIPELINE / "DatasetAtributos16"
@@ -141,7 +141,7 @@ ESPACOS_BUSCA = {
     },
     "SVM": {
         "C": [1e-3, 1e4, "log"],
-        "gamma": [1e-4, 1e2, "log"],
+        "gamma": [1e-4, 1e3, "log"],
         "class_weight": [None, "balanced"],
     },
     "KNN": {
